@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/virufy2/website/issues"
   },
-  "homepage": "https://github.com/virufy2/website#readme"
+  "homepage": "https://github.com/virufy2/website#readme",
+  "dependencies": {
+    "tailwindcss": "^1.6.2"
+  }
 }
