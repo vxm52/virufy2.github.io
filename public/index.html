@@ -13,15 +13,17 @@
     />
     <meta name="author" content="Team Virufy" />
     <link rel="stylesheet" href="styles.css" />
-    <!-- TODO: Add favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
   </head>
   <body>
+    <!-- content wrapper -->
     <div>
-      <!-- content wrapper -->
       <section>
         <nav>
           <div>
-            <h1><a href="#">[Virufy Logo Here]</a></h1>
+            <a href="#">
+              <img src="img/logos/virufy-logo.png" alt="Virufy logo" />
+            </a>
           </div>
           <ul>
             <li>
@@ -70,6 +72,7 @@
       <!-- end nav -->
       <main>
         <header>
+          <!-- TODO: Set background of header to img/home/header-bg.png -->
           <div>
             <h1>Early detection of COVID-19 with AI technology</h1>
           </div>
@@ -88,6 +91,8 @@
 
         <!-- Our mission -->
         <section>
+          <!-- TODO: Set background of this section to img/home/mission-bg.png
+          -->
           <div>
             <h2>Our mission</h2>
           </div>
@@ -109,97 +114,123 @@
           </div>
         </section>
 
-        <!-- How will it work -->
-        <section>
-          <div>
-            <p>How will it work?</p>
-            <h2>Record your cough sounds & save lives</h2>
-          </div>
-          <div>
+        <!-- Wrapper for background img/home/about-bg.png -->
+        <div>
+          <!-- How will it work -->
+          <section>
             <div>
-              <!-- TODO: Add image -->
-              <h5>Donate your cough</h5>
+              <p>How will it work?</p>
+              <h2>Record your cough sounds & save lives</h2>
+            </div>
+            <div>
+              <div>
+                <img src="img/home/cough-icon.png" alt="Cough icon" />
+                <h5>Donate your cough</h5>
+                <p>
+                  Your contribution will help us build a tool that can replace
+                  the traditional tools being used right now.
+                </p>
+              </div>
+              <div>
+                <img src="img/home/sound-icon.png" alt="Sound icon" />
+                <h5>Help train the AI to recognize cough sounds</h5>
+                <p>
+                  Help train our AI by contributing to a big database of cough
+                  sounds. AI will analyze cough patterns
+                </p>
+              </div>
+              <div>
+                <img src="img/home/app-icon.png" alt="App icon" />
+                <h5>Help us build a powerful AI app</h5>
+                <p>
+                  Help us build a powerful app that accurately detects early
+                  diagnosis of COVID-19
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- About us -->
+          <section>
+            <div>
+              <h2>About us</h2>
+            </div>
+            <div>
               <p>
-                Your contribution will help us build a tool that can replace the
-                traditional tools being used right now.
+                We are a student-led nonprofit. We are a passionate student-run
+                team of AI engineers, mobile web app developers, and young
+                medical professionals. We want to do our best to help the
+                situation and can’t think of anything more noble. We are part of
+                <a href="#">Stanford's COVID-19 Response Innovation Lab</a> and
+                also featured in <a href="#">One Young World.</a> Your support
+                can benefit hundreds of millions of lives across 190+ countries!
+              </p>
+            </div>
+          </section>
+
+          <!-- Collaboration -->
+          <section>
+            <div>
+              <h3>In collaboration with</h3>
+            </div>
+            <div>
+              <img
+                src="img/logos/covid-19-RIL-logo.png"
+                alt="Covid-19 Response
+              Innovation Lab logo"
+              />
+              <img
+                src="img/logos/one-young-world-logo.png"
+                alt="One Young World
+              logo"
+              />
+              <img src="img/logos/jig-jp-logo.png" alt="Jig JP logo" />
+              <img
+                src="img/logos/stanford-h4r-logo.png"
+                alt="Stanford Hacking 4
+              Recovery logo"
+              />
+              <img
+                src="img/logos/siena-company-logo.png"
+                alt="Siena Company
+              logo"
+              />
+            </div>
+          </section>
+        </div>
+
+        <!-- Wrapper for background img/home/header-bg.png -->
+        <div>
+          <!-- Timeline -->
+          <section>
+            <div>
+              <h2>Our timeline</h2>
+            </div>
+            <div>
+              <img src="img/home/timeline-icon.png" alt="Image of timeline" />
+            </div>
+          </section>
+
+          <!-- Help us -->
+          <section>
+            <div>
+              <h2>Help us make this happen</h2>
+            </div>
+            <div>
+              <p>[State who we are interested in taking the survey.]</p>
+            </div>
+            <div>
+              <p>
+                Take 5 minutes to record your cough and answer a few questions
               </p>
             </div>
             <div>
-              <!-- TODO: Add image -->
-              <h5>Help train the AI to recognize cough sounds</h5>
-              <p>
-                Help train our AI by contributing to a big database of cough
-                sounds. AI will analyze cough patterns
-              </p>
+              <a href="#">
+                <button>Donate your cough</button>
+              </a>
             </div>
-            <div>
-              <!-- TODO: Add image -->
-              <h5>Help us build a powerful AI app</h5>
-              <p>
-                Help us build a powerful app that accurately detects early
-                diagnosis of COVID-19
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- About us -->
-        <section>
-          <div>
-            <h2>About us</h2>
-          </div>
-          <div>
-            <p>
-              We are a student-led nonprofit. We are a passionate student-run
-              team of AI engineers, mobile web app developers, and young medical
-              professionals. We want to do our best to help the situation and
-              can’t think of anything more noble. We are part of
-              <a href="#">Stanford's COVID-19 Response Innovation Lab</a> and
-              also featured in <a href="#">One Young World.</a> Your support can
-              benefit hundreds of millions of lives across 190+ countries!
-            </p>
-          </div>
-        </section>
-
-        <!-- Collaboration -->
-        <section>
-          <div>
-            <h3>In collaboration with</h3>
-          </div>
-          <div>
-            <!-- TODO: Add logos of collaborators -->
-          </div>
-        </section>
-
-        <!-- Timeline -->
-        <section>
-          <div>
-            <h2>Our timeline</h2>
-          </div>
-          <div>
-            <!-- TODO: Add timeline image -->
-          </div>
-        </section>
-
-        <!-- Help us -->
-        <section>
-          <div>
-            <h2>Help us make this happen</h2>
-          </div>
-          <div>
-            <p>[State who we are interested in taking the survey.]</p>
-          </div>
-          <div>
-            <p>
-              Take 5 minutes to record your cough and answer a few questions
-            </p>
-          </div>
-          <div>
-            <a href="#">
-              <button>Donate your cough</button>
-            </a>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
 
       <footer>
@@ -213,11 +244,21 @@
         </section>
         <!-- Icon container -->
         <section>
-          <a href="#">GH Icon</a>
-          <a href="#">Twitter Icon</a>
-          <a href="#">FB Icon</a>
-          <a href="#">IG Icon</a>
-          <a href="#">LI Icon</a>
+          <a href="#">
+            <img src="img/logos/github-icon.png" alt="Github Icon" />
+          </a>
+          <a href="#">
+            <img src="img/logos/twitter-icon.png" alt="Twitter Icon" />
+          </a>
+          <a href="#">
+            <img src="img/logos/facebook-icon.png" alt="Facebook Icon" />
+          </a>
+          <a href="#">
+            <img src="img/logos/instagram-icon.png" alt="Instagram Icon" />
+          </a>
+          <a href="#">
+            <img src="img/logos/linkedin-icon.png" alt="LinkedIn Icon" />
+          </a>
         </section>
       </footer>
     </div>
