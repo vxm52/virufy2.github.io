@@ -14,23 +14,28 @@
     <meta name="author" content="Team Virufy" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <script async src="scripts/index.js"></script>
   </head>
   <body class="font-body text-gray-100">
     <!-- content wrapper -->
     <div>
-      <section class="mt-10 mx-40">
+      <section class="mt-10 mx-4 md:mx-40 relative">
         <nav class="flex justify-between items-center">
           <div>
             <a href="#">
-              <img src="img/logos/virufy-logo.png" alt="Virufy logo" />
+              <img
+                class="w-2/3"
+                src="img/logos/virufy-logo.png"
+                alt="Virufy logo"
+              />
             </a>
           </div>
-          <div class="px-4 cursor-pointer md:hidden">
+          <div class="cursor-pointer md:hidden" id="menu-icon">
             <svg
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              class="w-5 menu"
+              class="w-6 menu"
             >
               <path
                 stroke-linecap="round"
@@ -40,7 +45,31 @@
               ></path>
             </svg>
           </div>
+          <div class="px-4 cursor-pointer hidden md:hidden" id="close-icon">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="x w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </div>
 
+          <!-- Mobile Nav -->
+          <div
+            class="md:hidden hidden absolute top-0 z-10 mt-24"
+            id="mobile-nav"
+          >
+            <h3>Testing</h3>
+          </div>
+
+          <!-- Desktop Nav -->
           <ul class="flex justify-between items-center w-1/2 hidden md:block">
             <li>
               <a href="#">
