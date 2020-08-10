@@ -3,11 +3,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#13C2C2", // Button Background, Links
+        primary: "#13C2C2", // Buttons, Links
         secondary: {
           100: "#00B696", // Footer Background
-          200: "#13C2C2", // Navbar Btn Border
+          200: "#08979C", // Navbar Buttons
         },
+      },
+      textColor: {
+        gray: {
+          100: "#1F1F1F", // Body text
+          200: "#434343", // Sub-headings
+          300: "#2D2D2D", // Main heading
+        },
+        teal: "#13C2C2",
       },
       fontFamily: {
         heading: ["'Open Sans'"],
