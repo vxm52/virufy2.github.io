@@ -18,7 +18,9 @@ Installs all the dependencies for local development.
 The [Tailwind CSS Docs](https://www.tailwindcss.com/docs) lists all the
 available utility classes, which should cover most styling requirements.
 
-If you want to add custom CSS, make sure to work on `src/styles.css` **NOT**
-`public/styles.css`. Once you've made your changes, run `npm run build-css`
+If you want to add custom style classes, the best way is to extend Tailwind's
+defaults by modifying `tailwind.config.js`.
+
+Once you've made your changes, run `npm run build-css`
 and Tailwind will compile a new stylesheet into
 `public/styles.css`.
