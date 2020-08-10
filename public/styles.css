@@ -18119,6 +18119,21 @@ video {
           animation: bounce 1s infinite;
 }
 
+.footer {
+  --bg-opacity: 1;
+  background-color: #00B696;
+  background-color: rgba(0, 182, 150, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

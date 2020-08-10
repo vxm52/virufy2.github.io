@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer {
+  @apply bg-secondary-100 text-white flex flex-col-reverse py-10 px-6;
+}
