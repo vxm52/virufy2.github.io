@@ -18,9 +18,14 @@ Installs all the dependencies for local development.
 The [Tailwind CSS Docs](https://www.tailwindcss.com/docs) lists all the
 available utility classes, which should cover most styling requirements.
 
-If you want to add custom style classes, the best way is to extend Tailwind's
-defaults by modifying `tailwind.config.js`.
+If you want to add small custom styles (eg. fonts, colors), you can do so
+by extending Tailwind's defaults in `tailwind.config.js`.
 
+If you want to create reusable component classes, you can add them to
+`src/styles.css` (**NOT** `public/styles.css`). Recommendation: Use
+Tailwind's `@apply` directive along with the available utility classes.
+
+**Important:**
 Once you've made your changes, run `npm run build-css`
 and Tailwind will compile a new stylesheet into
 `public/styles.css`.
