@@ -8,6 +8,7 @@ module.exports = {
           100: "#00B696", // Footer Background
           200: "#08979C", // Navbar Buttons
         },
+        filler: "rgba(172, 224, 215, 0.05)",
       },
       textColor: {
         gray: {
