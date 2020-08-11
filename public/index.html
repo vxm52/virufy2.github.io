@@ -20,16 +20,18 @@
     <!-- content wrapper -->
     <div>
       <section class="relative md:mx-20 md:py-4">
-        <nav class="flex items-center justify-between">
+        <nav class="flex items-center justify-between md:py-4">
+          <!-- Virufy logo -->
           <div class="mt-10 ml-4 md:mt-0">
             <a href="#">
               <img
-                class="w-1/2 m:w-3/4"
+                class="w-1/2 md:w-full"
                 src="img/logos/virufy-logo.png"
                 alt="Virufy logo"
               />
             </a>
           </div>
+          <!-- Mobile nav menu icon -->
           <div class="mt-10 mr-4 cursor-pointer md:hidden" id="menu-icon">
             <svg
               fill="none"
@@ -45,6 +47,7 @@
               ></path>
             </svg>
           </div>
+          <!-- Mobile nav close icon -->
           <div
             class="hidden mt-10 mr-4 cursor-pointer md:hidden"
             id="close-icon"
@@ -154,7 +157,7 @@
             </li>
             <li>
               <select
-                class="px-2 pb-2 overflow-visible border rounded text-secondary-200 border-secondary-200"
+                class="pb-2 pl-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
               >
                 <option value="en">🇺🇸&nbsp; English</option>
                 <option value="sp">🇪🇸 &nbsp; Español</option>
