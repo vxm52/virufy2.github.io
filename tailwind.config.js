@@ -24,6 +24,9 @@ module.exports = {
         subHeading: ["'Source Sans Pro'"],
         body: ["'Source Sans Pro'"],
       },
+      screens: {
+        "2xl": "1440px",
+      },
     },
   },
   variants: {
