@@ -16,21 +16,23 @@
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <script async src="scripts/index.js"></script>
   </head>
-  <body class="font-body text-gray-100">
+  <body class="text-gray-100 font-body">
     <!-- content wrapper -->
     <div>
-      <section class="mt-10 mx-4 md:mx-40 relative">
-        <nav class="flex justify-between items-center">
-          <div>
+      <section class="relative md:mx-20 md:py-4">
+        <nav class="flex items-center justify-between md:py-4">
+          <!-- Virufy logo -->
+          <div class="mt-10 ml-4 md:mt-0">
             <a href="#">
               <img
-                class="w-2/3"
+                class="w-1/2 md:w-full"
                 src="img/logos/virufy-logo.png"
                 alt="Virufy logo"
               />
             </a>
           </div>
-          <div class="cursor-pointer md:hidden" id="menu-icon">
+          <!-- Mobile nav menu icon -->
+          <div class="mt-10 mr-4 cursor-pointer md:hidden" id="menu-icon">
             <svg
               fill="none"
               viewBox="0 0 24 24"
@@ -45,12 +47,16 @@
               ></path>
             </svg>
           </div>
-          <div class="px-4 cursor-pointer hidden md:hidden" id="close-icon">
+          <!-- Mobile nav close icon -->
+          <div
+            class="hidden mt-10 mr-4 cursor-pointer md:hidden"
+            id="close-icon"
+          >
             <svg
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              class="x w-6"
+              class="w-6 x"
             >
               <path
                 stroke-linecap="round"
@@ -63,26 +69,75 @@
 
           <!-- Mobile Nav -->
           <div
-            class="md:hidden hidden absolute top-0 z-10 mt-24"
+            class="absolute top-0 z-10 hidden w-full mt-20 text-gray-400 bg-white border-t border-gray-200 md:hidden"
             id="mobile-nav"
           >
-            <h3>Testing</h3>
+            <section class="px-4 py-4">
+              <span class="inline-block text-xs text-gray-200">About us</span>
+              <div class="flex mt-4">
+                <a href="#" class="w-1/2">
+                  <span>Mission</span>
+                </a>
+                <a href="#">
+                  <span>Blog</span>
+                </a>
+              </div>
+              <div class="flex mt-2">
+                <a href="#" class="w-1/2">
+                  <span>Our team</span>
+                </a>
+                <a href="#">
+                  <span>One Young World</span>
+                </a>
+              </div>
+            </section>
+            <section class="px-4 py-4 border-t border-gray-200">
+              <div class="flex">
+                <a href="#" class="w-1/2">
+                  <span>Our research</span>
+                </a>
+                <a href="#">
+                  <span>GoFundMe</span>
+                </a>
+              </div>
+              <div class="flex mt-2">
+                <a href="#">
+                  <span>Join us</span>
+                </a>
+              </div>
+            </section>
+            <section
+              class="flex justify-center px-4 py-8 border-t border-gray-200"
+            >
+              <button class="w-full px-8 py-2 text-white rounded bg-primary">
+                Donate your cough
+              </button>
+            </section>
           </div>
 
           <!-- Desktop Nav -->
-          <ul class="flex justify-between items-center w-1/2 hidden md:block">
-            <li>
-              <a href="#">
-                <span>About Us</span>
-              </a>
-            </li>
-            <!--TODO: implement dropdown -->
-            <div class="hidden">
-              <a href="#">Mission</a>
-              <a href="#">Our team</a>
-              <a href="#">One Young World</a>
-              <a href="#">Blog</a>
-            </div>
+          <ul
+            class="relative items-center justify-between hidden w-1/2 md:w-3/4 xl:w-1/2 md:flex"
+          >
+            <a href="#" class="group" id="about-link">
+              <span class="inline-block">
+                About Us
+                <img
+                  class="inline-block"
+                  src="img/home/caret-down-icon.png"
+                  alt="caret icon"
+                />
+              </span>
+              <div
+                class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md justify-evenly"
+                id="about-dropdown"
+              >
+                <a class="pb-2" href="#">Mission</a>
+                <a class="pb-2" href="#">Our team</a>
+                <a class="pb-2" href="#">One Young World</a>
+                <a href="#">Blog</a>
+              </div>
+            </a>
             <li>
               <a href="#">
                 <span>Our research</span>
@@ -101,7 +156,7 @@
             <li>
               <a href="#">
                 <button
-                  class="text-secondary-200 border-secondary-200 border rounded py-1 px-4"
+                  class="px-4 py-1 border rounded text-secondary-200 border-secondary-200"
                 >
                   Donate your cough
                 </button>
@@ -109,12 +164,12 @@
             </li>
             <li>
               <select
-                class="text-secondary-200 border-secondary-200 border rounded py-1 px-2"
+                class="pb-2 pl-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
               >
-                <option value="en">English</option>
-                <option value="sp">Español</option>
-                <option value="br">Português</option>
-                <option value="jp">日本語</option>
+                <option value="en">🇺🇸&nbsp; English</option>
+                <option value="sp">🇪🇸 &nbsp; Español</option>
+                <option value="br">🇧🇷 &nbsp; Português</option>
+                <option value="jp">🇯🇵 &nbsp; 日本語</option>
               </select>
             </li>
           </ul>
@@ -125,7 +180,7 @@
         <header>
           <!-- TODO: Set background of header to img/home/header-bg.png -->
           <div>
-            <h1 class="text-5xl text-gray-300 font-bold font-heading">
+            <h1 class="text-5xl font-bold text-gray-300 font-heading">
               Early detection of COVID-19 with AI technology
             </h1>
           </div>
@@ -137,7 +192,7 @@
           </div>
           <div>
             <a href="#">
-              <button class="text-white bg-primary rounded py-2 px-8">
+              <button class="px-8 py-2 text-white rounded bg-primary">
                 Donate your cough
               </button>
             </a>
@@ -145,11 +200,9 @@
         </header>
 
         <!-- Our mission -->
-        <section>
-          <!-- TODO: Set background of this section to img/home/mission-bg.png
-          -->
+        <section class="bg-filler">
           <div>
-            <h2 class="text-2xl text-gray-200 font-bold">Our mission</h2>
+            <h2 class="text-2xl font-bold text-gray-200">Our mission</h2>
           </div>
           <div>
             <p>
@@ -165,7 +218,7 @@
           <div>
             <a href="#">
               <button
-                class="text-primary border-primary border rounded py-2 px-6"
+                class="px-6 py-2 border rounded text-primary border-primary"
               >
                 Learn more
               </button>
@@ -179,7 +232,7 @@
           <section>
             <div>
               <p>How will it work?</p>
-              <h2 class="text-2xl text-gray-200 font-bold">
+              <h2 class="text-2xl font-bold text-gray-200">
                 Record your cough sounds & save lives
               </h2>
             </div>
@@ -216,9 +269,9 @@
           </section>
 
           <!-- About us -->
-          <section>
+          <section class="md:bg-filler">
             <div>
-              <h2 class="text-2xl text-gray-200 font-bold">About us</h2>
+              <h2 class="text-2xl font-bold text-gray-200">About us</h2>
             </div>
             <div>
               <p>
@@ -248,7 +301,7 @@
           <!-- Collaboration -->
           <section>
             <div>
-              <h3 class="text-xl text-gray-200 font-semibold">
+              <h3 class="text-xl font-semibold text-gray-200">
                 In collaboration with
               </h3>
             </div>
@@ -283,7 +336,7 @@
           <!-- Timeline -->
           <section>
             <div>
-              <h2 class="text-2xl text-gray-200 font-bold">Our timeline</h2>
+              <h2 class="text-2xl font-bold text-gray-200">Our timeline</h2>
             </div>
             <div>
               <img
@@ -302,7 +355,7 @@
           <!-- Help us -->
           <section>
             <div>
-              <h2 class="text-2xl text-gray-200 font-bold">
+              <h2 class="text-2xl font-bold text-gray-200">
                 Help us make this happen
               </h2>
             </div>
@@ -316,7 +369,7 @@
             </div>
             <div>
               <a href="#">
-                <button class="bg-primary text-white rounded py-2 px-6">
+                <button class="px-6 py-2 text-white rounded bg-primary">
                   Donate your cough
                 </button>
               </a>

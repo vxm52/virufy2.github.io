@@ -8,12 +8,14 @@ module.exports = {
           100: "#00B696", // Footer Background
           200: "#08979C", // Navbar Buttons
         },
+        filler: "rgba(172, 224, 215, 0.05)",
       },
       textColor: {
         gray: {
           100: "#1F1F1F", // Body text
           200: "#434343", // Sub-headings
           300: "#2D2D2D", // Main heading
+          400: "#21242C", // Mobile nav text
         },
         teal: "#13C2C2",
       },
@@ -24,6 +26,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    display: ["responsive", "hover", "group-hover"],
+  },
   plugins: [],
 };
