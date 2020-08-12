@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 .footer {
-  @apply bg-secondary-100 text-white flex flex-col-reverse py-10 px-6;
+  @apply px-6 py-10 text-white bg-secondary-100;
 }
