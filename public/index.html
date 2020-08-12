@@ -17,9 +17,10 @@
     <script async src="scripts/index.js"></script>
   </head>
   <body class="text-gray-100 font-body">
-    <!-- content wrapper -->
+    <!-- Outer content wrapper -->
     <div>
-      <section class="relative md:mx-20 md:py-4">
+      <!-- Nav section -->
+      <section class="relative mx-auto md:py-4 md:px-16">
         <nav class="flex items-center justify-between md:py-4">
           <!-- Virufy logo -->
           <div class="mt-10 ml-4 md:mt-0">
@@ -175,209 +176,218 @@
           </ul>
         </nav>
       </section>
-      <!-- end nav -->
-      <main>
-        <header>
-          <!-- TODO: Set background of header to img/home/header-bg.png -->
-          <div>
-            <h1 class="text-5xl font-bold text-gray-300 font-heading">
-              Early detection of COVID-19 with AI technology
-            </h1>
-          </div>
-          <div>
-            <p class="text-xl">
-              Help us fight the pandemic by donating your cough to our database
-              and contribute to help us build an AI-powered analysis tool.
-            </p>
-          </div>
-          <div>
-            <a href="#">
-              <button class="px-8 py-2 text-white rounded bg-primary">
-                Donate your cough
-              </button>
-            </a>
-          </div>
-        </header>
+      <!-- End of nav section -->
 
-        <!-- Our mission -->
-        <section class="bg-filler">
-          <div>
-            <h2 class="text-2xl font-bold text-gray-200">Our mission</h2>
-          </div>
-          <div>
-            <p>
-              Our vision is to develop a smartphone app that can be used by
-              everyone in the world to find out in seconds whether they have
-              COVID-19. We are utilizing cutting-edge artificial intelligence
-              technology to identify patterns undetectable by humans from the
-              unique respiratory signatures of lungs damaged by the virus. From
-              extensive research, we believe we can achieve 90% or more accuracy
-              and help control this pandemic!
-            </p>
-          </div>
-          <div>
-            <a href="#">
-              <button
-                class="px-6 py-2 border rounded text-primary border-primary"
+      <!-- Inner content wrapper -->
+      <div class="px-4 mx-auto md:px-16">
+        <main>
+          <header class="mt-8">
+            <!-- TODO: Set background of header to img/home/header-bg.png -->
+            <div>
+              <h1
+                class="text-4xl font-bold text-gray-300 md:text-5xl font-heading"
               >
-                Learn more
-              </button>
-            </a>
-          </div>
-        </section>
-
-        <!-- Wrapper for background img/home/about-bg.png -->
-        <div>
-          <!-- How will it work -->
-          <section>
-            <div>
-              <p>How will it work?</p>
-              <h2 class="text-2xl font-bold text-gray-200">
-                Record your cough sounds & save lives
-              </h2>
+                Early detection of COVID-19 with AI technology
+              </h1>
             </div>
-            <div>
-              <div>
-                <img src="img/home/cough-icon.png" alt="Cough icon" />
-                <h5 class="text-lg font-bold">Donate your cough</h5>
-                <p>
-                  Your contribution will help us build a tool that can replace
-                  the traditional tools being used right now.
-                </p>
-              </div>
-              <div>
-                <img src="img/home/sound-icon.png" alt="Sound icon" />
-                <h5 class="text-lg font-bold">
-                  Help train the AI to recognize cough sounds
-                </h5>
-                <p>
-                  Help train our AI by contributing to a big database of cough
-                  sounds. AI will analyze cough patterns
-                </p>
-              </div>
-              <div>
-                <img src="img/home/app-icon.png" alt="App icon" />
-                <h5 class="text-lg font-bold">
-                  Help us build a powerful AI app
-                </h5>
-                <p>
-                  Help us build a powerful app that accurately detects early
-                  diagnosis of COVID-19
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <!-- About us -->
-          <section class="md:bg-filler">
-            <div>
-              <h2 class="text-2xl font-bold text-gray-200">About us</h2>
-            </div>
-            <div>
-              <p>
-                We are a student-led nonprofit. We are a passionate student-run
-                team of AI engineers, mobile web app developers, and young
-                medical professionals. We want to do our best to help the
-                situation and can’t think of anything more noble. We are part of
-                <a
-                  href="https://responselab.stanford.edu/projects.html"
-                  class="text-teal"
-                >
-                  Stanford's COVID-19 Response Innovation Lab
-                </a>
-                and also featured in
-                <a
-                  href="https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
-                  class="text-teal"
-                >
-                  One Young World.
-                </a>
-                Your support can benefit hundreds of millions of lives across
-                190+ countries!
+            <div class="my-2">
+              <p class="text-xl">
+                Help us fight the pandemic by <br />
+                donating your cough to our database and contribute to help us
+                build an <br />
+                AI-powered analysis tool.
               </p>
             </div>
-          </section>
-
-          <!-- Collaboration -->
-          <section>
-            <div>
-              <h3 class="text-xl font-semibold text-gray-200">
-                In collaboration with
-              </h3>
-            </div>
-            <div>
-              <img
-                src="img/logos/covid-19-RIL-logo.png"
-                alt="Covid-19 Response
-              Innovation Lab logo"
-              />
-              <img
-                src="img/logos/one-young-world-logo.png"
-                alt="One Young World
-              logo"
-              />
-              <img src="img/logos/jig-jp-logo.png" alt="Jig JP logo" />
-              <img
-                src="img/logos/stanford-h4r-logo.png"
-                alt="Stanford Hacking 4
-              Recovery logo"
-              />
-              <img
-                src="img/logos/siena-company-logo.png"
-                alt="Siena Company
-              logo"
-              />
-            </div>
-          </section>
-        </div>
-
-        <!-- Wrapper for background img/home/header-bg.png -->
-        <div>
-          <!-- Timeline -->
-          <section>
-            <div>
-              <h2 class="text-2xl font-bold text-gray-200">Our timeline</h2>
-            </div>
-            <div>
-              <img
-                class="hidden sm:block"
-                src="img/home/timeline-icon.png"
-                alt="Image of timeline"
-              />
-              <img
-                class="sm:hidden"
-                src="img/home/timeline-icon-mobile.png"
-                alt="Image of timeline"
-              />
-            </div>
-          </section>
-
-          <!-- Help us -->
-          <section>
-            <div>
-              <h2 class="text-2xl font-bold text-gray-200">
-                Help us make this happen
-              </h2>
-            </div>
-            <div>
-              <p>[State who we are interested in taking the survey.]</p>
-            </div>
-            <div>
-              <p>
-                Take 5 minutes to record your cough and answer a few questions
-              </p>
-            </div>
-            <div>
+            <div class="my-10">
               <a href="#">
-                <button class="px-6 py-2 text-white rounded bg-primary">
+                <button class="px-8 py-2 text-white rounded bg-primary">
                   Donate your cough
                 </button>
               </a>
             </div>
-          </section>
-        </div>
-      </main>
+          </header>
 
+          <!-- Our mission -->
+          <section class="bg-filler">
+            <div>
+              <h2 class="text-2xl font-bold text-gray-200">Our mission</h2>
+            </div>
+            <div>
+              <p>
+                Our vision is to develop a smartphone app that can be used by
+                everyone in the world to find out in seconds whether they have
+                COVID-19. We are utilizing cutting-edge artificial intelligence
+                technology to identify patterns undetectable by humans from the
+                unique respiratory signatures of lungs damaged by the virus.
+                From extensive research, we believe we can achieve 90% or more
+                accuracy and help control this pandemic!
+              </p>
+            </div>
+            <div>
+              <a href="#">
+                <button
+                  class="px-6 py-2 border rounded text-primary border-primary"
+                >
+                  Learn more
+                </button>
+              </a>
+            </div>
+          </section>
+
+          <!-- Wrapper for background img/home/about-bg.png -->
+          <div>
+            <!-- How will it work -->
+            <section>
+              <div>
+                <p>How will it work?</p>
+                <h2 class="text-2xl font-bold text-gray-200">
+                  Record your cough sounds & save lives
+                </h2>
+              </div>
+              <div>
+                <div>
+                  <img src="img/home/cough-icon.png" alt="Cough icon" />
+                  <h5 class="text-lg font-bold">Donate your cough</h5>
+                  <p>
+                    Your contribution will help us build a tool that can replace
+                    the traditional tools being used right now.
+                  </p>
+                </div>
+                <div>
+                  <img src="img/home/sound-icon.png" alt="Sound icon" />
+                  <h5 class="text-lg font-bold">
+                    Help train the AI to recognize cough sounds
+                  </h5>
+                  <p>
+                    Help train our AI by contributing to a big database of cough
+                    sounds. AI will analyze cough patterns
+                  </p>
+                </div>
+                <div>
+                  <img src="img/home/app-icon.png" alt="App icon" />
+                  <h5 class="text-lg font-bold">
+                    Help us build a powerful AI app
+                  </h5>
+                  <p>
+                    Help us build a powerful app that accurately detects early
+                    diagnosis of COVID-19
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- About us -->
+            <section class="md:bg-filler">
+              <div>
+                <h2 class="text-2xl font-bold text-gray-200">About us</h2>
+              </div>
+              <div>
+                <p>
+                  We are a student-led nonprofit. We are a passionate
+                  student-run team of AI engineers, mobile web app developers,
+                  and young medical professionals. We want to do our best to
+                  help the situation and can’t think of anything more noble. We
+                  are part of
+                  <a
+                    href="https://responselab.stanford.edu/projects.html"
+                    class="text-teal"
+                  >
+                    Stanford's COVID-19 Response Innovation Lab
+                  </a>
+                  and also featured in
+                  <a
+                    href="https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
+                    class="text-teal"
+                  >
+                    One Young World.
+                  </a>
+                  Your support can benefit hundreds of millions of lives across
+                  190+ countries!
+                </p>
+              </div>
+            </section>
+
+            <!-- Collaboration -->
+            <section>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-200">
+                  In collaboration with
+                </h3>
+              </div>
+              <div>
+                <img
+                  src="img/logos/covid-19-RIL-logo.png"
+                  alt="Covid-19 Response
+                Innovation Lab logo"
+                />
+                <img
+                  src="img/logos/one-young-world-logo.png"
+                  alt="One Young World
+                logo"
+                />
+                <img src="img/logos/jig-jp-logo.png" alt="Jig JP logo" />
+                <img
+                  src="img/logos/stanford-h4r-logo.png"
+                  alt="Stanford Hacking 4
+                Recovery logo"
+                />
+                <img
+                  src="img/logos/siena-company-logo.png"
+                  alt="Siena Company
+                logo"
+                />
+              </div>
+            </section>
+          </div>
+
+          <!-- Wrapper for background img/home/header-bg.png -->
+          <div>
+            <!-- Timeline -->
+            <section>
+              <div>
+                <h2 class="text-2xl font-bold text-gray-200">Our timeline</h2>
+              </div>
+              <div>
+                <img
+                  class="hidden sm:block"
+                  src="img/home/timeline-icon.png"
+                  alt="Image of timeline"
+                />
+                <img
+                  class="sm:hidden"
+                  src="img/home/timeline-icon-mobile.png"
+                  alt="Image of timeline"
+                />
+              </div>
+            </section>
+
+            <!-- Help us -->
+            <section>
+              <div>
+                <h2 class="text-2xl font-bold text-gray-200">
+                  Help us make this happen
+                </h2>
+              </div>
+              <div>
+                <p>[State who we are interested in taking the survey.]</p>
+              </div>
+              <div>
+                <p>
+                  Take 5 minutes to record your cough and answer a few questions
+                </p>
+              </div>
+              <div>
+                <a href="#">
+                  <button class="px-6 py-2 text-white rounded bg-primary">
+                    Donate your cough
+                  </button>
+                </a>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+      <!-- End of inner content wrapper -->
       <footer class="footer md:flex-row md:justify-between md:px-20 md:py-12">
         <section>
           <div>
@@ -407,5 +417,6 @@
         </section>
       </footer>
     </div>
+    <!-- End of outer content wrapper -->
   </body>
 </html>
