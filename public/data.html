@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Verify your COVID-19 risk with a smartphone | Data | Virufy</title>
+		<!-- TODO: Add Hotjar Tracking Script -->
+		<!-- TODO: Add Google Analytics Scripts -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Virufy - assess your risk for COVID-19 with our AI-powered app using your smartphone. A project of Stanford University's
+	COVID-19 Response Innovation Lab."
+		/>
+		<meta name="author" content="Team Virufy" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="img/favicon.png" type="image/x-icon" />
+		<script async src="scripts/index.js"></script>
+	</head>
+	<body class="text-gray-100 font-body">
+		<!-- content wrapper -->
+		<div>
+			<section class="relative md:mx-20 md:py-4">
+				<nav class="flex items-center justify-between md:py-4">
+					<!-- Virufy logo -->
+					<div class="mt-10 ml-4 md:mt-0">
+						<a href="#">
+							<img
+								class="w-1/2 md:w-full"
+								src="img/logos/virufy-logo.png"
+								alt="Virufy logo"
+							/>
+						</a>
+					</div>
+					<!-- Mobile nav menu icon -->
+					<div class="mt-10 mr-4 cursor-pointer md:hidden" id="menu-icon">
+						<svg
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							class="w-6 menu"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"
+							></path>
+						</svg>
+					</div>
+					<!-- Mobile nav close icon -->
+					<div class="hidden mt-10 mr-4 cursor-pointer md:hidden" id="close-icon">
+						<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 x">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M6 18L18 6M6 6l12 12"
+							></path>
+						</svg>
+					</div>
+
+					<!-- Mobile Nav -->
+					<div
+						class="absolute top-0 z-10 hidden w-full mt-20 text-gray-400 bg-white border-t border-gray-200 md:hidden"
+						id="mobile-nav"
+					>
+						<section class="px-4 py-4">
+							<span class="inline-block text-xs text-gray-200">About us</span>
+							<div class="flex mt-4">
+								<a href="#" class="w-1/2">
+									<span>Mission</span>
+								</a>
+								<a href="#">
+									<span>Blog</span>
+								</a>
+							</div>
+							<div class="flex mt-2">
+								<a href="#" class="w-1/2">
+									<span>Our team</span>
+								</a>
+								<a href="#">
+									<span>One Young World</span>
+								</a>
+							</div>
+						</section>
+						<section class="px-4 py-4 border-t border-gray-200">
+							<div class="flex">
+								<a href="#" class="w-1/2">
+									<span>Our research</span>
+								</a>
+								<a href="#">
+									<span>GoFundMe</span>
+								</a>
+							</div>
+							<div class="flex mt-2">
+								<a href="#">
+									<span>Join us</span>
+								</a>
+							</div>
+						</section>
+						<section class="flex justify-center px-4 py-8 border-t border-gray-200">
+							<button class="w-full px-8 py-2 text-white rounded bg-primary">
+								Donate your cough
+							</button>
+						</section>
+					</div>
+
+					<!-- Desktop Nav -->
+					<ul
+						class="relative items-center justify-between hidden w-1/2 md:w-3/4 xl:w-1/2 md:flex"
+					>
+						<a href="#" class="group" id="about-link">
+							<span class="inline-block">
+								About Us
+								<img
+									class="inline-block"
+									src="img/home/caret-down-icon.png"
+									alt="caret icon"
+								/>
+							</span>
+							<div
+								class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md justify-evenly"
+								id="about-dropdown"
+							>
+								<a class="pb-2" href="#">Mission</a>
+								<a class="pb-2" href="#">Our team</a>
+								<a class="pb-2" href="#">One Young World</a>
+								<a href="#">Blog</a>
+							</div>
+						</a>
+						<li>
+							<a href="#">
+								<span>Our research</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Join us</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>GoFund Me</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<button
+									class="px-4 py-1 border rounded text-secondary-200 border-secondary-200"
+								>
+									Donate your cough
+								</button>
+							</a>
+						</li>
+						<li>
+							<select
+								class="pb-2 pl-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
+							>
+								<option value="en">🇺🇸&nbsp; English</option>
+								<option value="sp">🇪🇸 &nbsp; Español</option>
+								<option value="br">🇧🇷 &nbsp; Português</option>
+								<option value="jp">🇯🇵 &nbsp; 日本語</option>
+							</select>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<!-- end nav -->
+			<main>
+				<header class="relative flex">
+					<!-- background image -->
+					<img
+						src="./img/data/header-bg.png"
+						alt="Data background"
+						class="hidden md:block relative"
+						style="bottom: 36px;"
+					/>
+					<div class="md:absolute my-20 md:my-20 mx-10 md:mx-20 w-full md:w-7/12">
+						<h1 class="mb-6 text-5xl font-bold text-gray-300 font-heading">
+							Open data
+						</h1>
+
+						<p class="text-xl">
+							We have decided to open source some of our COVID-19 cough datasets.
+						</p>
+					</div>
+				</header>
+
+				<section class="mx-10 md:mx-20 flex flex-wrap mb-20">
+					<div class="md:w-1/2 my-5 md:my-10 flex flex-wrap">
+						<!-- icon -->
+						<div class="w-full md:w-3/12 lg:w-1/6">
+							<img class="m-auto" src="./img/mission/globe.png" alt="Globe" />
+						</div>
+						<!-- text -->
+						<div class="md:w-9/12 lg:w-5/6">
+							<h2 class="text-2xl font-bold text-gray-200">Focus on global impact</h2>
+							<p>
+								Collect data and provide a solution for people in developing countries
+								across the world. We are currently working with collaborators in
+								Pakistan, US, and Japan.
+							</p>
+						</div>
+					</div>
+					<div class="md:w-1/2 flex flex-wrap my-10">
+						<!-- icon -->
+						<div class="w-full md:w-3/12 lg:w-1/6">
+							<img class="m-auto" src="./img/mission/heart.png" alt="Heart" />
+						</div>
+						<!-- text -->
+						<div class="md:w-9/12 lg:w-5/6">
+							<h2 class="text-2xl font-bold text-gray-200">
+								Reduce burden on health systems
+							</h2>
+							<p>
+								Get your COVID-19 risk status without ever needing to go to a hsopital
+								or testing site. Share your risk score with your doctor via phone or
+								telehealth appointment to increase capacity at hospitals.
+							</p>
+						</div>
+					</div>
+					<div class="md:w-1/2 flex flex-wrap my-10">
+						<!-- icon -->
+						<div class="w-full md:w-3/12 lg:w-1/6">
+							<img class="m-auto" src="./img/mission/mask.png" alt="Mask" />
+						</div>
+						<!-- text -->
+						<div class="md:w-9/12 lg:w-5/6">
+							<h2 class="text-2xl font-bold text-gray-200">
+								Decrease risk of exposure
+							</h2>
+							<p>
+								Home testing means no trip to the hospital, reducing the risk of
+								exposure to both you and healthcare workers. Early detection means you
+								can isolate yourself sonner, decreasing the risk of infection for others
+								who come in contact with you.
+							</p>
+						</div>
+					</div>
+					<div class="md:w-1/2 flex flex-wrap my-10">
+						<!-- icon -->
+						<div class="w-full md:w-3/12 lg:w-1/6">
+							<img class="m-auto" src="./img/mission/lock.png" alt="lock" />
+						</div>
+						<!-- text -->
+						<div class="md:w-9/12 lg:w-5/6">
+							<h2 class="text-2xl font-bold text-gray-200">End lockdowns</h2>
+							<p>
+								Global detection and tracking of infected individuals helps end current
+								lockdowns safely. While also helping to prevent future ones. Early
+								detection and isolation of COVID-19 positive patients means we can get
+								back to our normal routines sooner.
+							</p>
+						</div>
+					</div>
+					<div class="md:w-1/2 flex flex-wrap my-10">
+						<!-- icon -->
+						<div class="w-full md:w-3/12 lg:w-1/6">
+							<img class="m-auto" src="./img/mission/cross.png" alt="Cross" />
+						</div>
+						<!-- text -->
+						<div class="md:w-9/12 lg:w-5/6">
+							<h2 class="text-2xl font-bold text-gray-200">Increase access to care</h2>
+							<p>
+								Testing for rural communities and others who live far from hospitals or
+								testing sites. No-cost testing solution for COVID-19.
+							</p>
+						</div>
+					</div>
+					<div class="md:w-1/2 flex flex-wrap my-10">
+						<!-- icon -->
+						<div class="w-full md:w-3/12 lg:w-1/6">
+							<img class="m-auto" src="./img/mission/level.png" alt="Stress level" />
+						</div>
+						<!-- text -->
+						<div class="md:w-9/12 lg:w-5/6">
+							<h2 class="text-2xl font-bold text-gray-200">Decrease stress</h2>
+							<p>
+								Feeling symptoms? Find out your risk early without the stress of waiting
+								to get tested. No need to worry about testing availibility for access.
+							</p>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer md:flex-row md:justify-between md:px-20 md:py-12">
+				<section>
+					<div>
+						<a href="#">Privacy Policy</a>
+					</div>
+					<div>
+						<p>© Copyright 2020 Virufy. All rights reserved.</p>
+					</div>
+				</section>
+				<!-- Icon container -->
+				<section class="flex mb-16">
+					<a href="https://github.com/virufy" class="mr-3">
+						<img src="img/logos/github-icon.png" alt="Github Icon" />
+					</a>
+					<a href="https://twitter.com/VirufyOrg" class="mr-3">
+						<img src="img/logos/twitter-icon.png" alt="Twitter Icon" />
+					</a>
+					<a href="https://www.facebook.com/Virufy/" class="mr-3">
+						<img src="img/logos/facebook-icon.png" alt="Facebook Icon" />
+					</a>
+					<a href="https://www.instagram.com/virufyorg/" class="mr-3">
+						<img src="img/logos/instagram-icon.png" alt="Instagram Icon" />
+					</a>
+					<a href="https://www.linkedin.com/company/virufy/" class="mr-3">
+						<img src="img/logos/linkedin-icon.png" alt="LinkedIn Icon" />
+					</a>
+				</section>
+			</footer>
+		</div>
+	</body>
+</html>
