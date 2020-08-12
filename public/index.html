@@ -117,20 +117,27 @@
 
           <!-- Desktop Nav -->
           <ul
-            class="items-center justify-between hidden w-1/2 md:w-3/4 xl:w-1/2 md:flex"
+            class="relative items-center justify-between hidden w-1/2 md:w-3/4 xl:w-1/2 md:flex"
           >
-            <li>
-              <a href="#">
-                <span>About Us</span>
-              </a>
-            </li>
-            <!--TODO: implement dropdown -->
-            <div class="hidden">
-              <a href="#">Mission</a>
-              <a href="#">Our team</a>
-              <a href="#">One Young World</a>
-              <a href="#">Blog</a>
-            </div>
+            <a href="#" class="group" id="about-link">
+              <span class="inline-block">
+                About Us
+                <img
+                  class="inline-block"
+                  src="img/home/caret-down-icon.png"
+                  alt="caret icon"
+                />
+              </span>
+              <div
+                class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md justify-evenly"
+                id="about-dropdown"
+              >
+                <a class="pb-2" href="#">Mission</a>
+                <a class="pb-2" href="#">Our team</a>
+                <a class="pb-2" href="#">One Young World</a>
+                <a href="#">Blog</a>
+              </div>
+            </a>
             <li>
               <a href="#">
                 <span>Our research</span>
