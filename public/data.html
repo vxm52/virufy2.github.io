@@ -167,22 +167,24 @@
 			</section>
 			<!-- end nav -->
 			<main class="relative">
-				<header class="relative flex">
-					<!-- background image -->
-					<img
-						src="./img/data/header-bg.png"
-						alt="Data background"
-						class="hidden md:block relative"
-						style="bottom: 36px;"
-					/>
-					<div class="md:absolute my-20 md:my-20 mx-10 md:mx-20 w-full md:w-7/12">
-						<h1 class="mb-6 text-5xl font-bold text-gray-300 font-heading">
-							Open data
-						</h1>
+				<header>
+					<div class="relative flex">
+						<!-- background image -->
+						<img
+							src="./img/data/header-bg.png"
+							alt="Data background"
+							class="hidden md:block relative"
+							style="bottom: 36px;"
+						/>
+						<div class="md:absolute my-20 md:my-20 mx-10 md:mx-20 w-full md:w-7/12">
+							<h1 class="mb-6 text-5xl font-bold text-gray-300 font-heading">
+								Open data
+							</h1>
 
-						<p class="text-xl">
-							We have decided to open source some of our COVID-19 cough datasets.
-						</p>
+							<p class="text-xl">
+								We have decided to open source some of our COVID-19 cough datasets.
+							</p>
+						</div>
 					</div>
 				</header>
 
@@ -202,9 +204,13 @@
 							and collaboration from academia and industry all over the world.
 						</p>
 					</section>
-					<section class="pb-10 flex flex-wrap">
-						<div class="md:w-1/2 my-5 md:my-10">
-							<h2 class="mb-4 text-2xl font-bold text-gray-200">Data source</h2>
+					<section class="pb-10 flex flex-wrap justify-between">
+						<div class="md:w-5/12 my-5 md:my-10">
+							<h2
+								class="mb-4 pt-1 text-xl font-bold text-gray-200 border-none md:border-solid border-t-2 border-gray-400 max-w-xs"
+							>
+								Data source
+							</h2>
 							<p>
 								Our data is very high quality because it was collected at a hospital
 								under supervision by physicians following Standard Operating Procedures
@@ -213,30 +219,51 @@
 								gender, medical history).
 							</p>
 						</div>
-						<div class="md:w-1/2 my-5 md:my-10">
-							<h2 class="mb-4 text-2xl font-bold text-gray-200">Get Started</h2>
+						<div class="md:w-5/12 my-5 md:my-10">
+							<h2
+								class="mb-4 pt-1 text-xl font-bold text-gray-200 border-none md:border-solid border-t-2 border-gray-400 max-w-xs"
+							>
+								Get Started
+							</h2>
 							<p>
 								Our data and instructions for usage can be found on our GitHub page. Our
 								cough and textual models for processing the data are also uploaded.
 							</p>
-							<button>Visit out Github</button>
+							<button
+								class="mt-5 border-2 border-primary rounded px-6 py-1 text-primary hover:bg-primary hover:text-white transition-colors duration-150"
+							>
+								Visit out Github
+							</button>
 						</div>
-						<div class="md:w-1/2 my-5 md:my-10">
-							<h2 class="mb-4 text-2xl font-bold text-gray-200">Collaboration</h2>
+						<div class="md:w-5/12 my-5 md:my-10">
+							<h2
+								class="mb-4 pt-1 text-xl font-bold text-gray-200 border-none md:border-solid border-t-2 border-gray-400 max-w-xs"
+							>
+								Collaboration
+							</h2>
+							<!-- TODO: Add link to email -->
 							<p>
 								We warmly welcome review of our data and code. We hope to create a
 								community of researchers driven to use this data to create solutions for
-								the pandemic. Please email us at open-data@virufy.org if you are
-								interested.
+								the pandemic. Please email us at
+								<a href="mailto: open-data@virufy.org" class="text-primary"
+									>open-data@virufy.org</a
+								>
+								if you are interested.
 							</p>
-							<button>Contact us</button>
+							<button
+								class="mt-5 border-2 border-primary rounded px-6 py-1 text-primary hover:bg-primary hover:text-white transition-colors duration-150"
+							>
+								Contact us
+							</button>
 						</div>
 					</section>
 				</div>
 				<img
 					src="img/data/footer-bg.png"
 					alt="Abstract background"
-					class="absolute bottom-0"
+					class="hidden md:block absolute bottom-0"
+					style="z-index: -1;"
 				/>
 			</main>
 
