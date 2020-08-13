@@ -18,10 +18,10 @@
   </head>
   <body class="text-gray-100 font-body">
     <!-- Nav section -->
-    <section class="relative wrapper md:py-4 md:px-16 3xl:px-0">
-      <nav class="flex items-center justify-between md:py-4">
+    <section class="relative wrapper md:pb-4 md:px-16 3xl:px-0">
+      <nav class="flex justify-between md:py-4">
         <!-- Virufy logo -->
-        <div class="mt-10 ml-4 md:mt-0">
+        <div class="mt-10 ml-4 md:mt-0 md:self-start">
           <a href="#">
             <img
               class="w-1/2 md:w-full"
@@ -113,27 +113,29 @@
 
         <!-- Desktop Nav -->
         <ul
-          class="relative items-center justify-between hidden w-1/2 md:w-3/4 xl:w-1/2 md:flex"
+          class="relative items-baseline justify-between hidden w-1/2 md:w-3/4 xl:w-1/2 md:flex"
         >
-          <a href="#" class="group" id="about-link">
-            <span class="inline-block">
-              About Us
-              <img
-                class="inline-block"
-                src="img/home/caret-down-icon.png"
-                alt="caret icon"
-              />
-            </span>
-            <div
-              class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md justify-evenly"
-              id="about-dropdown"
-            >
-              <a class="pb-2" href="#">Mission</a>
-              <a class="pb-2" href="#">Our team</a>
-              <a class="pb-2" href="#">One Young World</a>
-              <a href="#">Blog</a>
+          <li class="group">
+            <div>
+              <a href="#" class="block pb-12" id="about-link">
+                About Us
+                <img
+                  class="inline-block"
+                  src="img/home/caret-down-icon.png"
+                  alt="caret icon"
+                />
+              </a>
+              <div
+                class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md transform transition ease-out duration-1000 group-hover:flex hover:flex justify-evenly"
+                id="about-dropdown"
+              >
+                <a class="pb-2" href="#">Mission</a>
+                <a class="pb-2" href="#">Our team</a>
+                <a class="pb-2" href="#">One Young World</a>
+                <a href="#">Blog</a>
+              </div>
             </div>
-          </a>
+          </li>
           <li>
             <a href="#">
               <span>Our research</span>
