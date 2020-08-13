@@ -25,4 +25,5 @@ languageBtn.addEventListener("click", () => {
   languageNav.classList.remove("hidden");
   closeIcon.classList.remove("hidden");
   languageBtn.classList.add("hidden");
+  menuIcon.classList.add("hidden");
 });
