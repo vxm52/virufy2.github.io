@@ -18,10 +18,10 @@
   </head>
   <body class="text-gray-100 font-body">
     <!-- Nav section -->
-    <section class="relative wrapper md:pb-4 md:px-16 3xl:px-0">
-      <nav class="flex justify-between md:py-4">
+    <section class="wrapper md:pb-4 md:px-16 3xl:px-0">
+      <nav class="relative flex items-center justify-between md:py-4">
         <!-- Virufy logo -->
-        <div class="mt-10 ml-4 md:mt-0 md:self-start">
+        <div class="md:ml-4 md:self-start">
           <a href="#">
             <img
               class="w-1/2 md:w-full"
@@ -30,42 +30,93 @@
             />
           </a>
         </div>
-        <!-- Mobile nav menu icon -->
-        <div class="mt-10 mr-4 cursor-pointer md:hidden" id="menu-icon">
-          <svg
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="w-6 menu"
+        <!-- Container for right side of nav -->
+        <div>
+          <!-- Mobile language button -->
+          <div class="inline-block">
+            <button
+              id="mobile-lng-btn"
+              class="px-3 py-1 text-sm border rounded md:hidden button text-secondary-200 border-secondary-200"
+            >
+              🇺🇸&nbsp; English
+            </button>
+          </div>
+          <!-- Mobile language menu -->
+          <div
+            class="absolute top-0 left-0 z-10 hidden w-full h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200"
+            id="mobile-lng-menu"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </div>
-        <!-- Mobile nav close icon -->
-        <div class="hidden mt-10 mr-4 cursor-pointer md:hidden" id="close-icon">
-          <svg
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="w-6 x"
+          <section class="px-4 py-4">
+            <span class="inline-block text-base gray-200 text">Choose the language</span>
+          </section>
+          <section class="px-4 py-4 border-t border-gray-200">
+            <a href="#"><span> 🇺🇸&nbsp; English</span></a>
+          </section>
+          <section class="px-4 py-4 border-t border-gray-200">
+            <a href="#"><span> 🇪🇸 &nbsp; Español</span></a>
+          </section>
+          <section class="px-4 py-4 border-t border-gray-200">
+            <a href="#"><span> 🇧🇷 &nbsp; Português</span></a>
+          </section>
+          <section class="px-4 py-4 border-t border-gray-200">
+            <a href="#"><span> 🇯🇵 &nbsp; 日本語</span></a>
+          </section>
+          <!--
+            TODO: If we want to implement saving, we  need to enable
+            cookies to store the user's language preferences 
+          <section
+            class="flex justify-center px-4 py-8 border-t border-gray-200"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            ></path>
-          </svg>
+            <button class="w-full px-8 py-2 text-white rounded bg-primary"
+            id="mobile-save-btn">
+              Save
+            </button>
+          </section>
+          -->
         </div>
+       </div>
+
+          <!-- Mobile nav menu icon -->
+          <div class="inline-block cursor-pointer md:hidden" id="menu-icon">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 menu"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </div>
+          <!-- Mobile nav close icon -->
+          <div
+            class="hidden inline-block cursor-pointer md:hidden"
+            id="close-icon"
+          >
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 x"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <!-- End of container -->
 
         <!-- Mobile Nav -->
         <div
-          class="absolute top-0 z-10 hidden w-full mt-20 text-gray-400 bg-white border-t border-gray-200 md:hidden"
+          class="absolute top-0 z-10 hidden w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 md:hidden"
           id="mobile-nav"
         >
           <section class="px-4 py-4">
