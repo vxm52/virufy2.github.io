@@ -18396,6 +18396,15 @@ video {
   background-color: rgba(0, 182, 150, var(--bg-opacity));
 }
 
+.wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 1600px;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
