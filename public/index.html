@@ -17,438 +17,437 @@
     <script async src="scripts/index.js"></script>
   </head>
   <body class="text-gray-100 font-body">
-    <!-- Outer content wrapper -->
-    <div>
-      <!-- Nav section -->
-      <section class="relative mx-auto md:py-4 md:px-16 max-w-screen-3xl">
-        <nav class="flex items-center justify-between md:py-4">
-          <!-- Virufy logo -->
-          <div class="mt-10 ml-4 md:mt-0">
-            <a href="#">
-              <img
-                class="w-1/2 md:w-full"
-                src="img/logos/virufy-logo.png"
-                alt="Virufy logo"
-              />
-            </a>
-          </div>
-          <!-- Mobile nav menu icon -->
-          <div class="mt-10 mr-4 cursor-pointer md:hidden" id="menu-icon">
-            <svg
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="w-6 menu"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </div>
-          <!-- Mobile nav close icon -->
-          <div
-            class="hidden mt-10 mr-4 cursor-pointer md:hidden"
-            id="close-icon"
+    <!-- Nav section -->
+    <section class="relative wrapper md:py-4 md:px-16 3xl:px-0">
+      <nav class="flex items-center justify-between md:py-4">
+        <!-- Virufy logo -->
+        <div class="mt-10 ml-4 md:mt-0">
+          <a href="#">
+            <img
+              class="w-1/2 md:w-full"
+              src="img/logos/virufy-logo.png"
+              alt="Virufy logo"
+            />
+          </a>
+        </div>
+        <!-- Mobile nav menu icon -->
+        <div class="mt-10 mr-4 cursor-pointer md:hidden" id="menu-icon">
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 menu"
           >
-            <svg
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="w-6 x"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            </svg>
-          </div>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </div>
+        <!-- Mobile nav close icon -->
+        <div class="hidden mt-10 mr-4 cursor-pointer md:hidden" id="close-icon">
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 x"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </div>
 
-          <!-- Mobile Nav -->
-          <div
-            class="absolute top-0 z-10 hidden w-full mt-20 text-gray-400 bg-white border-t border-gray-200 md:hidden"
-            id="mobile-nav"
-          >
-            <section class="px-4 py-4">
-              <span class="inline-block text-xs text-gray-200">About us</span>
-              <div class="flex mt-4">
-                <a href="#" class="w-1/2">
-                  <span>Mission</span>
-                </a>
-                <a href="#">
-                  <span>Blog</span>
-                </a>
-              </div>
-              <div class="flex mt-2">
-                <a href="#" class="w-1/2">
-                  <span>Our team</span>
-                </a>
-                <a href="#">
-                  <span>One Young World</span>
-                </a>
-              </div>
-            </section>
-            <section class="px-4 py-4 border-t border-gray-200">
-              <div class="flex">
-                <a href="#" class="w-1/2">
-                  <span>Our research</span>
-                </a>
-                <a href="#">
-                  <span>GoFundMe</span>
-                </a>
-              </div>
-              <div class="flex mt-2">
-                <a href="#">
-                  <span>Join us</span>
-                </a>
-              </div>
-            </section>
-            <section
-              class="flex justify-center px-4 py-8 border-t border-gray-200"
-            >
-              <button class="w-full px-8 py-2 text-white rounded bg-primary">
-                Donate your cough
-              </button>
-            </section>
-          </div>
-
-          <!-- Desktop Nav -->
-          <ul
-            class="relative items-center justify-between hidden w-1/2 md:w-3/4 xl:w-1/2 md:flex"
-          >
-            <a href="#" class="group" id="about-link">
-              <span class="inline-block">
-                About Us
-                <img
-                  class="inline-block"
-                  src="img/home/caret-down-icon.png"
-                  alt="caret icon"
-                />
-              </span>
-              <div
-                class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md justify-evenly"
-                id="about-dropdown"
-              >
-                <a class="pb-2" href="#">Mission</a>
-                <a class="pb-2" href="#">Our team</a>
-                <a class="pb-2" href="#">One Young World</a>
-                <a href="#">Blog</a>
-              </div>
-            </a>
-            <li>
+        <!-- Mobile Nav -->
+        <div
+          class="absolute top-0 z-10 hidden w-full mt-20 text-gray-400 bg-white border-t border-gray-200 md:hidden"
+          id="mobile-nav"
+        >
+          <section class="px-4 py-4">
+            <span class="inline-block text-xs text-gray-200">About us</span>
+            <div class="flex mt-4">
+              <a href="#" class="w-1/2">
+                <span>Mission</span>
+              </a>
               <a href="#">
+                <span>Blog</span>
+              </a>
+            </div>
+            <div class="flex mt-2">
+              <a href="#" class="w-1/2">
+                <span>Our team</span>
+              </a>
+              <a href="#">
+                <span>One Young World</span>
+              </a>
+            </div>
+          </section>
+          <section class="px-4 py-4 border-t border-gray-200">
+            <div class="flex">
+              <a href="#" class="w-1/2">
                 <span>Our research</span>
               </a>
-            </li>
-            <li>
+              <a href="#">
+                <span>GoFundMe</span>
+              </a>
+            </div>
+            <div class="flex mt-2">
               <a href="#">
                 <span>Join us</span>
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <span>GoFund Me</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <button
-                  class="px-4 py-1 border rounded text-secondary-200 border-secondary-200"
-                >
-                  Donate your cough
-                </button>
-              </a>
-            </li>
-            <li>
-              <select
-                class="pb-2 pl-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
-              >
-                <option value="en">🇺🇸&nbsp; English</option>
-                <option value="sp">🇪🇸 &nbsp; Español</option>
-                <option value="br">🇧🇷 &nbsp; Português</option>
-                <option value="jp">🇯🇵 &nbsp; 日本語</option>
-              </select>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <!-- End of nav section -->
-
-      <!-- Inner content wrapper -->
-      <div class="px-4 mx-auto md:px-16 3xl:px-0 max-w-screen-3xl">
-        <main>
-          <header class="flex mt-8 items-top">
-            <section>
-              <div>
-                <h1
-                  class="text-4xl font-bold text-gray-300 md:text-5xl font-heading"
-                >
-                  Early detection of COVID-19 with AI technology
-                </h1>
-              </div>
-              <div class="my-2">
-                <p class="mr-6 text-xl sm:mr-0">
-                  Help us fight the pandemic by donating your cough to our
-                  database and contribute to help us build an AI-powered analysis
-                  tool.
-                </p>
-              </div>
-              <div class="my-10">
-                <a href="#">
-                  <button class="px-8 py-2 text-white rounded bg-primary">
-                    Donate your cough
-                  </button>
-                </a>
-              </div>
-            </section>
-            <section class="hidden sm:block">
-              <img src="img/home/header-bg.png" alt="Illustration of woman
-              holding smartphone"/>
-            </section>
-          </header>
-
-          <!-- Our mission -->
-          <section class="bg-filler">
-            <div class="my-2">
-              <h2 class="text-2xl font-bold text-gray-200">Our mission</h2>
-            </div>
-            <div class="my-2">
-              <p>
-                Our vision is to develop a smartphone app that can be used by
-                everyone in the world to find out in seconds whether they have
-                COVID-19. We are utilizing cutting-edge artificial intelligence
-                technology to identify patterns undetectable by humans from the
-                unique respiratory signatures of lungs damaged by the virus.
-                From extensive research, we believe we can achieve 90% or more
-                accuracy and help control this pandemic!
-              </p>
-            </div>
-            <div class="my-6">
-              <a href="#">
-                <button
-                  class="px-6 py-2 border rounded text-primary border-primary"
-                >
-                  Learn more
-                </button>
-              </a>
             </div>
           </section>
-
-          <!-- Wrapper for background img/home/about-bg.png -->
-          <div>
-            <!-- How will it work -->
-            <section class="my-16">
-              <div class="mt-4">
-                <p class="my-2">How will it work?</p>
-                <h2 class="text-2xl font-bold text-gray-200">
-                  Record your cough sounds & save lives
-                </h2>
-              </div>
-              <div class="flex flex-col md:flex-row ">
-                <div>
-                  <img src="img/home/cough-icon.png" class="mx-auto my-8" alt="Cough icon" />
-                  <h5 class="text-lg font-bold">Donate your cough</h5>
-                  <p>
-                    Your contribution will help us build a tool that can replace
-                    the traditional tools being used right now.
-                  </p>
-                </div>
-                <div class="mt-2">
-                  <img
-                    class="mx-auto my-2"
-                    src="img/home/sound-icon.png"
-                    alt="Sound icon"
-                  />
-                  <h5 class="text-lg font-bold">
-                    Help train the AI to recognize cough sounds
-                  </h5>
-                  <p class="my-2">
-                    Help train our AI by contributing to a big database of cough
-                    sounds. AI will analyze cough patterns
-                  </p>
-                </div>
-                <div class="my-4">
-                  <img
-                    class="mx-auto my-4"
-                    src="img/home/app-icon.png"
-                    alt="App icon"
-                  />
-                  <h5 class="text-lg font-bold">
-                    Help us build a powerful AI app
-                  </h5>
-                  <p class="my-2">
-                    Help us build a powerful app that accurately detects early
-                    diagnosis of COVID-19
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <!-- About us -->
-            <section
-              class="bg-local md:bg-filler"
-              style="background-image: url(./img/home/about-bg-mobile.png);"
-            >
-              <div>
-                <h2 class="text-2xl font-bold text-gray-200">About us</h2>
-              </div>
-              <div>
-                <p>
-                  We are a student-led nonprofit. We are a passionate
-                  student-run team of AI engineers, mobile web app developers,
-                  and young medical professionals. We want to do our best to
-                  help the situation and can’t think of anything more noble. We
-                  are part of
-                  <a
-                    href="https://responselab.stanford.edu/projects.html"
-                    class="text-teal"
-                  >
-                    Stanford's COVID-19 Response Innovation Lab
-                  </a>
-                  and also featured in
-                  <a
-                    href="https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
-                    class="text-teal"
-                  >
-                    One Young World.
-                  </a>
-                  Your support can benefit hundreds of millions of lives across
-                  190+ countries!
-                </p>
-              </div>
-            </section>
-
-            <!-- Collaboration -->
-            <section class="my-10">
-              <div>
-                <h3 class="mb-8 text-xl font-semibold text-gray-200">
-                  In collaboration with
-                </h3>
-              </div>
-              <div class="flex flex-col justify-center md:flex-row md:justify-between">
-                <div>
-                  <img
-                    class="mx-auto mb-4"
-                    src="img/logos/covid-19-RIL-logo.png"
-                    alt="Covid-19 Response
-                Innovation Lab logo"
-                  />
-                </div>
-                <div>
-                  <img
-                    class="mx-auto mb-2"
-                    src="img/logos/one-young-world-logo.png"
-                    alt="One Young World
-                logo"
-                  />
-                </div>
-                <div>
-                  <img
-                    class="mx-auto mb-4"
-                    src="img/logos/jig-jp-logo.png"
-                    alt="Jig JP logo"
-                  />
-                </div>
-                <div>
-                  <img
-                    class="mx-auto mb-2"
-                    src="img/logos/stanford-h4r-logo.png"
-                    alt="Stanford Hacking 4
-                Recovery logo"
-                  />
-                </div>
-                <div class="mt-10 md:mt-0">
-                  <img
-                    class="mx-auto"
-                    src="img/logos/siena-company-logo.png"
-                    alt="Siena Company
-                logo"
-                  />
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <!-- Wrapper for background img/home/header-bg.png -->
-          <div>
-            <!-- Timeline -->
-            <section class"my-4">
-              <div class="my-4">
-                <h2 class="text-2xl font-bold text-gray-200">Our timeline</h2>
-              </div>
-              <div>
-                <img
-                  class="hidden sm:block"
-                  src="img/home/timeline-icon.png"
-                  alt="Image of timeline"
-                />
-                <img
-                  class="mx-auto sm:hidden"
-                  src="img/home/timeline-icon-mobile.png"
-                  alt="Image of timeline"
-                />
-              </div>
-            </section>
-
-            <!-- Help us -->
-            <section class="my-8 mb-20">
-              <div>
-                <h2 class="text-2xl font-bold text-gray-200">
-                  Help us make this happen
-                </h2>
-              </div>
-              <div class="my-4">
-                <p>
-                  Take 5 minutes to record your cough and answer a few questions
-                </p>
-              </div>
-              <div>
-                <a href="#">
-                  <button class="px-6 py-2 text-white rounded bg-primary">
-                    Donate your cough
-                  </button>
-                </a>
-              </div>
-            </section>
-          </div>
-        </main>
-      </div>
-      <!-- End of inner content wrapper -->
-      <footer class="footer md:px-20 md:py-12">
-        <div class="flex flex-col-reverse mx-auto max-w-screen-3xl md:flex-row md:justify-between">
-          <section>
-            <div>
-              <a href="#">Privacy Policy</a>
-            </div>
-            <div>
-              <p>© Copyright 2020 Virufy. All rights reserved.</p>
-            </div>
-          </section>
-          <!-- Icon container -->
-          <section class="flex mb-16">
-            <a href="https://github.com/virufy" class="mr-3">
-              <img src="img/logos/github-icon.png" alt="Github Icon" />
-            </a>
-            <a href="https://twitter.com/VirufyOrg" class="mr-3">
-              <img src="img/logos/twitter-icon.png" alt="Twitter Icon" />
-            </a>
-            <a href="https://www.facebook.com/Virufy/" class="mr-3">
-              <img src="img/logos/facebook-icon.png" alt="Facebook Icon" />
-            </a>
-            <a href="https://www.instagram.com/virufyorg/" class="mr-3">
-              <img src="img/logos/instagram-icon.png" alt="Instagram Icon" />
-            </a>
-            <a href="https://www.linkedin.com/company/virufy/" class="mr-3">
-              <img src="img/logos/linkedin-icon.png" alt="LinkedIn Icon" />
-            </a>
+          <section
+            class="flex justify-center px-4 py-8 border-t border-gray-200"
+          >
+            <button class="w-full px-8 py-2 text-white rounded bg-primary">
+              Donate your cough
+            </button>
           </section>
         </div>
-      </footer>
-    </div>
-    <!-- End of outer content wrapper -->
+
+        <!-- Desktop Nav -->
+        <ul
+          class="relative items-center justify-between hidden w-1/2 md:w-3/4 xl:w-1/2 md:flex"
+        >
+          <a href="#" class="group" id="about-link">
+            <span class="inline-block">
+              About Us
+              <img
+                class="inline-block"
+                src="img/home/caret-down-icon.png"
+                alt="caret icon"
+              />
+            </span>
+            <div
+              class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md justify-evenly"
+              id="about-dropdown"
+            >
+              <a class="pb-2" href="#">Mission</a>
+              <a class="pb-2" href="#">Our team</a>
+              <a class="pb-2" href="#">One Young World</a>
+              <a href="#">Blog</a>
+            </div>
+          </a>
+          <li>
+            <a href="#">
+              <span>Our research</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Join us</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>GoFund Me</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <button
+                class="px-4 py-1 border rounded text-secondary-200 border-secondary-200"
+              >
+                Donate your cough
+              </button>
+            </a>
+          </li>
+          <li>
+            <select
+              class="pb-2 pl-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
+            >
+              <option value="en">🇺🇸&nbsp; English</option>
+              <option value="sp">🇪🇸 &nbsp; Español</option>
+              <option value="br">🇧🇷 &nbsp; Português</option>
+              <option value="jp">🇯🇵 &nbsp; 日本語</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- End of nav section -->
+
+    <main>
+      <header class="flex wrapper items-top md:px-16 3xl:px-0">
+        <section>
+          <div>
+            <h1
+              class="text-4xl font-bold text-gray-300 md:text-5xl font-heading"
+            >
+              Early detection of COVID-19 with AI technology
+            </h1>
+          </div>
+          <div class="my-2">
+            <p class="mr-6 text-xl sm:mr-0">
+              Help us fight the pandemic by donating your cough to our database
+              and contribute to help us build an AI-powered analysis tool.
+            </p>
+          </div>
+          <div class="my-10">
+            <a href="#">
+              <button class="px-8 py-2 text-white rounded bg-primary">
+                Donate your cough
+              </button>
+            </a>
+          </div>
+        </section>
+        <section class="hidden -my-4 sm:block">
+          <img
+            src="img/home/header-bg.png"
+            alt="Illustration of woman
+              holding smartphone"
+          />
+        </section>
+      </header>
+
+      <!-- Our mission -->
+      <div class="wrapper md:px-16 3xl:px-0">
+        <section class="bg-filler lg:w-1/2">
+          <div class="mb-2">
+            <h2 class="text-2xl font-bold text-gray-200">Our mission</h2>
+          </div>
+          <div class="my-2">
+            <p>
+              Our vision is to develop a smartphone app that can be used by
+              everyone in the world to find out in seconds whether they have
+              COVID-19. We are utilizing cutting-edge artificial intelligence
+              technology to identify patterns undetectable by humans from the
+              unique respiratory signatures of lungs damaged by the virus. From
+              extensive research, we believe we can achieve 90% or more accuracy
+              and help control this pandemic!
+            </p>
+          </div>
+          <div class="my-6">
+            <a href="#">
+              <button
+                class="px-6 py-2 border rounded text-primary border-primary"
+              >
+                Learn more
+              </button>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!-- Wrapper -->
+      <div class="wrapper md:px-16 3xl:px-0">
+        <!-- How will it work section -->
+        <section class="my-16">
+          <div class="mt-4">
+            <p class="my-2">How will it work?</p>
+            <h2 class="text-2xl font-bold text-gray-200">
+              Record your cough sounds & save lives
+            </h2>
+          </div>
+          <div class="flex flex-col md:flex-row">
+            <div>
+              <img
+                src="img/home/cough-icon.png"
+                class="mx-auto my-8"
+                alt="Cough icon"
+              />
+              <h5 class="text-lg font-bold">Donate your cough</h5>
+              <p>
+                Your contribution will help us build a tool that can replace the
+                traditional tools being used right now.
+              </p>
+            </div>
+            <div class="mt-2">
+              <img
+                class="mx-auto my-2"
+                src="img/home/sound-icon.png"
+                alt="Sound icon"
+              />
+              <h5 class="text-lg font-bold">
+                Help train the AI to recognize cough sounds
+              </h5>
+              <p class="my-2">
+                Help train our AI by contributing to a big database of cough
+                sounds. AI will analyze cough patterns
+              </p>
+            </div>
+            <div class="my-4">
+              <img
+                class="mx-auto my-4"
+                src="img/home/app-icon.png"
+                alt="App icon"
+              />
+              <h5 class="text-lg font-bold">
+                Help us build a powerful AI app
+              </h5>
+              <p class="my-2">
+                Help us build a powerful app that accurately detects early
+                diagnosis of COVID-19
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- About us section -->
+        <section
+          class="bg-local md:bg-filler"
+          style="background-image: url(./img/home/about-bg-mobile.png);"
+        >
+          <div>
+            <h2 class="text-2xl font-bold text-gray-200">About us</h2>
+          </div>
+          <div>
+            <p>
+              We are a student-led nonprofit. We are a passionate student-run
+              team of AI engineers, mobile web app developers, and young medical
+              professionals. We want to do our best to help the situation and
+              can’t think of anything more noble. We are part of
+              <a
+                href="https://responselab.stanford.edu/projects.html"
+                class="text-teal"
+              >
+                Stanford's COVID-19 Response Innovation Lab
+              </a>
+              and also featured in
+              <a
+                href="https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
+                class="text-teal"
+              >
+                One Young World.
+              </a>
+              Your support can benefit hundreds of millions of lives across 190+
+              countries!
+            </p>
+          </div>
+        </section>
+
+        <!-- Collaboration section -->
+        <section class="my-10">
+          <div>
+            <h3 class="mb-8 text-xl font-semibold text-gray-200">
+              In collaboration with
+            </h3>
+          </div>
+          <div
+            class="flex flex-col justify-center md:flex-row md:justify-between"
+          >
+            <div>
+              <img
+                class="mx-auto mb-4"
+                src="img/logos/covid-19-RIL-logo.png"
+                alt="Covid-19 Response Innovation Lab logo"
+              />
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-2"
+                src="img/logos/one-young-world-logo.png"
+                alt="One Young World logo"
+              />
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-4"
+                src="img/logos/jig-jp-logo.png"
+                alt="Jig JP logo"
+              />
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-2"
+                src="img/logos/stanford-h4r-logo.png"
+                alt="Stanford Hacking 4 Recovery logo"
+              />
+            </div>
+            <div class="mt-10 md:mt-0">
+              <img
+                class="mx-auto"
+                src="img/logos/siena-company-logo.png"
+                alt="Siena Company logo"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- End of Wrapper -->
+
+      <!-- Wrapper for Timeline and Help Us section with background image -->
+      <div class="w-full">
+        <!-- Timeline -->
+        <section class="w-full wrapper md:mb-64 md:px-16 3xl:px-0">
+          <div class="my-4">
+            <h2 class="text-2xl font-bold text-gray-200">Our timeline</h2>
+          </div>
+          <div class="mt-8">
+            <img
+              class="hidden w-full sm:block"
+              src="img/home/timeline-icon.png"
+              alt="Image of timeline"
+            />
+            <img
+              class="mx-auto sm:hidden"
+              src="img/home/timeline-icon-mobile.png"
+              alt="Image of timeline"
+            />
+          </div>
+        </section>
+
+        <!-- Help us -->
+        <section class="mb-20 wrapper md:px-16 3xl:px-0">
+          <div>
+            <h2 class="text-2xl font-bold text-gray-200">
+              Help us make this happen
+            </h2>
+          </div>
+          <div class="my-4">
+            <p>
+              Take 5 minutes to record your cough and answer a few questions
+            </p>
+          </div>
+          <div>
+            <a href="#">
+              <button class="px-6 py-2 text-white rounded bg-primary">
+                Donate your cough
+              </button>
+            </a>
+          </div>
+        </section>
+      </div>
+      <!-- End of wrapper for Timeline and Help Us section -->
+    </main>
+
+    <footer class="footer md:px-20 md:py-12">
+      <div
+        class="flex flex-col-reverse mx-auto max-w-screen-3xl md:flex-row md:justify-between"
+      >
+        <section>
+          <div>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div>
+            <p>© Copyright 2020 Virufy. All rights reserved.</p>
+          </div>
+        </section>
+        <!-- Icon container -->
+        <section class="flex mb-16">
+          <a href="https://github.com/virufy" class="mr-3">
+            <img src="img/logos/github-icon.png" alt="Github Icon" />
+          </a>
+          <a href="https://twitter.com/VirufyOrg" class="mr-3">
+            <img src="img/logos/twitter-icon.png" alt="Twitter Icon" />
+          </a>
+          <a href="https://www.facebook.com/Virufy/" class="mr-3">
+            <img src="img/logos/facebook-icon.png" alt="Facebook Icon" />
+          </a>
+          <a href="https://www.instagram.com/virufyorg/" class="mr-3">
+            <img src="img/logos/instagram-icon.png" alt="Instagram Icon" />
+          </a>
+          <a href="https://www.linkedin.com/company/virufy/" class="mr-3">
+            <img src="img/logos/linkedin-icon.png" alt="LinkedIn Icon" />
+          </a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
