@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Verify your COVID-19 risk with a smartphone | Our team | Virufy</title>
+    <!-- TODO: Add Hotjar Tracking Script -->
+    <!-- TODO: Add Google Analytics Scripts -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Virufy - assess your risk for COVID-19 with our AI-powered app using your smartphone. A project of Stanford University's
+	COVID-19 Response Innovation Lab."
+    />
+    <meta name="author" content="Team Virufy" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <script async src="scripts/index.js"></script>
+  </head>
+  <body class="text-gray-100 font-body">
+    <!-- Nav section -->
+    <section class="wrapper md:pb-4 md:px-16 3xl:px-0">
+      <nav class="relative flex items-center justify-between md:py-4">
+        <!-- Virufy logo -->
+        <div class="md:ml-4 md:self-start">
+          <a href="./index.html">
+            <img
+              class="w-1/2 md:w-full"
+              src="img/logos/virufy-logo.png"
+              alt="Virufy logo"
+            />
+          </a>
+        </div>
+        <!-- Container for right side of nav -->
+        <div class="flex justify-end">
+          <!-- Mobile language button -->
+          <div class="inline-block mr-6">
+            <button
+              id="mobile-lng-btn"
+              class="px-3 py-1 text-sm border rounded lg:hidden button text-secondary-200 border-secondary-200"
+            >
+              🇺🇸&nbsp; English
+            </button>
+          </div>
+          <!-- Mobile language menu -->
+          <div
+            class="absolute top-0 left-0 z-10 hidden w-screen h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200 md:mt-20"
+            id="mobile-lng-menu"
+          >
+            <section class="px-4 py-4">
+              <span class="inline-block text-base gray-200 text"
+                >Choose the language</span
+              >
+            </section>
+            <!-- TODO: Add links to translated pages -->
+            <section class="px-4 py-4 border-t border-gray-200">
+              <a href="#"><span> 🇺🇸&nbsp; English</span></a>
+            </section>
+            <section class="px-4 py-4 border-t border-gray-200">
+              <a href="#"><span> 🇪🇸 &nbsp; Español</span></a>
+            </section>
+            <section class="px-4 py-4 border-t border-gray-200">
+              <a href="#"><span> 🇧🇷 &nbsp; Português</span></a>
+            </section>
+            <section class="px-4 py-4 border-t border-gray-200">
+              <a href="#"><span> 🇯🇵 &nbsp; 日本語</span></a>
+            </section>
+            <!--
+              TODO: If we want to implement saving, we  need to enable
+              cookies to store the user's language preferences 
+            <section
+              class="flex justify-center px-4 py-8 border-t border-gray-200"
+            >
+              <button class="w-full px-8 py-2 text-white rounded bg-primary"
+              id="mobile-save-btn">
+                Save
+              </button>
+            </section>
+            -->
+          </div>
+
+          <!-- Mobile nav menu icon -->
+          <div class="inline-block cursor-pointer lg:hidden" id="menu-icon">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 menu"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </div>
+          <!-- Mobile nav close icon -->
+          <div
+            class="hidden inline-block cursor-pointer lg:hidden"
+            id="close-icon"
+          >
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 x"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <!-- End of container -->
+
+        <!-- Mobile Nav -->
+        <div
+          class="absolute top-0 z-10 hidden w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 lg:hidden md:mt-20"
+          id="mobile-nav"
+        >
+          <section class="px-4 py-4">
+            <span class="inline-block text-xs text-gray-200">About us</span>
+            <div class="flex mt-4">
+              <a href="./mission.html" class="w-1/2">
+                <span>Mission</span>
+              </a>
+              <a href="https://blog.virufy.org/">
+                <span>Blog</span>
+              </a>
+            </div>
+            <div class="flex mt-2">
+              <a href="./team.html" class="w-1/2">
+                <span>Our team</span>
+              </a>
+              <a href="https://oywj.org/">
+                <span>One Young World</span>
+              </a>
+            </div>
+          </section>
+          <section class="px-4 py-4 border-t border-gray-200">
+            <div class="flex">
+              <a href="./research.html" class="w-1/2">
+                <span>Our research</span>
+              </a>
+              <a href="https://www.gofundme.com/f/virufyorg">
+                <span>GoFundMe</span>
+              </a>
+            </div>
+            <div class="flex mt-2">
+              <a href="./join.html">
+                <span>Join us</span>
+              </a>
+            </div>
+          </section>
+          <section
+            class="flex justify-center px-4 py-8 border-t border-gray-200"
+          >
+            <a href="https://form.jotform.com/201988192533159">
+              <button class="w-full px-8 py-2 text-white rounded bg-primary">
+                Donate your cough
+              </button>
+            </a>
+          </section>
+        </div>
+
+        <!-- Desktop Nav -->
+        <ul
+          class="relative items-baseline justify-between hidden w-3/4 2xl:w-1/2 lg:flex"
+        >
+          <li class="group">
+            <div>
+              <a href="#" class="block pb-12">
+                About Us
+                <img
+                  class="inline-block"
+                  src="img/home/caret-down-icon.png"
+                  alt="caret icon"
+                />
+              </a>
+              <div
+                class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md transform transition ease-out duration-1000 group-hover:flex hover:flex justify-evenly"
+              >
+                <a class="pb-2" href="./mission.html">Mission</a>
+                <a class="pb-2" href="./team.html">Our team</a>
+                <a class="pb-2" href="https://oywj.org/">One Young World</a>
+                <a href="https://blog.virufy.org"/>Blog</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="./research.html">
+              <span>Our research</span>
+            </a>
+          </li>
+          <li>
+            <a href="./join.html">
+              <span>Join us</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.gofundme.com/f/virufyorg">
+              <span>GoFund Me</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://form.jotform.com/201988192533159">
+              <button
+                class="px-4 py-1 border rounded text-secondary-200 border-secondary-200"
+              >
+                Donate your cough
+              </button>
+            </a>
+          </li>
+          <!-- Language Dropdown -->
+          <li class="w-1/4 group">
+            <div class="w-full">
+              <a href="#" class="block pb-10">
+                <span
+                  class="px-4 py-2 overflow-visible border rounded text-secondary-200 border-secondary-200"
+                  >🇺🇸&nbsp; English</span
+                >
+              </a>
+              <div
+                class="absolute top-0 flex flex-col hidden py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md transform transition ease-out duration-1000 group-hover:flex hover:flex justify-evenly"
+              >
+                <a class="pb-2 mx-4" href="#">🇪🇸 &nbsp; Español</a>
+                <a class="pb-2 mx-4" href="#">🇧🇷 &nbsp; Português</a>
+                <a class="pb-2 mx-4" href="#">🇯🇵 &nbsp; 日本語</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- End of nav section -->
+
+    <main>
+      <header class="relative flex md:pb-40 wrapper md:px-16 3xl:px-0">
+        <section class="self-start mt-6 md:mt-16 md:w-1/2">
+          <div>
+            <h1
+              class="text-4xl font-bold text-gray-300 md:text-5xl font-heading"
+            >Our team</h1>
+          </div>
+          <div class="my-2">
+            <p class="mr-6 text-xl sm:mr-0">We are all passionate about combining tech with global health, social good, and equity in order to fight the pandemic.</p>
+          </div>
+        </section>
+        <img
+          class="absolute right-0 hidden w-full -z-10 md:block"
+          src="img/team/header-bg.png"
+          alt="Illustration of woman
+            holding smartphone"
+        />
+      </header>
+
+      <!-- Wrapper -->
+      <div class="wrapper md:px-16 3xl:px-0 2xl:mt-40">
+        <!-- Collaboration section -->
+        <section>
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-200">Collaboration</h2>
+          </div>
+          <div class="mb-6 lg:w-4/5">
+            <p>We are a team of over twenty enthusiastic, ambitious youth and students representing 17 universities: California Northstate University School of Medicine, Cornell, Duke, Harvard, Harvey Mudd, Lambda School, Northeastern, Princeton, Stanford, UC Irvine, UCLA, UPenn, UC Santa Barbara, UCSF School of Medicine, York University/Sheridan College, Western University in Ontario, and WUSTL.  We’re also worldwide, with members hailing from the USA, Canada, Japan, Nepal, Colombia, Peru, Brazil, Nepal, India, and Pakistan, with a broad global reach.</p>
+          </div>
+          <!-- Logo Container -->
+          <div
+            class="flex flex-col justify-center my-8 md:mt-16 md:flex-row md:justify-between"
+          >
+            <div>
+              <img
+                class="mx-auto mb-4"
+                src="img/logos/covid-19-RIL-logo.png"
+                alt="Covid-19 Response Innovation Lab logo"
+              />
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-2"
+                src="img/logos/one-young-world-logo.png"
+                alt="One Young World logo"
+              />
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-4"
+                src="img/logos/jig-jp-logo.png"
+                alt="Jig JP logo"
+              />
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-2"
+                src="img/logos/stanford-h4r-logo.png"
+                alt="Stanford Hacking 4 Recovery logo"
+              />
+            </div>
+            <div class="mt-10 md:mt-0">
+              <img
+                class="mx-auto"
+                src="img/logos/siena-company-logo.png"
+                alt="Siena Company logo"
+              />
+            </div>
+          </div><!-- End of Logo container -->
+        </section><!-- End of collaboration section -->
+      </div>
+      <!-- End of wrapper -->
+
+    </main>
+    <footer class="footer md:px-20 md:py-12">
+      <div
+        class="flex flex-col-reverse mx-auto max-w-screen-3xl md:flex-row md:justify-between"
+      >
+        <section>
+          <div>
+            <!-- TODO: Add link to privacy policy -->
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div>
+            <p>© Copyright 2020 Virufy. All rights reserved.</p>
+          </div>
+        </section>
+        <!-- Icon container -->
+        <section class="flex mb-16">
+          <a href="https://github.com/virufy" class="mr-3">
+            <img src="img/logos/github-icon.png" alt="Github Icon" />
+          </a>
+          <a href="https://twitter.com/VirufyOrg" class="mr-3">
+            <img src="img/logos/twitter-icon.png" alt="Twitter Icon" />
+          </a>
+          <a href="https://www.facebook.com/Virufy/" class="mr-3">
+            <img src="img/logos/facebook-icon.png" alt="Facebook Icon" />
+          </a>
+          <a href="https://www.instagram.com/virufyorg/" class="mr-3">
+            <img src="img/logos/instagram-icon.png" alt="Instagram Icon" />
+          </a>
+          <a href="https://www.linkedin.com/company/virufy/" class="mr-3">
+            <img src="img/logos/linkedin-icon.png" alt="LinkedIn Icon" />
+          </a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
+
