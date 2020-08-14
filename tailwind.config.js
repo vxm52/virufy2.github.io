@@ -24,10 +24,19 @@ module.exports = {
         subHeading: ["'Source Sans Pro'"],
         body: ["'Source Sans Pro'"],
       },
+      margin: {
+        "72": "18rem",
+        "80": "20rem",
+        "96": "24rem",
+        "128": "32rem",
+      },
       screens: {
         "2xl": "1440px",
         "3xl": "1600px",
         "4xl": "1920px",
+      },
+      zIndex: {
+        "-10": "-10",
       },
     },
   },
