@@ -42,6 +42,7 @@ module.exports = {
   },
   variants: {
     display: ["responsive", "hover", "group-hover"],
+    pointerEvents: ["responsive", "hover", "focus"],
   },
   plugins: [],
 };
