@@ -626,9 +626,9 @@ video {
   }
 }
 
-@media (min-width: 1600px){
+@media (min-width: 1680px){
   .container{
-    max-width: 1600px;
+    max-width: 1680px;
   }
 }
 
@@ -8039,7 +8039,7 @@ video {
 }
 
 .max-w-screen-3xl{
-  max-width: 1600px;
+  max-width: 1680px;
 }
 
 .max-w-screen-4xl{
@@ -18526,7 +18526,7 @@ video {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
-  max-width: 1600px;
+  max-width: 1680px;
 }
 
 @media (min-width: 640px){
@@ -18564,9 +18564,9 @@ video {
     }
   }
 
-  @media (min-width: 1600px){
+  @media (min-width: 1680px){
     .sm\:container{
-      max-width: 1600px;
+      max-width: 1680px;
     }
   }
 
@@ -25977,7 +25977,7 @@ video {
   }
 
   .sm\:max-w-screen-3xl{
-    max-width: 1600px;
+    max-width: 1680px;
   }
 
   .sm\:max-w-screen-4xl{
@@ -36389,9 +36389,9 @@ video {
     }
   }
 
-  @media (min-width: 1600px){
+  @media (min-width: 1680px){
     .md\:container{
-      max-width: 1600px;
+      max-width: 1680px;
     }
   }
 
@@ -43802,7 +43802,7 @@ video {
   }
 
   .md\:max-w-screen-3xl{
-    max-width: 1600px;
+    max-width: 1680px;
   }
 
   .md\:max-w-screen-4xl{
@@ -54214,9 +54214,9 @@ video {
     }
   }
 
-  @media (min-width: 1600px){
+  @media (min-width: 1680px){
     .lg\:container{
-      max-width: 1600px;
+      max-width: 1680px;
     }
   }
 
@@ -61627,7 +61627,7 @@ video {
   }
 
   .lg\:max-w-screen-3xl{
-    max-width: 1600px;
+    max-width: 1680px;
   }
 
   .lg\:max-w-screen-4xl{
@@ -72039,9 +72039,9 @@ video {
     }
   }
 
-  @media (min-width: 1600px){
+  @media (min-width: 1680px){
     .xl\:container{
-      max-width: 1600px;
+      max-width: 1680px;
     }
   }
 
@@ -79452,7 +79452,7 @@ video {
   }
 
   .xl\:max-w-screen-3xl{
-    max-width: 1600px;
+    max-width: 1680px;
   }
 
   .xl\:max-w-screen-4xl{
@@ -89864,9 +89864,9 @@ video {
     }
   }
 
-  @media (min-width: 1600px){
+  @media (min-width: 1680px){
     .\32xl\:container{
-      max-width: 1600px;
+      max-width: 1680px;
     }
   }
 
@@ -97277,7 +97277,7 @@ video {
   }
 
   .\32xl\:max-w-screen-3xl{
-    max-width: 1600px;
+    max-width: 1680px;
   }
 
   .\32xl\:max-w-screen-4xl{
@@ -107654,7 +107654,7 @@ video {
   }
 }
 
-@media (min-width: 1600px){
+@media (min-width: 1680px){
   .\33xl\:container{
     width: 100%;
   }
@@ -107689,9 +107689,9 @@ video {
     }
   }
 
-  @media (min-width: 1600px){
+  @media (min-width: 1680px){
     .\33xl\:container{
-      max-width: 1600px;
+      max-width: 1680px;
     }
   }
 
@@ -115102,7 +115102,7 @@ video {
   }
 
   .\33xl\:max-w-screen-3xl{
-    max-width: 1600px;
+    max-width: 1680px;
   }
 
   .\33xl\:max-w-screen-4xl{
@@ -125514,9 +125514,9 @@ video {
     }
   }
 
-  @media (min-width: 1600px){
+  @media (min-width: 1680px){
     .\34xl\:container{
-      max-width: 1600px;
+      max-width: 1680px;
     }
   }
 
@@ -132927,7 +132927,7 @@ video {
   }
 
   .\34xl\:max-w-screen-3xl{
-    max-width: 1600px;
+    max-width: 1680px;
   }
 
   .\34xl\:max-w-screen-4xl{
