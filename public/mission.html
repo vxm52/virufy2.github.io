@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Verify your COVID-19 risk with a smartphone | Mission | Virufy</title>
+		<!-- TODO: Add Hotjar Tracking Script -->
+		<!-- TODO: Add Google Analytics Scripts -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Virufy - assess your risk for COVID-19 with our AI-powered app using your smartphone. A project of Stanford University's
+	COVID-19 Response Innovation Lab."
+		/>
+		<meta name="author" content="Team Virufy" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="img/favicon.png" type="image/x-icon" />
+		<script async src="scripts/index.js"></script>
+	</head>
+	<body class="text-gray-100 font-body">
+		
+    <!-- Nav section -->
+    <section class="wrapper md:pb-4 md:px-16 3xl:px-0">
+		<nav class="relative flex items-center justify-between md:py-4">
+		  <!-- Virufy logo -->
+		  <div class="md:ml-4 md:self-start">
+			<a href="./index.html">
+			  <img
+				class="w-1/2 md:w-full"
+				src="img/logos/virufy-logo.png"
+				alt="Virufy logo"
+			  />
+			</a>
+		  </div>
+		  <!-- Container for right side of nav -->
+		  <div class="flex justify-end">
+			<!-- Mobile language button -->
+			<div class="inline-block mr-6">
+			  <button
+				id="mobile-lng-btn"
+				class="px-3 py-1 text-sm border rounded lg:hidden button text-secondary-200 border-secondary-200"
+			  >
+				🇺🇸&nbsp; English
+			  </button>
+			</div>
+			<!-- Mobile language menu -->
+			<div
+			  class="absolute top-0 left-0 z-10 hidden w-full h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200 md:mt-20"
+			  id="mobile-lng-menu"
+			>
+			  <section class="px-4 py-4">
+				<span class="inline-block text-base gray-200 text"
+				  >Choose the language</span
+				>
+			  </section>
+			  <!-- TODO: Add links to translated pages -->
+			  <section class="px-4 py-4 border-t border-gray-200">
+				<a href="#"><span> 🇺🇸&nbsp; English</span></a>
+			  </section>
+			  <section class="px-4 py-4 border-t border-gray-200">
+				<a href="#"><span> 🇪🇸 &nbsp; Español</span></a>
+			  </section>
+			  <section class="px-4 py-4 border-t border-gray-200">
+				<a href="#"><span> 🇧🇷 &nbsp; Português</span></a>
+			  </section>
+			  <section class="px-4 py-4 border-t border-gray-200">
+				<a href="#"><span> 🇯🇵 &nbsp; 日本語</span></a>
+			  </section>
+			  <!--
+				TODO: If we want to implement saving, we  need to enable
+				cookies to store the user's language preferences 
+			  <section
+				class="flex justify-center px-4 py-8 border-t border-gray-200"
+			  >
+				<button class="w-full px-8 py-2 text-white rounded bg-primary"
+				id="mobile-save-btn">
+				  Save
+				</button>
+			  </section>
+			  -->
+			</div>
+  
+			<!-- Mobile nav menu icon -->
+			<div class="inline-block cursor-pointer lg:hidden" id="menu-icon">
+			  <svg
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+				class="w-6 menu"
+			  >
+				<path
+				  stroke-linecap="round"
+				  stroke-linejoin="round"
+				  stroke-width="2"
+				  d="M4 6h16M4 12h16M4 18h16"
+				></path>
+			  </svg>
+			</div>
+			<!-- Mobile nav close icon -->
+			<div
+			  class="hidden inline-block cursor-pointer lg:hidden"
+			  id="close-icon"
+			>
+			  <svg
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+				class="w-6 x"
+			  >
+				<path
+				  stroke-linecap="round"
+				  stroke-linejoin="round"
+				  stroke-width="2"
+				  d="M6 18L18 6M6 6l12 12"
+				></path>
+			  </svg>
+			</div>
+		  </div>
+		  <!-- End of container -->
+  
+		  <!-- Mobile Nav -->
+		  <div
+			class="absolute top-0 z-10 hidden w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 lg:hidden md:mt-20"
+			id="mobile-nav"
+		  >
+			<section class="px-4 py-4">
+			  <span class="inline-block text-xs text-gray-200">About us</span>
+			  <div class="flex mt-4">
+				<a href="./mission.html" class="w-1/2">
+				  <span>Mission</span>
+				</a>
+				<a href="https://blog.virufy.org/">
+				  <span>Blog</span>
+				</a>
+			  </div>
+			  <div class="flex mt-2">
+				<a href="./team.html" class="w-1/2">
+				  <span>Our team</span>
+				</a>
+				<a href="https://oywj.org/">
+				  <span>One Young World</span>
+				</a>
+			  </div>
+			</section>
+			<section class="px-4 py-4 border-t border-gray-200">
+			  <div class="flex">
+				<a href="./research.html" class="w-1/2">
+				  <span>Our research</span>
+				</a>
+				<a href="https://www.gofundme.com/f/virufyorg">
+				  <span>GoFundMe</span>
+				</a>
+			  </div>
+			  <div class="flex mt-2">
+				<a href="./join.html">
+				  <span>Join us</span>
+				</a>
+			  </div>
+			</section>
+			<section
+			  class="flex justify-center px-4 py-8 border-t border-gray-200"
+			>
+			  <a href="https://form.jotform.com/201988192533159">
+				<button class="w-full px-8 py-2 text-white rounded bg-primary">
+				  Donate your cough
+				</button>
+			  </a>
+			</section>
+		  </div>
+  
+		  <!-- Desktop Nav -->
+		  <ul
+			class="relative items-baseline justify-between hidden w-3/4 2xl:w-1/2 lg:flex"
+		  >
+			<li class="group">
+			  <div>
+				<a href="#" class="block pb-12">
+				  About Us
+				  <img
+					class="inline-block"
+					src="img/home/caret-down-icon.png"
+					alt="caret icon"
+				  />
+				</a>
+				<div
+				  class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md transform transition ease-out duration-1000 group-hover:flex hover:flex justify-evenly"
+				>
+				  <a class="pb-2" href="./mission.html">Mission</a>
+				  <a class="pb-2" href="./team.html">Our team</a>
+				  <a class="pb-2" href="https://oywj.org/">One Young World</a>
+				  <a href="https://blog.virufy.org"/>Blog</a>
+				</div>
+			  </div>
+			</li>
+			<li>
+			  <a href="./research.html">
+				<span>Our research</span>
+			  </a>
+			</li>
+			<li>
+			  <a href="./join.html">
+				<span>Join us</span>
+			  </a>
+			</li>
+			<li>
+			  <a href="https://www.gofundme.com/f/virufyorg">
+				<span>GoFund Me</span>
+			  </a>
+			</li>
+			<li>
+			  <a href="https://form.jotform.com/201988192533159">
+				<button
+				  class="px-4 py-1 border rounded text-secondary-200 border-secondary-200"
+				>
+				  Donate your cough
+				</button>
+			  </a>
+			</li>
+			<!-- Language Dropdown -->
+			<li class="w-1/4 group">
+			  <div class="w-full">
+				<a href="#" class="block pb-10">
+				  <span
+					class="px-4 py-2 overflow-visible border rounded text-secondary-200 border-secondary-200"
+					>🇺🇸&nbsp; English</span
+				  >
+				</a>
+				<div
+				  class="absolute top-0 flex flex-col hidden py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md transform transition ease-out duration-1000 group-hover:flex hover:flex justify-evenly"
+				>
+				  <a class="pb-2 mx-4" href="#">🇪🇸 &nbsp; Español</a>
+				  <a class="pb-2 mx-4" href="#">🇧🇷 &nbsp; Português</a>
+				  <a class="pb-2 mx-4" href="#">🇯🇵 &nbsp; 日本語</a>
+				</div>
+			  </div>
+			</li>
+		  </ul>
+		</nav>
+	  </section>
+	  <!-- End of nav section -->
+			<main class="wrapper md:px-16 3xl:px-0">
+				<header class="my-10 md:my-20 flex justify-between">
+					<div class="w-full md:w-7/12">
+						<h1 class="mb-6 text-5xl font-bold text-gray-300 font-heading">
+							Our goal
+						</h1>
+
+						<p class="text-xl">
+							We believe instant, universal, and early detection, which will allow
+							society to pinpoint the locations of the virus, is the key to end the
+							pandemic and necessity for lockdowns.
+						</p>
+					</div>
+					<div class="hidden md:block md:w-4/12">
+						<img class="ml-auto" src="./img/mission/header-image.png" alt="Mission" />
+					</div>
+				</header>
+
+				<section class="flex flex-wrap mb-20 md:justify-between">
+					<div
+						class="md:w-1/2 my-5 md:my-10 flex flex-wrap md:flex-no-wrap justify-center md:justify-start"
+					>
+						<!-- icon -->
+						<div style="max-width: 70px;">
+							<img
+								class="my-6 md:my-0 md:pr-2"
+								src="./img/mission/globe.png"
+								alt="Globe"
+							/>
+						</div>
+
+						<!-- text -->
+						<div class="w-full md:w-10/12">
+							<h2 class="mb-2 text-2xl font-bold text-gray-200">
+								Focus on global impact
+							</h2>
+							<p>
+								Collect data and provide a solution for people in developing countries
+								across the world. We are currently working with collaborators in
+								Pakistan, US, and Japan.
+							</p>
+						</div>
+					</div>
+					<div
+						class="md:w-1/2 my-5 md:my-10 flex flex-wrap md:flex-no-wrap justify-center md:justify-start"
+					>
+						<!-- icon -->
+						<div style="max-width: 70px;">
+							<img
+								class="my-6 md:my-0 md:pr-2"
+								src="./img/mission/heart.png"
+								alt="Heart"
+							/>
+						</div>
+						<!-- text -->
+						<div class="w-full md:w-10/12">
+							<h2 class="mb-2 text-2xl font-bold text-gray-200">
+								Reduce burden on health systems
+							</h2>
+							<p>
+								Get your COVID-19 risk status without ever needing to go to a hsopital
+								or testing site. Share your risk score with your doctor via phone or
+								telehealth appointment to increase capacity at hospitals.
+							</p>
+						</div>
+					</div>
+					<div
+						class="md:w-1/2 my-5 md:my-10 flex flex-wrap md:flex-no-wrap justify-center md:justify-start"
+					>
+						<!-- icon -->
+						<div style="max-width: 70px;">
+							<img
+								class="my-6 md:my-0 md:pr-2"
+								src="./img/mission/mask.png"
+								alt="Mask"
+							/>
+						</div>
+						<!-- text -->
+						<div class="w-full md:w-10/12">
+							<h2 class="mb-2 text-2xl font-bold text-gray-200">
+								Decrease risk of exposure
+							</h2>
+							<p>
+								Home testing means no trip to the hospital, reducing the risk of
+								exposure to both you and healthcare workers. Early detection means you
+								can isolate yourself sonner, decreasing the risk of infection for others
+								who come in contact with you.
+							</p>
+						</div>
+					</div>
+					<div
+						class="md:w-1/2 my-5 md:my-10 flex flex-wrap md:flex-no-wrap justify-center md:justify-start"
+					>
+						<!-- icon -->
+						<div style="max-width: 70px;">
+							<img
+								class="my-6 md:my-0 md:pr-2"
+								src="./img/mission/lock.png"
+								alt="lock"
+							/>
+						</div>
+						<!-- text -->
+						<div class="w-full md:w-10/12">
+							<h2 class="mb-2 text-2xl font-bold text-gray-200">End lockdowns</h2>
+							<p>
+								Global detection and tracking of infected individuals helps end current
+								lockdowns safely. While also helping to prevent future ones. Early
+								detection and isolation of COVID-19 positive patients means we can get
+								back to our normal routines sooner.
+							</p>
+						</div>
+					</div>
+					<div
+						class="md:w-1/2 my-5 md:my-10 flex flex-wrap md:flex-no-wrap justify-center md:justify-start"
+					>
+						<!-- icon -->
+						<div style="max-width: 70px;">
+							<img
+								class="my-6 md:my-0 md:pr-2"
+								src="./img/mission/cross.png"
+								alt="Cross"
+							/>
+						</div>
+						<!-- text -->
+						<div class="w-full md:w-10/12">
+							<h2 class="mb-2 text-2xl font-bold text-gray-200">
+								Increase access to care
+							</h2>
+							<p>
+								Testing for rural communities and others who live far from hospitals or
+								testing sites. No-cost testing solution for COVID-19.
+							</p>
+						</div>
+					</div>
+					<div
+						class="md:w-1/2 my-5 md:my-10 flex flex-wrap md:flex-no-wrap justify-center md:justify-start"
+					>
+						<!-- icon -->
+						<div style="max-width: 70px;">
+							<img
+								class="my-6 md:my-0 md:pr-1"
+								src="./img/mission/level.png"
+								alt="Stress level"
+							/>
+						</div>
+						<!-- text -->
+						<div class="w-full md:w-10/12">
+							<h2 class="mb-2 text-2xl font-bold text-gray-200">Decrease stress</h2>
+							<p>
+								Feeling symptoms? Find out your risk early without the stress of waiting
+								to get tested. No need to worry about testing availibility for access.
+							</p>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer md:px-20 md:py-12">
+				<div
+				  class="flex flex-col-reverse mx-auto max-w-screen-3xl md:flex-row md:justify-between"
+				>
+				  <section>
+					<div>
+					  <!-- TODO: Add link to privacy policy -->
+					  <a href="#">Privacy Policy</a>
+					</div>
+					<div>
+					  <p>© Copyright 2020 Virufy. All rights reserved.</p>
+					</div>
+				  </section>
+				  <!-- Icon container -->
+				  <section class="flex mb-16">
+					<a href="https://github.com/virufy" class="mr-3">
+					  <img src="img/logos/github-icon.png" alt="Github Icon" />
+					</a>
+					<a href="https://twitter.com/VirufyOrg" class="mr-3">
+					  <img src="img/logos/twitter-icon.png" alt="Twitter Icon" />
+					</a>
+					<a href="https://www.facebook.com/Virufy/" class="mr-3">
+					  <img src="img/logos/facebook-icon.png" alt="Facebook Icon" />
+					</a>
+					<a href="https://www.instagram.com/virufyorg/" class="mr-3">
+					  <img src="img/logos/instagram-icon.png" alt="Instagram Icon" />
+					</a>
+					<a href="https://www.linkedin.com/company/virufy/" class="mr-3">
+					  <img src="img/logos/linkedin-icon.png" alt="LinkedIn Icon" />
+					</a>
+				  </section>
+				</div>
+			  </footer>
+	</body>
+</html>
