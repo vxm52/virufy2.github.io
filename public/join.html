@@ -8,21 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Virufy - assess your risk for COVID-19 with our AI-powered app using your smartphone. A project of Stanford University's
-  COVID-19 Response Innovation Lab."
+      content="Interested in harnessing the power of AI in the fight against COVID?
+	See how you can get involved and become a part of team Virufy"
     />
     <meta name="author" content="Team Virufy" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <script async src="scripts/index.js"></script>
   </head>
-  
-  <body class="text-gray-100 font-body">
+
+  <body class="text-gray-100 font-body overscroll-none">
     <!-- Nav section -->
     <section class="wrapper md:pb-4 md:px-16 3xl:px-0">
-      <nav class="relative flex items-center justify-between md:py-4">
+      <nav class="flex items-center justify-between md:py-4">
         <!-- Virufy logo -->
-        <div class="md:ml-4 md:self-start">
+        <div>
           <a href="./index.html">
             <img
               class="w-1/2 md:w-full"
@@ -32,19 +32,19 @@
           </a>
         </div>
         <!-- Container for right side of nav -->
-        <div class="flex justify-end">
+        <div class="flex">
           <!-- Mobile language button -->
           <div class="inline-block mr-6">
             <button
               id="mobile-lng-btn"
               class="px-3 py-1 text-sm border rounded lg:hidden button text-secondary-200 border-secondary-200"
             >
-              🇺🇸&nbsp; English
+              English
             </button>
           </div>
           <!-- Mobile language menu -->
           <div
-            class="absolute top-0 left-0 z-10 hidden w-full h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200 md:mt-20"
+            class="absolute top-0 left-0 z-10 hidden w-full h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200 md:mt-40"
             id="mobile-lng-menu"
           >
             <section class="px-4 py-4">
@@ -53,17 +53,25 @@
               >
             </section>
             <!-- TODO: Add links to translated pages -->
-            <section class="px-4 py-4 border-t border-gray-200">
-              <a href="#"><span> 🇺🇸&nbsp; English</span></a>
+            <section
+              class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+            >
+              <a href="#"><span>English</span></a>
             </section>
-            <section class="px-4 py-4 border-t border-gray-200">
-              <a href="#"><span> 🇪🇸 &nbsp; Español</span></a>
+            <section
+              class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+            >
+              <a href="#"><span>Español</span></a>
             </section>
-            <section class="px-4 py-4 border-t border-gray-200">
-              <a href="#"><span> 🇧🇷 &nbsp; Português</span></a>
+            <section
+              class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+            >
+              <a href="#"><span>Português</span></a>
             </section>
-            <section class="px-4 py-4 border-t border-gray-200">
-              <a href="#"><span> 🇯🇵 &nbsp; 日本語</span></a>
+            <section
+              class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+            >
+              <a href="#"><span>日本語</span></a>
             </section>
             <!--
               TODO: If we want to implement saving, we  need to enable
@@ -119,7 +127,7 @@
 
         <!-- Mobile Nav -->
         <div
-          class="absolute top-0 z-10 hidden w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 lg:hidden md:mt-20"
+          class="absolute top-0 z-10 hidden w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 lg:hidden md:mt-40"
           id="mobile-nav"
         >
           <section class="px-4 py-4">
@@ -128,8 +136,8 @@
               <a href="./mission.html" class="w-1/2">
                 <span>Mission</span>
               </a>
-              <a href="https://blog.virufy.org/">
-                <span>Blog</span>
+              <a href="./data.html">
+                <span>Open data</span>
               </a>
             </div>
             <div class="flex mt-2">
@@ -169,28 +177,28 @@
 
         <!-- Desktop Nav -->
         <ul
-          class="relative items-baseline justify-between hidden w-3/4 2xl:w-1/2 lg:flex"
+          class="items-baseline justify-between hidden w-3/4 xl:w-1/2 lg:flex"
         >
-          <li class="group">
-            <div>
-              <a href="#" class="block pb-12">
-                About Us
-                <img
-                  class="inline-block"
-                  src="img/home/caret-down-icon.png"
-                  alt="caret icon"
-                />
-              </a>
-              <div
-                class="absolute top-0 flex flex-col hidden px-4 py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md transform transition ease-out duration-1000 group-hover:flex hover:flex justify-evenly"
-              >
-                <a class="pb-2" href="./mission.html">Mission</a>
-                <a class="pb-2" href="./team.html">Our team</a>
-                <a class="pb-2" href="https://oywj.org/">One Young World</a>
-                <a href="https://blog.virufy.org"/>Blog</a>
-              </div>
+          <div class="relative inline-block group">
+            <a href="#">
+              About Us
+              <img
+                class="inline-block"
+                src="img/home/caret-down-icon.png"
+                alt="caret icon"
+              />
+            </a>
+            <div
+              style="min-width: 150px;"
+              class="absolute flex-col hidden px-4 py-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
+            >
+              <a class="pb-2" href="./mission.html">Mission</a>
+              <a class="pb-2" href="./team.html">Our team</a>
+              <a class="pb-2" href="https://oywj.org/">One Young World</a>
+              <a href="./data.html">Open data</a>
             </div>
-          </li>
+          </div>
+
           <li>
             <a href="./research.html">
               <span>Our research</span>
@@ -216,352 +224,357 @@
             </a>
           </li>
           <!-- Language Dropdown -->
-          <li class="w-1/4 group">
-            <div class="w-full">
-              <a href="#" class="block pb-10">
-                <span
-                  class="px-4 py-2 overflow-visible border rounded text-secondary-200 border-secondary-200"
-                  >🇺🇸&nbsp; English</span
-                >
-              </a>
-              <div
-                class="absolute top-0 flex flex-col hidden py-4 mt-10 font-light text-gray-200 bg-white rounded shadow-md transform transition ease-out duration-1000 group-hover:flex hover:flex justify-evenly"
-              >
-                <a class="pb-2 mx-4" href="#">🇪🇸 &nbsp; Español</a>
-                <a class="pb-2 mx-4" href="#">🇧🇷 &nbsp; Português</a>
-                <a class="pb-2 mx-4" href="#">🇯🇵 &nbsp; 日本語</a>
-              </div>
+          <div class="relative inline-block group">
+            <button
+              class="px-4 py-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
+            >
+              English
+            </button>
+            <div
+              style="min-width: 100px;"
+              class="absolute flex-col hidden pt-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
+            >
+              <a class="pb-2 mx-4" href="#">Español</a>
+              <a class="pb-2 mx-4" href="#">Português</a>
+              <a class="pb-2 mx-4" href="#">日本語</a>
             </div>
-          </li>
+          </div>
         </ul>
       </nav>
     </section>
     <!-- End of nav section -->
-      <main>
-        <header class="flex items-center justify-between wrapper md:pb-4 md:px-16 3xl:px-8">
-          <div class="w-full md:w-7/12">
-            <h1 class="mb-6 text-4xl font-bold text-gray-300 md:text-5xl font-heading">
-              Join the fight to stop COVID
-            </h1>
-            <p class="text-xl">
-              We are a not-for-profit organization who are passionate about
-              making an impact on the world. We foster a great learning and
-              mentorship environment for people to grow and use their skills to
-              make an impact.
-            </p>
-          </div>
-          <div class="hidden md:block md:w-5/12">
-            <img class="ml-auto" src="./img/join-page/teamwork.png" alt="" />
-          </div>
-        </header>
 
-        <!-- Positions -->
-        <section class="justify-between wrapper md:pb-4 md:px-16 3xl:px-8">
-          <div class="mb-20">
-            <!-- Engineering -->
-            <div>
-              <div class="flex items-center justify-start mb-4">
-                <div>
-                  <h2 class="text-3xl font-bold text-gray-200">Engineering</h2>
-                </div>
-                <div>
-                  <img
-                    class="w-10/12 ml-2"
-                    src="./img/join-page/engineering.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="mb-6">
-                <div class="flex items-center justify-between mb-2">
-                  <div>
-                    <p class="text-xl">A.I. Engineer</p>
-                    <p class="">Remote - U.S.</p>
-                  </div>
-                  <div class="hidden md:flex">
-                    <a href="#">
-                      <button class="px-16 py-2 text-white rounded bg-primary">
-                        Apply
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="w-full md:w-8/12">
-                  <p>
-                    Our team of students works with machine learning, deep
-                    learning, and signal analysis for audio analysis in a
-                    medical setting. We welcome students with experience in
-                    these domains.
-                  </p>
-                </div>
-                <div class="mt-4 md:hidden">
-                  <a href="#">
-                    <button class="px-16 py-2 text-white rounded bg-primary">
-                      Apply
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
+    <main>
+      <header
+        class="flex items-center justify-between wrapper md:pb-4 md:px-16 3xl:px-8"
+      >
+        <div class="w-full md:w-7/12">
+          <h1
+            class="mb-6 text-4xl font-bold text-gray-300 md:text-5xl font-heading"
+          >
+            Join the fight to stop COVID
+          </h1>
+          <p class="text-xl">
+            We are a not-for-profit organization who are passionate about making
+            an impact on the world. We foster a great learning and mentorship
+            environment for people to grow and use their skills to make an
+            impact.
+          </p>
+        </div>
+        <div class="hidden md:block md:w-5/12">
+          <img class="ml-auto" src="./img/join-page/teamwork.png" alt="" />
+        </div>
+      </header>
 
-            <!-- Marketing -->
-            <div>
-              <div class="flex items-center justify-start mb-4">
-                <div>
-                  <h2 class="text-3xl font-bold text-gray-200">Marketing</h2>
-                </div>
-                <div>
-                  <img
-                    class="w-10/12 ml-2"
-                    src="./img/join-page/marketing.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="mb-6">
-                <div class="flex items-center justify-between mb-2">
-                  <div>
-                    <p class="text-xl">Video Editor</p>
-                    <p class="">Remote - Anywhere</p>
-                  </div>
-                  <div class="hidden md:flex">
-                    <a href="#">
-                      <button class="px-16 py-2 text-white rounded bg-primary">
-                        Apply
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="w-full md:w-8/12">
-                  <p>
-                    We are looking for a video editor to contribtue on a
-                    part-time volunteer basis who is passionate about editing
-                    digital content and creating graphics/illustrations for
-                    outreach and marketing purposes.
-                  </p>
-                </div>
-                <div class="mt-4 md:hidden">
-                  <a href="#">
-                    <button class="px-16 py-2 text-white rounded bg-primary">
-                      Apply
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!--Medical-->
-            <div>
-              <div class="flex items-center justify-start mb-4">
-                <div>
-                  <h2 class="text-3xl font-bold text-gray-200">Medical</h2>
-                </div>
-                <div>
-                  <img
-                    class="w-10/12 ml-2"
-                    src="./img/join-page/medical.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="mb-6">
-                <div class="flex items-center justify-between mb-2">
-                  <div>
-                    <p class="text-xl">Clinical Outreach</p>
-                    <p class="">Remote - Anywhere</p>
-                  </div>
-                  <div class="hidden md:flex">
-                    <a href="#">
-                      <button class="px-16 py-2 text-white rounded bg-primary">
-                        Apply
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="w-full md:w-8/12">
-                  <p>
-                    Big data from patients of multiple cultures and backgrounds
-                    is necessary for our AI algorithms to learn and be
-                    applicable globally. We need your help to reach out to
-                    hispitals across the world where many patients are tested
-                    positive for COVID-19 to conduct clinical data collection
-                    studies.
-                  </p>
-                </div>
-                <div class="mt-4 md:hidden">
-                  <a href="#">
-                    <button class="px-16 py-2 text-white rounded bg-primary">
-                      Apply
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <!--Next sub-position-->
-              <div class="mb-6">
-                <div class="flex items-center justify-between mb-2">
-                  <div>
-                    <p class="text-xl">Clinical Research Coordinator (CRC)</p>
-                    <p class="">Remote - Anywhere</p>
-                  </div>
-                  <div class="hidden md:flex">
-                    <a href="#">
-                      <button class="px-16 py-2 text-white rounded bg-primary">
-                        Apply
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="w-full md:w-8/12">
-                  <p>
-                    Seeking individuals to support in coordinating clinical
-                    activities. The CRC will be involved in preparing research
-                    protocols, reporting, informed consent, conduct of research,
-                    safeguarding PHI, and any general administrative matters.
-                  </p>
-                </div>
-                <div class="mt-4 md:hidden">
-                  <a href="#">
-                    <button class="px-16 py-2 text-white rounded bg-primary">
-                      Apply
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <!--Next sub-position-->
-              <div class="mb-6">
-                <div class="flex items-center justify-between mb-2">
-                  <div>
-                    <p class="text-xl">Health AI Mentors</p>
-                    <p class="">Remote - Anywhere</p>
-                  </div>
-                  <div class="hidden md:flex">
-                    <a href="#">
-                      <button class="px-16 py-2 text-white rounded bg-primary">
-                        Apply
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="w-full md:w-8/12">
-                  <p>
-                    Our team of students works with machine learning, deep
-                    learning, and signal analysis for audio, video, and textual
-                    analysis in a medical setting. In addition to student we
-                    also welcome the expertise of more established people within
-                    the field of AI in an advisor or mentorship role.
-                  </p>
-                </div>
-                <div class="mt-4 md:hidden">
-                  <a href="#">
-                    <button class="px-16 py-2 text-white rounded bg-primary">
-                      Apply
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- People -->
-            <div>
-              <div class="flex items-center justify-start mb-4">
-                <div>
-                  <h2 class="text-3xl font-bold text-gray-200">People</h2>
-                </div>
-                <div>
-                  <img
-                    class="w-10/12 ml-2"
-                    src="./img/join-page/people.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div class="mb-6">
-                <div class="flex items-center justify-between mb-2">
-                  <div>
-                    <p class="text-xl">Project Manager</p>
-                    <p class="">Remote - Anywhere</p>
-                  </div>
-                  <div class="hidden md:flex">
-                    <a href="#">
-                      <button class="px-16 py-2 text-white rounded bg-primary">
-                        Apply
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="w-full md:w-8/12">
-                  <p>
-                    We are seeking a project manager who will work closely with
-                    the development team in order to define a product roadmap,
-                    manage development progress and align with stakeholders.
-                  </p>
-                </div>
-                <div class="mt-4 md:hidden">
-                  <a href="#">
-                    <button class="px-16 py-2 text-white rounded bg-primary">
-                      Apply
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <!--Next sub-position-->
-              <div class="mb-6">
-                <div class="flex items-center justify-between mb-2">
-                  <div>
-                    <p class="text-xl">Youth Ambassador</p>
-                    <p class="">Remote - Anywhere</p>
-                  </div>
-                  <div class="hidden md:flex">
-                    <a href="#">
-                      <button class="px-16 py-2 text-white rounded bg-primary">
-                        Apply
-                      </button>
-                    </a>
-                  </div>
-                </div>
-                <div class="w-full md:w-8/12">
-                  <p>
-                    We are seeking students who can establish a campaign so that
-                    as many people as possible in their local or regional area
-                    are regularly using Virufy;s web and smartphone apps to
-                    provide their cough data.
-                  </p>
-                </div>
-                <div class="mt-4 md:hidden">
-                  <a href="#">
-                    <button class="px-16 py-2 text-white rounded bg-primary">
-                      Apply
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Help us -->
-        <section
-          class="hidden mx-10 my-10 text-center md:block md:mx-20 md:my-20"
-        >
+      <!-- Positions -->
+      <section class="justify-between wrapper md:pb-4 md:px-16 3xl:px-8">
+        <div class="mb-20">
+          <!-- Engineering -->
           <div>
-            <h2 class="mb-4 text-2xl font-bold text-gray-200">
-              Don't see what you are looking for? Reach out to us!
-            </h2>
+            <div class="flex items-center justify-start mb-4">
+              <div>
+                <h2 class="text-3xl font-bold text-gray-200">Engineering</h2>
+              </div>
+              <div>
+                <img
+                  class="w-10/12 ml-2"
+                  src="./img/join-page/engineering.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">A.I. Engineer</p>
+                  <p class="">Remote - U.S.</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a href="#">
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      Apply
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  Our team of students works with machine learning, deep
+                  learning, and signal analysis for audio analysis in a medical
+                  setting. We welcome students with experience in these domains.
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a href="#">
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    Apply
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
-            <a href="#">
-              <button class="px-16 py-2 text-white rounded bg-primary">
-                Contact us
-              </button>
-            </a>
-          </div>
-        </section>
-      </main>
 
-      <footer class="footer md:flex-row md:justify-between md:px-20 md:py-12">
+          <!-- Marketing -->
+          <div>
+            <div class="flex items-center justify-start mb-4">
+              <div>
+                <h2 class="text-3xl font-bold text-gray-200">Marketing</h2>
+              </div>
+              <div>
+                <img
+                  class="w-10/12 ml-2"
+                  src="./img/join-page/marketing.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">Video Editor</p>
+                  <p class="">Remote - Anywhere</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a href="#">
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      Apply
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  We are looking for a video editor to contribtue on a part-time
+                  volunteer basis who is passionate about editing digital
+                  content and creating graphics/illustrations for outreach and
+                  marketing purposes.
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a href="#">
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    Apply
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!--Medical-->
+          <div>
+            <div class="flex items-center justify-start mb-4">
+              <div>
+                <h2 class="text-3xl font-bold text-gray-200">Medical</h2>
+              </div>
+              <div>
+                <img
+                  class="w-10/12 ml-2"
+                  src="./img/join-page/medical.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">Clinical Outreach</p>
+                  <p class="">Remote - Anywhere</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a href="#">
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      Apply
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  Big data from patients of multiple cultures and backgrounds is
+                  necessary for our AI algorithms to learn and be applicable
+                  globally. We need your help to reach out to hispitals across
+                  the world where many patients are tested positive for COVID-19
+                  to conduct clinical data collection studies.
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a href="#">
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    Apply
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!--Next sub-position-->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">Clinical Research Coordinator (CRC)</p>
+                  <p class="">Remote - Anywhere</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a href="#">
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      Apply
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  Seeking individuals to support in coordinating clinical
+                  activities. The CRC will be involved in preparing research
+                  protocols, reporting, informed consent, conduct of research,
+                  safeguarding PHI, and any general administrative matters.
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a href="#">
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    Apply
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!--Next sub-position-->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">Health AI Mentors</p>
+                  <p class="">Remote - Anywhere</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a href="#">
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      Apply
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  Our team of students works with machine learning, deep
+                  learning, and signal analysis for audio, video, and textual
+                  analysis in a medical setting. In addition to student we also
+                  welcome the expertise of more established people within the
+                  field of AI in an advisor or mentorship role.
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a href="#">
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    Apply
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- People -->
+          <div>
+            <div class="flex items-center justify-start mb-4">
+              <div>
+                <h2 class="text-3xl font-bold text-gray-200">People</h2>
+              </div>
+              <div>
+                <img
+                  class="w-10/12 ml-2"
+                  src="./img/join-page/people.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">Project Manager</p>
+                  <p class="">Remote - Anywhere</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a href="#">
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      Apply
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  We are seeking a project manager who will work closely with
+                  the development team in order to define a product roadmap,
+                  manage development progress and align with stakeholders.
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a href="#">
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    Apply
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!--Next sub-position-->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">Youth Ambassador</p>
+                  <p class="">Remote - Anywhere</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a href="#">
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      Apply
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  We are seeking students who can establish a campaign so that
+                  as many people as possible in their local or regional area are
+                  regularly using Virufy;s web and smartphone apps to provide
+                  their cough data.
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a href="#">
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    Apply
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Help us -->
+      <section
+        class="hidden mx-10 my-10 text-center md:block md:mx-20 md:my-20"
+      >
+        <div>
+          <h2 class="mb-4 text-2xl font-bold text-gray-200">
+            Don't see what you are looking for? Reach out to us!
+          </h2>
+        </div>
+        <div>
+          <a href="mailto:info@virufy.org">
+            <button class="px-16 py-2 text-white rounded bg-primary">
+              Contact us
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer md:px-20 md:py-12">
+      <div
+        class="flex flex-col-reverse mx-auto max-w-screen-3xl md:flex-row md:justify-between"
+      >
         <section>
           <div>
+            <!-- TODO: Add link to privacy policy -->
             <a href="#">Privacy Policy</a>
           </div>
           <div>
@@ -586,7 +599,7 @@
             <img src="img/logos/linkedin-icon.png" alt="LinkedIn Icon" />
           </a>
         </section>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
