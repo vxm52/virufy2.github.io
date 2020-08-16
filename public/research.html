@@ -252,15 +252,24 @@
 
 			<section class="my-20 wrapper md:px-16 3xl:px-0">
 				<div class="border border-gray-400 rounded my-4">
-					<button
-						onclick="collapse(this)"
-						type="button"
-						class="collapsible w-full border-b border-gray-400 text-left font-bold py-2 px-4"
-					>
-						How will Virufy help collect cough samples?
-					</button>
+					<div class="relative flex items-center justify-end">
+						<button
+							onclick="collapse(this)"
+							type="button"
+							class="w-full border-b border-gray-400 text-left font-bold py-2 px-4"
+						>
+							How will Virufy help collect cough samples?
+						</button>
+						<img
+							class="absolute"
+							style="right: 1rem;"
+							src="img/research/expand.png"
+							alt="expand/collapse icon"
+						/>
+					</div>
+
 					<div
-						class="hidden overflow-hidden"
+						class="overflow-hidden"
 						style="max-height: 0; transition: max-height 200ms ease-out;"
 					>
 						<p class="my-6 mx-4">
@@ -289,15 +298,24 @@
 					</div>
 				</div>
 				<div class="border border-gray-400 rounded my-4">
-					<button
-						onclick="collapse(this)"
-						type="button"
-						class="collapsible w-full border-b border-gray-400 text-left font-bold py-2 px-4"
-					>
-						How might COVID-19 coughs be distinguishable?
-					</button>
+					<div class="relative flex items-center justify-end">
+						<button
+							onclick="collapse(this)"
+							type="button"
+							class="w-full border-b border-gray-400 text-left font-bold py-2 px-4"
+						>
+							How might COVID-19 coughs be distinguishable?
+						</button>
+						<img
+							class="absolute"
+							style="right: 1rem;"
+							src="img/research/expand.png"
+							alt="expand/collapse icon"
+						/>
+					</div>
+
 					<div
-						class="hidden overflow-hidden"
+						class="overflow-hidden"
 						style="max-height: 0; transition: max-height 200ms ease-out;"
 					>
 						<p class="my-6 mx-4">
@@ -317,15 +335,23 @@
 					</div>
 				</div>
 				<div class="border border-gray-400 rounded my-4">
-					<button
-						onclick="collapse(this)"
-						type="button"
-						class="collapsible w-full border-b border-gray-400 text-left font-bold py-2 px-4"
-					>
-						How will Virufy’s AI algorithm predict a COVID-19 diagnosis?
-					</button>
+					<div class="relative flex items-center justify-end">
+						<button
+							onclick="collapse(this)"
+							type="button"
+							class="w-full border-b border-gray-400 text-left font-bold py-2 px-4"
+						>
+							How will Virufy’s AI algorithm predict a COVID-19 diagnosis?
+						</button>
+						<img
+							class="absolute"
+							style="right: 1rem;"
+							src="img/research/expand.png"
+							alt="expand/collapse icon"
+						/>
+					</div>
 					<div
-						class="hidden overflow-hidden"
+						class="overflow-hidden"
 						style="max-height: 0; transition: max-height 200ms ease-out;"
 					>
 						<p class="my-6 mx-4">
@@ -646,13 +672,15 @@
 
 		<script>
 			function collapse(btn) {
-				var content = btn.nextElementSibling;
-				if (content.style.display === "block") {
-					content.style.maxHeight = "0";
-					content.style.display = "none";
-				} else {
-					content.style.display = "block";
+				const icon = btn.nextElementSibling;
+				const content = btn.parentElement.nextElementSibling;
+
+				if (content.style.maxHeight === "0px") {
 					content.style.maxHeight = content.scrollHeight + "px";
+					icon.setAttribute("src", "img/research/collapse.png");
+				} else {
+					content.style.maxHeight = "0px";
+					icon.setAttribute("src", "img/research/expand.png");
 				}
 			}
 		</script>
