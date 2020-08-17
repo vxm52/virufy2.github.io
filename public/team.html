@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A global team of passionate scientists | Team | Virufy</title>
+    <!-- TODO: Add Hotjar Tracking Script -->
+    <!-- TODO: Add Google Analytics Scripts -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Virufy is a global team of passionate young computer scientists
+      mentored by authorities in AI, signal processing, & medicine."
+    />
+    <meta name="author" content="Team Virufy" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <script async src="scripts/index.js"></script>
+  </head>
+  <body class="text-gray-100 font-body">
+    <!-- Nav section -->
+    <section class="wrapper md:pb-4 md:px-16 3xl:px-0">
+      <nav class="flex items-center justify-between md:py-4">
+        <!-- Virufy logo -->
+        <div>
+          <a href="./index.html">
+            <img
+              class="w-1/2 md:w-full"
+              src="img/logos/virufy-logo.png"
+              alt="Virufy logo"
+            />
+          </a>
+        </div>
+        <!-- Container for right side of nav -->
+        <div class="flex">
+          <!-- Mobile language button -->
+          <div class="inline-block mr-6">
+            <button
+              id="mobile-lng-btn"
+              class="px-3 py-1 text-sm border rounded lg:hidden button text-secondary-200 border-secondary-200"
+            >
+              English
+            </button>
+          </div>
+          <!-- Mobile language menu -->
+          <div
+            class="absolute top-0 left-0 z-10 hidden w-full h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200 md:mt-40"
+            id="mobile-lng-menu"
+          >
+            <section class="px-4 py-4">
+              <span class="inline-block text-base gray-200 text"
+                >Choose the language</span
+              >
+            </section>
+            <!-- TODO: Add links to translated pages -->
+            <section
+              class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+            >
+              <a href="#"><span>English</span></a>
+            </section>
+            <section
+              class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+            >
+              <a href="#"><span>Español</span></a>
+            </section>
+            <section
+              class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+            >
+              <a href="#"><span>Português</span></a>
+            </section>
+            <section
+              class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+            >
+              <a href="#"><span>日本語</span></a>
+            </section>
+            <!--
+              TODO: If we want to implement saving, we  need to enable
+              cookies to store the user's language preferences 
+            <section
+              class="flex justify-center px-4 py-8 border-t border-gray-200"
+            >
+              <button class="w-full px-8 py-2 text-white rounded bg-primary"
+              id="mobile-save-btn">
+                Save
+              </button>
+            </section>
+            -->
+          </div>
+
+          <!-- Mobile nav menu icon -->
+          <div class="inline-block cursor-pointer lg:hidden" id="menu-icon">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 menu"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </div>
+          <!-- Mobile nav close icon -->
+          <div
+            class="hidden inline-block cursor-pointer lg:hidden"
+            id="close-icon"
+          >
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 x"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <!-- End of container -->
+
+        <!-- Mobile Nav -->
+        <div
+          class="absolute top-0 z-10 hidden w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 lg:hidden md:mt-40"
+          id="mobile-nav"
+        >
+          <section class="px-4 py-4">
+            <span class="inline-block text-xs text-gray-200">About us</span>
+            <div class="flex mt-4">
+              <a href="./mission.html" class="w-1/2">
+                <span>Mission</span>
+              </a>
+              <a href="./data.html">
+                <span>Open data</span>
+              </a>
+            </div>
+            <div class="flex mt-2">
+              <a href="./team.html" class="w-1/2">
+                <span>Our team</span>
+              </a>
+              <a href="https://oywj.org/">
+                <span>One Young World</span>
+              </a>
+            </div>
+          </section>
+          <section class="px-4 py-4 border-t border-gray-200">
+            <div class="flex">
+              <a href="./research.html" class="w-1/2">
+                <span>Our research</span>
+              </a>
+              <a href="https://www.gofundme.com/f/virufyorg">
+                <span>GoFundMe</span>
+              </a>
+            </div>
+            <div class="flex mt-2">
+              <a href="./join.html">
+                <span>Join us</span>
+              </a>
+            </div>
+          </section>
+          <section
+            class="flex justify-center px-4 py-8 border-t border-gray-200"
+          >
+            <a href="https://form.jotform.com/201988192533159">
+              <button class="w-full px-8 py-2 text-white rounded bg-primary">
+                Donate your cough
+              </button>
+            </a>
+          </section>
+        </div>
+
+        <!-- Desktop Nav -->
+        <ul
+          class="items-baseline justify-between hidden w-3/4 xl:w-1/2 lg:flex"
+        >
+          <div class="relative inline-block group">
+            <a href="#">
+              About Us
+              <img
+                class="inline-block"
+                src="img/home/caret-down-icon.png"
+                alt="caret icon"
+              />
+            </a>
+            <div
+              style="min-width: 150px;"
+              class="absolute z-50 flex-col hidden px-4 py-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
+            >
+              <a class="pb-2" href="./mission.html">Mission</a>
+              <a class="pb-2" href="./team.html">Our team</a>
+              <a class="pb-2" href="https://oywj.org/">One Young World</a>
+              <a href="./data.html">Open data</a>
+            </div>
+          </div>
+
+          <li>
+            <a href="./research.html">
+              <span>Our research</span>
+            </a>
+          </li>
+          <li>
+            <a href="./join.html">
+              <span>Join us</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.gofundme.com/f/virufyorg">
+              <span>GoFund Me</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://form.jotform.com/201988192533159">
+              <button
+                class="px-4 py-1 border rounded text-secondary-200 border-secondary-200"
+              >
+                Donate your cough
+              </button>
+            </a>
+          </li>
+          <!-- Language Dropdown -->
+          <div class="relative inline-block group">
+            <button
+              class="px-4 py-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
+            >
+              English
+            </button>
+            <div
+              style="min-width: 100px;"
+              class="absolute z-50 flex-col hidden pt-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
+            >
+              <a class="pb-2 mx-4" href="#">Español</a>
+              <a class="pb-2 mx-4" href="#">Português</a>
+              <a class="pb-2 mx-4" href="#">日本語</a>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </section>
+    <!-- End of nav section -->
+
+    <main class="relative">
+      <header class="flex lg:pb-40 wrapper 3xl:px-0">
+        <section class="self-center mt-6 lg:mt-24 md:w-1/2 md:px-16 3xl:px-0">
+          <div>
+            <h1
+              class="text-4xl font-bold text-gray-300 md:text-5xl font-heading"
+            >Our team</h1>
+          </div>
+          <div class="my-2">
+            <p class="mr-6 text-2xl sm:mr-0">We are all passionate about combining tech with global health, social good, and equity in order to fight the pandemic.</p>
+          </div>
+        </section>
+      </header>
+      <img
+        class="absolute top-0 right-0 hidden w-full -z-10 md:block"
+        src="img/team/header-bg.png"
+        alt="Illustration of woman
+          holding smartphone"
+      />
+
+
+      <!-- Wrapper -->
+      <div class="wrapper md:px-16 3xl:px-0 2xl:mt-24">
+        <!-- Collaboration section -->
+        <section class="md:mb-32">
+          <div class="mb-6">
+            <h2 class="text-3xl font-bold text-gray-200">Collaboration</h2>
+          </div>
+          <div class="mb-6 lg:w-4/5">
+            <p>We are a team of over twenty enthusiastic, ambitious youth and students representing 17 universities: California Northstate University School of Medicine, Cornell, Duke, Harvard, Harvey Mudd, Lambda School, Northeastern, Princeton, Stanford, UC Irvine, UCLA, UPenn, UC Santa Barbara, UCSF School of Medicine, York University/Sheridan College, Western University in Ontario, and WUSTL.  We’re also worldwide, with members hailing from the USA, Canada, Japan, Nepal, Colombia, Peru, Brazil, Nepal, India, and Pakistan, with a broad global reach.</p>
+          </div>
+          <!-- Logo Container -->
+          <div
+            class="flex flex-col justify-center my-8 md:mt-16 md:flex-row md:justify-between"
+          >
+            <div>
+              <img
+                class="mx-auto mb-4"
+                src="img/logos/covid-19-RIL-logo.png"
+                alt="Covid-19 Response Innovation Lab logo"
+              />
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-2"
+                src="img/logos/one-young-world-logo.png"
+                alt="One Young World logo"
+              />
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-4"
+                src="img/logos/jig-jp-logo.png"
+                alt="Jig JP logo"
+              />
+            </div>
+            <div>
+              <img
+                class="mx-auto mb-2"
+                src="img/logos/stanford-h4r-logo.png"
+                alt="Stanford Hacking 4 Recovery logo"
+              />
+            </div>
+            <div class="mt-10 md:mt-0">
+              <img
+                class="mx-auto"
+                src="img/logos/siena-company-logo.png"
+                alt="Siena Company logo"
+              />
+            </div>
+          </div><!-- End of Logo container -->
+        </section><!-- End of collaboration section -->
+      </div>
+      <!-- End of wrapper -->
+
+      <!-- Wrapper for Leadership section -->
+      <div class="wrapper md:px-16 3xl:px-0">
+        <div class="mb-6 md:mb-20">
+          <h2 class="text-3xl font-bold text-center text-gray-200">Leadership</h2>
+        </div>
+        <section class="flex flex-col flex-wrap mb-10 xl:justify-center md:justify-around md:flex-row">
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/amil.jpg" 
+                alt="Amil Khanzada"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Amil Khanzada</h5>
+              <h6 class="text-lg">
+                Founder & CTO
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/amilkhanzada">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center">
+                One Young World Peace Ambassador<br>
+                Alumni, UC Berkeley Computer Science
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/kim.jpg" 
+                alt="Kim Tran"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Kim Tran</h5>
+              <h6 class="text-lg">
+                VP of Operations
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/kimberley-tran-princeton/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center">
+                Pandemic Fellow for the Institute for Public Health and Medicine
+                at the Feinberg School of Medicine<br>
+                B.A. Molecular Biology, Princeton University
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/sabrina.jpg" 
+                alt="Sabrina Shen"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Sabrina Shen</h5>
+              <h6 class="text-lg">
+                Lead ML Engineer
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/sabrina-shen-83bba5172/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center">
+                Harvey Mudd Aero Lab Student Researcher<br>
+                Autonomous Campus Robot Team Member<br>
+                B.E. Electrical and Electronics Engineering, Harvey Mudd
+                College<br>
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/vivian.jpg" 
+                alt="Vivian Ross"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Vivian Ross</h5>
+              <h6 class="text-lg">
+                Lead Web Developer
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/vivian-ross-4370831a1">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center">
+                IEEE Member<br>
+                B.S. Computer Engineering, UC Santa Barbara
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 h-auto mx-auto my-2 rounded-full" 
+                src="img/team/jason.jpg" 
+                alt="Jason Pareja Jauregui"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Jason Pareja
+              Jauregui</h5>
+              <h6 class="text-lg">
+                Peru Community Outreach Manager
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/jasonpareja/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center">
+                One Young World Latin America Coordinating Ambassador<br>
+                Graduate, MIT Sloan School of Management
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/sebastian.jpg" 
+                alt="Sebastian Pedraza"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Sebastian
+                Pedraza</h5>
+              <h6 class="text-lg">
+                Colombia Community Outreach Manager
+              </h6>
+              <div class="my-2">
+                <a href="https://co.linkedin.com/in/jean-sebastian-pedraza-paez-02b8aa11a">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center">
+                YPARD Steering Committee Member<br>
+                Political Science and Public Management, International University of La Rioja
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/samantha.jpg" 
+                alt="Samantha Lieberman"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Samantha
+                Lieberman</h5>
+              <h6 class="text-lg">
+                HR Business Partner
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/samantha-lieberman-9265a517/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center">
+                Startup People Operations Executive<br>
+                B.A. Environmental Studies, University of Pennsylvania
+              </p>
+            </div>
+        </section>
+      </div>
+      <!-- End of wrapper for Leadership section -->
+
+      <!-- Wrapper for Advisory section -->
+      <div class="wrapper md:px-16 3xl:px-0 md:mt-20">
+        <div class="mb-6 md:mb-16">
+          <h2 class="text-3xl font-bold text-center text-gray-200">Advisory</h2>
+        </div>
+        <section class="flex flex-col flex-wrap mb-10 xl:justify-center md:justify-around md:flex-row">
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4 ">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/kara-meister.jpg" 
+                alt="Kara Meister, M.D."
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Kara Meister,
+              M.D.</h5>
+              <h6 class="text-lg">
+                Medical Advisor
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/kara-meister-200335110/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center">
+                Clinical Assistant Professor, Otolaryngology<br>
+                Stanford School of Medicine
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4 ">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/mary.jpg" 
+                alt="Mary Dunne"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Mary Dunne,
+                M.D.</h5>
+              <h6 class="text-lg">
+                Medical Advisor
+              </h6>
+              <div class="my-2">
+                <a href="https://dci.stanford.edu/mimi-dunne-md/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center">
+                Emergency Medicine and Palliative Care Physician<br>
+                Stanford Distinguished Career Institute 2019-2020
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 h-auto mx-auto my-2 rounded-full" 
+                src="img/team/nathan.jpg" 
+                alt="Nathan Thomas"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Nathan Thomas</h5>
+              <h6 class="text-lg">
+                Executive Advisor
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/namathom/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center sm:w-1/2">
+                One Young World Peace Ambassador<br>
+                Founder and CEO - All We Are
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/allen.jpg" 
+                alt="Allen Chin"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Allen Chin</h5>
+              <h6 class="text-lg">
+                Executive Advisor HR
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/sabrina-shen-83bba5172/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center sm:w-2/3">
+                Chief People Officer
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/ayesha.jpg" 
+                alt="Ayesha Fraser"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Ayesha Fraser, CCRP</h5>
+              <h6 class="text-lg">
+                Clinical Research Advisor
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/ayeshakfraser/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center sm:w-2/3">
+                Clinical Research Regulatory Specialist<br>
+                Stanford University
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 h-auto mx-auto my-2 rounded-full" 
+                src="img/team/todd.jpg" 
+                alt="Todd Basche"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Todd Basche</h5>
+              <h6 class="text-lg">
+                Executive Advisor
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/toddbasche/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center sm:w-1/2">
+                CEO - Transformational Products Inc.<br>
+                Stanford Lean Launchpad Mentor
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/taisuke.jpg" 
+                alt="Taisuke Fukuno"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Taisuke
+                Fukuno</h5>
+              <h6 class="text-lg">
+                Japan Outreach Advisor
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/taisuke-fukuno-a3b3415">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center sm:w-2/3">
+                Founder & Chairman - jig.jp<br>
+                Sabae, Japan
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center mx-10 mb-10 md:w-1/3 lg:w-1/4">
+              <img
+                class="w-64 mx-auto my-2 rounded-full" 
+                src="img/team/pedro.jpg" 
+                alt="Pedro Siena"
+              />
+              <h5 class="mt-4 text-xl font-semibold text-gray-200">Pedro Siena</h5>
+              <h6 class="text-lg">
+                Brazil Outreach Advisor
+              </h6>
+              <div class="my-2">
+                <a href="https://www.linkedin.com/in/pedrosiena/">
+                  <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                  icon"/>
+                </a>
+              </div>
+              <p class="w-5/6 text-center sm:w-2/3">
+                Founder and CEO - Siena Company<br>
+                São Carlos, Brazil
+              </p>
+            </div>
+        </section>
+      </div>
+
+      <!-- Wrapper for Contributors section -->
+      <!-- Remove hidden once contributor information is available -->
+      <div class="hidden wrapper md:px-16 3xl:px-0 md:mt-20">
+        <div class="mb-6 md:mb-12">
+          <h2 class="text-3xl font-bold text-center text-gray-200">Contributors</h2>
+        </div>
+        <section>
+          <!-- Team column (mobile) / row (desktop) -->
+          <div class="mb-4 grid md:grid-cols-2 xl:grid-cols-3 md:row-gap-8">
+            <div class="flex items-center justify-center mb-4 md:mb-0 md:col-span-1">
+              <p class="mr-4 text-xl font-semibold text-gray-200">
+                John Woo - <span class="font-normal">UX Designer</span>
+              </p>
+              <a href="#">
+                <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                icon"/>
+              </a>
+            </div>
+
+            <div class="flex items-center justify-center mb-4 md:mb-0 md:col-span-1">
+              <p class="mr-4 text-xl font-semibold text-gray-200">
+                John Woo - <span class="font-normal">UX Designer</span>
+              </p>
+              <a href="#">
+                <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                icon"/>
+              </a>
+            </div>
+
+            <div class="flex items-center justify-center mb-4 md:mb-0 md:col-span-1">
+              <p class="mr-4 text-xl font-semibold text-gray-200">
+                John Woo - <span class="font-normal">UX Designer</span>
+              </p>
+              <a href=#"">
+                <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                icon"/>
+              </a>
+            </div>
+          </div>
+
+          <!-- Team column (mobile) / row (desktop) -->
+          <div class="mb-4 grid md:grid-cols-2 xl:grid-cols-3 md:row-gap-8">
+            <div class="flex items-center justify-center mb-4 md:mb-0 md:col-span-1">
+              <p class="mr-4 text-xl font-semibold text-gray-200">
+                John Woo - <span class="font-normal">UX Designer</span>
+              </p>
+              <a href="#">
+                <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                icon"/>
+              </a>
+            </div>
+
+            <div class="flex items-center justify-center mb-4 md:mb-0 md:col-span-1">
+              <p class="mr-4 text-xl font-semibold text-gray-200">
+                John Woo - <span class="font-normal">UX Designer</span>
+              </p>
+              <a href="#">
+                <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                icon"/>
+              </a>
+            </div>
+
+            <div class="flex items-center justify-center mb-4 md:mb-0 md:col-span-1">
+              <p class="mr-4 text-xl font-semibold text-gray-200">
+                John Woo - <span class="font-normal">UX Designer</span>
+              </p>
+              <a href=#"">
+                <img src="img/logos/linkedin-icon-dark.png" alt="LinkedIn
+                icon"/>
+              </a>
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+      <!-- Wrapper for CTA section -->
+      <div class="wrapper md:px-16 3xl:px-0 md:mt-20">
+        <div class="mb-6 md:mb-20">
+          <h2 class="text-2xl font-bold text-center text-gray-200 md:text-3xl">Interested in
+          helping out? Join our team!</h2>
+          <div class="mx-auto my-10 text-center">
+            <a href="join.html">
+              <button class="px-8 py-2 text-white rounded bg-primary">
+                Join now
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer md:px-20 md:py-12">
+      <div
+        class="flex flex-col-reverse mx-auto max-w-screen-3xl md:flex-row md:justify-between"
+      >
+        <section>
+          <div>
+            <!-- TODO: Add link to privacy policy -->
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div>
+            <p>© Copyright 2020 Virufy. All rights reserved.</p>
+          </div>
+        </section>
+        <!-- Icon container -->
+        <section class="flex mb-16">
+          <a href="https://github.com/virufy" class="mr-3">
+            <img src="img/logos/github-icon.png" alt="Github Icon" />
+          </a>
+          <a href="https://twitter.com/VirufyOrg" class="mr-3">
+            <img src="img/logos/twitter-icon.png" alt="Twitter Icon" />
+          </a>
+          <a href="https://www.facebook.com/Virufy/" class="mr-3">
+            <img src="img/logos/facebook-icon.png" alt="Facebook Icon" />
+          </a>
+          <a href="https://www.instagram.com/virufyorg/" class="mr-3">
+            <img src="img/logos/instagram-icon.png" alt="Instagram Icon" />
+          </a>
+          <a href="https://www.linkedin.com/company/virufy/" class="mr-3">
+            <img src="img/logos/linkedin-icon.png" alt="LinkedIn Icon" />
+          </a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
+
