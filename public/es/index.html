@@ -47,7 +47,7 @@
   </head>
   <body class="text-gray-100 font-body overscroll-none">
     <!-- Nav section -->
-    <section class="wrapper md:pb-4 md:px-16 3xl:px-0">
+    <section class="relative wrapper">
       <nav class="flex items-center justify-between md:py-4">
         <!-- Virufy logo -->
         <div>
@@ -71,10 +71,7 @@
             </button>
           </div>
           <!-- Mobile language menu -->
-          <div
-            class="absolute top-0 left-0 z-10 hidden w-full h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200 md:mt-40"
-            id="mobile-lng-menu"
-          >
+          <div class="hidden text-center mobile-menu" id="mobile-lng-menu">
             <section class="px-4 py-4">
               <span class="inline-block text-base gray-200 text"
                 >Seleccione el idioma</span
@@ -149,10 +146,7 @@
         <!-- End of container -->
 
         <!-- Mobile Nav -->
-        <div
-          class="absolute top-0 z-10 hidden w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 lg:hidden md:mt-40"
-          id="mobile-nav"
-        >
+        <div class="hidden px-6 mobile-menu" id="mobile-nav">
           <section class="px-4 py-4">
             <span class="inline-block text-xs text-gray-200"
               >Quiénes somos</span
@@ -168,9 +162,6 @@
             <div class="flex mt-2">
               <a href="./team.html" class="w-1/2">
                 <span>Nuestro equipo</span>
-              </a>
-              <a href="https://oywj.org/">
-                <span>One Young World</span>
               </a>
             </div>
           </section>
@@ -219,7 +210,6 @@
             >
               <a class="pb-2" href="./mission.html">Misión</a>
               <a class="pb-2" href="./team.html">Nuestro equipo</a>
-              <a class="pb-2" href="https://oywj.org/">One Young World</a>
               <a href="./data.html">Datos abiertos</a>
             </div>
           </div>
@@ -434,39 +424,49 @@
             class="flex flex-col justify-center md:flex-row md:justify-between"
           >
             <div>
-              <img
-                class="mx-auto mb-4"
-                src="../img/logos/covid-19-RIL-logo.png"
-                alt="Covid-19 Response Innovation Lab logo"
-              />
+              <a href="https://responselab.stanford.edu/">
+                <img
+                  class="mx-auto mb-4"
+                  src="../img/logos/covid-19-RIL-logo.png"
+                  alt="Covid-19 Response Innovation Lab logo"
+                />
+              </a>
             </div>
             <div>
-              <img
-                class="mx-auto mb-2"
-                src="../img/logos/one-young-world-logo.png"
-                alt="One Young World logo"
-              />
+              <a href="https://www.oneyoungworld.com/counsellors">
+                <img
+                  class="mx-auto mb-2"
+                  src="../img/logos/one-young-world-logo.png"
+                  alt="One Young World logo"
+                />
+              </a>
             </div>
             <div>
-              <img
-                class="mx-auto mb-4"
-                src="../img/logos/jig-jp-logo.png"
-                alt="Jig JP logo"
-              />
+              <a href="https://jig.jp/">
+                <img
+                  class="mx-auto mb-4"
+                  src="../img/logos/jig-jp-logo.png"
+                  alt="Jig JP logo"
+                />
+              </a>
             </div>
             <div>
-              <img
-                class="mx-auto mb-2"
-                src="../img/logos/stanford-h4r-logo.png"
-                alt="Stanford Hacking 4 Recovery logo"
-              />
+              <a href="https://h4r.stanford.edu/">
+                <img
+                  class="mx-auto mb-2"
+                  src="../img/logos/stanford-h4r-logo.png"
+                  alt="Stanford Hacking 4 Recovery logo"
+                />
+              </a>
             </div>
             <div class="mt-10 md:mt-0">
-              <img
-                class="mx-auto"
-                src="../img/logos/siena-company-logo.png"
-                alt="Siena Company logo"
-              />
+              <a href="https://sienacompany.com/">
+                <img
+                  class="mx-auto"
+                  src="../img/logos/siena-company-logo.png"
+                  alt="Siena Company logo"
+                />
+              </a>
             </div>
           </div>
         </section>
@@ -566,13 +566,13 @@
       window.cookieconsent.initialise({
         palette: {
           popup: {
-            background: "#00B696"
+            background: "#00B696",
           },
           button: {
             background: "#08979C",
-            text: "#FFF"
-          }
-        }
+            text: "#FFF",
+          },
+        },
       });
     </script>
   </body>
