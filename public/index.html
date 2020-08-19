@@ -47,7 +47,7 @@
   </head>
   <body class="text-gray-100 font-body overscroll-none">
     <!-- Nav section -->
-    <section class="relative wrapper md:pb-4 md:px-16 3xl:px-0">
+    <section class="relative wrapper">
       <nav class="flex items-center justify-between md:py-4">
         <!-- Virufy logo -->
         <div>
@@ -71,10 +71,7 @@
             </button>
           </div>
           <!-- Mobile language menu -->
-          <div
-            class="absolute top-0 left-0 z-10 hidden w-full h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200 md:mt-20"
-            id="mobile-lng-menu"
-          >
+          <div class="hidden px-6 text-center mobile-menu" id="mobile-lng-menu">
             <section class="px-4 py-4">
               <span class="inline-block text-base gray-200 text"
                 >Choose the language</span
@@ -154,10 +151,7 @@
         <!-- End of container -->
 
         <!-- Mobile Nav -->
-        <div
-          class="absolute top-0 left-0 z-10 hidden w-full h-screen px-6 mt-16 text-gray-400 bg-white border-t border-gray-200 lg:hidden md:mt-20"
-          id="mobile-nav"
-        >
+        <div class="hidden mobile-menu" id="mobile-nav">
           <section class="px-4 py-4">
             <span class="inline-block text-xs text-gray-200">About us</span>
             <div class="flex mt-4">
