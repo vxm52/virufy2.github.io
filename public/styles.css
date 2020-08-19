@@ -1276,31 +1276,18 @@ video {
 }
 
 @-webkit-keyframes spin{
-  from{
-    transform: rotate(0deg);
-  }
-
   to{
     transform: rotate(360deg);
   }
 }
 
 @keyframes spin{
-  from{
-    transform: rotate(0deg);
-  }
-
   to{
     transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes ping{
-  0%{
-    transform: scale(1);
-    opacity: 1;
-  }
-
   75%, 100%{
     transform: scale(2);
     opacity: 0;
@@ -1308,11 +1295,6 @@ video {
 }
 
 @keyframes ping{
-  0%{
-    transform: scale(1);
-    opacity: 1;
-  }
-
   75%, 100%{
     transform: scale(2);
     opacity: 0;
@@ -1320,20 +1302,12 @@ video {
 }
 
 @-webkit-keyframes pulse{
-  0%, 100%{
-    opacity: 1;
-  }
-
   50%{
     opacity: .5;
   }
 }
 
 @keyframes pulse{
-  0%, 100%{
-    opacity: 1;
-  }
-
   50%{
     opacity: .5;
   }
@@ -1347,7 +1321,7 @@ video {
   }
 
   50%{
-    transform: translateY(0);
+    transform: none;
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
@@ -1361,13 +1335,16 @@ video {
   }
 
   50%{
-    transform: translateY(0);
+    transform: none;
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
 .footer {
+  --bg-opacity: 1;
+  background-color: #00B696;
+  background-color: rgba(0, 182, 150, var(--bg-opacity));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 2.5rem;
@@ -1375,18 +1352,30 @@ video {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
-  --bg-opacity: 1;
-  background-color: #00B696;
-  background-color: rgba(0, 182, 150, var(--bg-opacity));
 }
 
 .wrapper {
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
   max-width: 1680px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px){
+  .wrapper{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1680px){
+  .wrapper{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 640px){
@@ -1919,6 +1908,10 @@ video {
 
   .\32xl\:mb-96{
     margin-bottom: 24rem;
+  }
+
+  .\32xl\:w-1\/2{
+    width: 50%;
   }
 }
 

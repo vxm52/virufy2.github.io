@@ -9,5 +9,5 @@
 }
 
 .wrapper {
-  @apply px-4 mx-auto mt-8 max-w-screen-3xl;
+  @apply px-4 mx-auto mt-8 max-w-screen-3xl md:pb-4 md:px-16 3xl:px-0;
 }
