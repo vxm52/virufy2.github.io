@@ -11,3 +11,7 @@
 .wrapper {
   @apply px-4 mx-auto mt-8 max-w-screen-3xl md:pb-4 md:px-16 3xl:px-0;
 }
+
+.mobile-menu {
+  @apply absolute top-0 left-0 z-10 w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 md:mt-20;
+}

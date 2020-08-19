@@ -1378,6 +1378,32 @@ video {
   }
 }
 
+.mobile-menu {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  --border-opacity: 1;
+  border-color: #edf2f7;
+  border-color: rgba(237, 242, 247, var(--border-opacity));
+  border-top-width: 1px;
+  height: 100vh;
+  margin-top: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  --text-opacity: 1;
+  color: #21242C;
+  color: rgba(33, 36, 44, var(--text-opacity));
+  width: 100%;
+  z-index: 10;
+}
+
+@media (min-width: 768px){
+  .mobile-menu{
+    margin-top: 5rem;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
