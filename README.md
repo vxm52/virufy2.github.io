@@ -68,4 +68,4 @@ This will push the contents of the `public/` directory on `master` to the `gh-pa
 branch. Github will automatically update the contents of the deployed website
 based on the new commits pushed.
 
-[More information]("https://gist.github.com/cobyism/4730490")
+[More information](https://gist.github.com/cobyism/4730490)
