@@ -55,6 +55,9 @@ Github doesn't have a clear method of deploying subdirectories (eg. `public/`).
 The current solution is to have the `gh-pages` branch hold only
 the contents in `public/` and deploy the `gh-pages` branch.
 
+❗This is temporary, there are some issues with this method regarding the CNAME
+commit that's created when you add a custom domain on GitHub
+
 To keep the deployed website up to date with master:
 
 1. Make sure your local `master` branch is up to date
@@ -65,4 +68,4 @@ This will push the contents of the `public/` directory on `master` to the `gh-pa
 branch. Github will automatically update the contents of the deployed website
 based on the new commits pushed.
 
-[More information](https://stackoverflow.com/questions/36782467/set-subdirectory-as-website-root-on-github-pages)
+[More information]("https://gist.github.com/cobyism/4730490")
