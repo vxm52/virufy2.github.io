@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Verify your COVID-19 risk with a smartphone | Home | Virufy</title>
+    <title>
+      Verify your COVID-19 risk with a smartphone | Join us | Virufy
+    </title>
     <!-- TODO: Add Hotjar Tracking Script -->
-    <!-- TODO: Add Google Analytics Scripts -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -14,12 +15,27 @@
     <meta name="author" content="Team Virufy" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
-    <script async src="scripts/index.js"></script>
+    <script defer src="scripts/index.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-165690517-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-165690517-3");
+    </script>
   </head>
 
   <body class="text-gray-100 font-body overscroll-none">
     <!-- Nav section -->
-    <section class="wrapper md:pb-4 md:px-16 3xl:px-0">
+    <section class="relative wrapper">
       <nav class="flex items-center justify-between md:py-4">
         <!-- Virufy logo -->
         <div>
@@ -44,7 +60,7 @@
           </div>
           <!-- Mobile language menu -->
           <div
-            class="absolute top-0 left-0 z-10 hidden w-full h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200 md:mt-40"
+            class="hidden text-center mobile-menu"
             id="mobile-lng-menu"
           >
             <section class="px-4 py-4">
@@ -127,7 +143,7 @@
 
         <!-- Mobile Nav -->
         <div
-          class="absolute top-0 z-10 hidden w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 lg:hidden md:mt-40"
+          class="hidden px-6 mobile-menu"
           id="mobile-nav"
         >
           <section class="px-4 py-4">
@@ -143,9 +159,6 @@
             <div class="flex mt-2">
               <a href="./team.html" class="w-1/2">
                 <span>Our team</span>
-              </a>
-              <a href="https://oywj.org/">
-                <span>One Young World</span>
               </a>
             </div>
           </section>
@@ -181,7 +194,7 @@
         >
           <div class="relative inline-block group">
             <a href="#">
-              About Us
+              About us
               <img
                 class="inline-block"
                 src="img/home/caret-down-icon.png"
@@ -194,7 +207,6 @@
             >
               <a class="pb-2" href="./mission.html">Mission</a>
               <a class="pb-2" href="./team.html">Our team</a>
-              <a class="pb-2" href="https://oywj.org/">One Young World</a>
               <a href="./data.html">Open data</a>
             </div>
           </div>
@@ -267,7 +279,7 @@
       </header>
 
       <!-- Positions -->
-      <section class="justify-between wrapper md:pb-4 md:px-16 3xl:px-0">
+      <section class="justify-between my-10 wrapper md:px-16 md:my-20 3xl:px-0">
         <div class="mb-20">
           <!-- Engineering -->
           <div>
@@ -290,7 +302,9 @@
                   <p class="">Remote - U.S.</p>
                 </div>
                 <div class="hidden md:flex">
-                  <a href="assets/ai_engineers.pdf">
+                  <a
+                    href="https://docs.google.com/document/d/1FJfyaFGUDIayoo4T3z-Zy23jEag1s597_RS98LCc_aU/edit?usp=sharing"
+                  >
                     <button class="px-16 py-2 text-white rounded bg-primary">
                       Apply
                     </button>
@@ -305,7 +319,45 @@
                 </p>
               </div>
               <div class="mt-4 md:hidden">
-                <a href="assets/ai_engineers.pdf">
+                <a
+                  href="https://docs.google.com/document/d/1FJfyaFGUDIayoo4T3z-Zy23jEag1s597_RS98LCc_aU/edit?usp=sharing"
+                >
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    Apply
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!--Next sub-position-->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">Health AI Mentors</p>
+                  <p class="">Remote - Anywhere</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a
+                    href="https://docs.google.com/document/d/1tTMmWLi8pBqouc2xUKj-wUyeDPcEyWrYGjHIXpnKORA/edit?usp=sharing"
+                  >
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      Apply
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  Our team of students works with machine learning, deep
+                  learning, and signal analysis for audio, video, and textual
+                  analysis in a medical setting. In addition to student we also
+                  welcome the expertise of more established people within the
+                  field of AI in an advisor or mentorship role.
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a
+                  href="https://docs.google.com/document/d/1tTMmWLi8pBqouc2xUKj-wUyeDPcEyWrYGjHIXpnKORA/edit?usp=sharing"
+                >
                   <button class="px-16 py-2 text-white rounded bg-primary">
                     Apply
                   </button>
@@ -313,6 +365,41 @@
               </div>
             </div>
           </div>
+
+          <!--Next sub-position-->
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-2">
+              <div>
+                <p class="text-xl">Twilio Developer</p>
+                <p class="">Remote - Anywhere</p>
+              </div>
+              <div class="hidden md:flex">
+                <a
+                  href="https://docs.google.com/document/d/1NEJiSC9VYZXM_Cf6OSB7IOU5Hq_sweBu7qysrqbq0Tk/edit?usp=sharing"
+                >
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    Apply
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="w-full md:w-8/12">
+              <p>
+                We are looking for a qualified Twilio developer to join our Engineering team.  If you’re passionate about developing our Twilio backend and helping people around the world, we would like to meet you. As a Twilio developer, you’ll collaborate with internal teams to develop and periodically update our Twilio infrastructure in a fast-paced environment.
+              </p>
+            </div>
+            <div class="mt-4 md:hidden">
+              <a
+                href="https://docs.google.com/document/d/1NEJiSC9VYZXM_Cf6OSB7IOU5Hq_sweBu7qysrqbq0Tk/edit?usp=sharing"
+              >
+                <button class="px-16 py-2 text-white rounded bg-primary">
+                  Apply
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
 
           <!-- Marketing -->
           <div>
@@ -346,7 +433,7 @@
               </div>
               <div class="w-full md:w-8/12">
                 <p>
-                  We are looking for a video editor to contribtue on a part-time
+                  We are looking for a video editor to contribute on a part-time
                   volunteer basis who is passionate about editing digital
                   content and creating graphics/illustrations for outreach and
                   marketing purposes.
@@ -385,7 +472,9 @@
                   <p class="">Remote - Anywhere</p>
                 </div>
                 <div class="hidden md:flex">
-                  <a href="assets/clinical_outreach_member.pdf">
+                  <a
+                    href="https://docs.google.com/document/d/1NSJkZ7lJdxX7YrTGcZhtJHzAJd6HtAwefERIF2y15A8/edit?usp=sharing"
+                  >
                     <button class="px-16 py-2 text-white rounded bg-primary">
                       Apply
                     </button>
@@ -402,7 +491,9 @@
                 </p>
               </div>
               <div class="mt-4 md:hidden">
-                <a href="assets/clinical_outreach_member.pdf">
+                <a
+                  href="https://docs.google.com/document/d/1NSJkZ7lJdxX7YrTGcZhtJHzAJd6HtAwefERIF2y15A8/edit?usp=sharing"
+                >
                   <button class="px-16 py-2 text-white rounded bg-primary">
                     Apply
                   </button>
@@ -417,7 +508,9 @@
                   <p class="">Remote - Anywhere</p>
                 </div>
                 <div class="hidden md:flex">
-                  <a href="assets/clinical_research_coordinator.pdf">
+                  <a
+                    href="https://docs.google.com/document/d/17_Jd9ptQL2hn-oqzkcrCmpl0_CZxK4pyKpor9Zc-nTQ/edit?usp=sharing"
+                  >
                     <button class="px-16 py-2 text-white rounded bg-primary">
                       Apply
                     </button>
@@ -433,39 +526,9 @@
                 </p>
               </div>
               <div class="mt-4 md:hidden">
-                <a href="assets/clinical_research_coordinator.pdf">
-                  <button class="px-16 py-2 text-white rounded bg-primary">
-                    Apply
-                  </button>
-                </a>
-              </div>
-            </div>
-            <!--Next sub-position-->
-            <div class="mb-6">
-              <div class="flex items-center justify-between mb-2">
-                <div>
-                  <p class="text-xl">Health AI Mentors</p>
-                  <p class="">Remote - Anywhere</p>
-                </div>
-                <div class="hidden md:flex">
-                  <a href="assets/ai_mentors.pdf">
-                    <button class="px-16 py-2 text-white rounded bg-primary">
-                      Apply
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div class="w-full md:w-8/12">
-                <p>
-                  Our team of students works with machine learning, deep
-                  learning, and signal analysis for audio, video, and textual
-                  analysis in a medical setting. In addition to student we also
-                  welcome the expertise of more established people within the
-                  field of AI in an advisor or mentorship role.
-                </p>
-              </div>
-              <div class="mt-4 md:hidden">
-                <a href="assets/ai_mentors.pdf">
+                <a
+                  href="https://docs.google.com/document/d/17_Jd9ptQL2hn-oqzkcrCmpl0_CZxK4pyKpor9Zc-nTQ/edit?usp=sharing"
+                >
                   <button class="px-16 py-2 text-white rounded bg-primary">
                     Apply
                   </button>
@@ -496,7 +559,9 @@
                   <p class="">Remote - Anywhere</p>
                 </div>
                 <div class="hidden md:flex">
-                  <a href="assets/project_manager.pdf">
+                  <a
+                    href="https://docs.google.com/document/d/1Q5dlwTL_W7yJzuAHuQxErxE34z7AeH7NESI4Q4aiQT8/edit?usp=sharing"
+                  >
                     <button class="px-16 py-2 text-white rounded bg-primary">
                       Apply
                     </button>
@@ -511,7 +576,9 @@
                 </p>
               </div>
               <div class="mt-4 md:hidden">
-                <a href="assets/project_manager.pdf">
+                <a
+                  href="https://docs.google.com/document/d/1Q5dlwTL_W7yJzuAHuQxErxE34z7AeH7NESI4Q4aiQT8/edit?usp=sharing"
+                >
                   <button class="px-16 py-2 text-white rounded bg-primary">
                     Apply
                   </button>
@@ -527,7 +594,7 @@
                 </div>
                 <div class="hidden md:flex">
                   <a
-                    href="https://docs.google.com/document/d/1338K50Nix3_3JbzILjy6mMk99KQnxGUTmQwqJ-3Zn84/edit"
+                    href="https://docs.google.com/document/d/1338K50Nix3_3JbzILjy6mMk99KQnxGUTmQwqJ-3Zn84/edit?usp=sharing"
                   >
                     <button class="px-16 py-2 text-white rounded bg-primary">
                       Apply
@@ -539,13 +606,13 @@
                 <p>
                   We are seeking students who can establish a campaign so that
                   as many people as possible in their local or regional area are
-                  regularly using Virufy;s web and smartphone apps to provide
+                  regularly using Virufy's web and smartphone apps to provide
                   their cough data.
                 </p>
               </div>
               <div class="mt-4 md:hidden">
                 <a
-                  href="https://docs.google.com/document/d/1338K50Nix3_3JbzILjy6mMk99KQnxGUTmQwqJ-3Zn84/edit"
+                  href="https://docs.google.com/document/d/1338K50Nix3_3JbzILjy6mMk99KQnxGUTmQwqJ-3Zn84/edit?usp=sharing"
                 >
                   <button class="px-16 py-2 text-white rounded bg-primary">
                     Apply

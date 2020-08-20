@@ -3,7 +3,6 @@
   <head>
     <title>Verify your COVID-19 risk with a smartphone | Data | Virufy</title>
     <!-- TODO: Add Hotjar Tracking Script -->
-    <!-- TODO: Add Google Analytics Scripts -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -14,11 +13,26 @@
     <meta name="author" content="Team Virufy" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
-    <script async src="scripts/index.js"></script>
+    <script defer src="scripts/index.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-165690517-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-165690517-3");
+    </script>
   </head>
   <body class="text-gray-100 font-body">
     <!-- Nav section -->
-    <section class="wrapper md:pb-4 md:px-16 3xl:px-0">
+    <section class="relative wrapper">
       <nav class="flex items-center justify-between md:py-4">
         <!-- Virufy logo -->
         <div>
@@ -42,10 +56,7 @@
             </button>
           </div>
           <!-- Mobile language menu -->
-          <div
-            class="absolute top-0 left-0 z-10 hidden w-full h-screen mt-16 text-center text-gray-400 bg-white border-t border-gray-200 md:mt-40"
-            id="mobile-lng-menu"
-          >
+          <div class="hidden text-center mobile-menu" id="mobile-lng-menu">
             <section class="px-4 py-4">
               <span class="inline-block text-base gray-200 text"
                 >Choose the language</span
@@ -124,10 +135,7 @@
         <!-- End of container -->
 
         <!-- Mobile Nav -->
-        <div
-          class="absolute top-0 z-10 hidden w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 lg:hidden md:mt-40"
-          id="mobile-nav"
-        >
+        <div class="hidden px-6 mobile-menu" id="mobile-nav">
           <section class="px-4 py-4">
             <span class="inline-block text-xs text-gray-200">About us</span>
             <div class="flex mt-4">
@@ -141,9 +149,6 @@
             <div class="flex mt-2">
               <a href="./team.html" class="w-1/2">
                 <span>Our team</span>
-              </a>
-              <a href="https://oywj.org/">
-                <span>One Young World</span>
               </a>
             </div>
           </section>
@@ -179,7 +184,7 @@
         >
           <div class="relative inline-block group">
             <a href="#">
-              About Us
+              About us
               <img
                 class="inline-block"
                 src="img/home/caret-down-icon.png"
@@ -192,7 +197,6 @@
             >
               <a class="pb-2" href="./mission.html">Mission</a>
               <a class="pb-2" href="./team.html">Our team</a>
-              <a class="pb-2" href="https://oywj.org/">One Young World</a>
               <a href="./data.html">Open data</a>
             </div>
           </div>

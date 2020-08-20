@@ -1,4 +1,7 @@
 module.exports = {
+  experimental: {
+    applyComplexClasses: true,
+  },
   purge: {
     enabled: true,
     content: ["./public/**/*.html", "./public/**/*.js"],
