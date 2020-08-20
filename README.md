@@ -30,9 +30,23 @@ If you want to create reusable component classes, you can add them to
 Tailwind's `@apply` directive along with the available utility classes.
 
 **Important:**
-Once you've made your changes, run `npm run build-css`
-and Tailwind will compile a new stylesheet into
-`public/styles.css`.
+While developing, disable `purge` in `tailwind.config.js` so you
+have access to all of Tailwind's utility classes while developing.
+
+Eg.
+
+```javascript
+purge: {
+  enabled: false;
+}
+```
+
+After any change to `src/styles.css` or `tailwind.config.js` run
+`npm run build-css` and Tailwind will compile a new stylesheet into `public/styles.css`.
+
+When you're ready to merge your branch to master, make sure to enable purge again
+and recompile the stylesheet. If you don't purge the unused styles, `styles.css`
+can end up being greater than 4mb.
 
 ## Deploying to Github Pages
 
@@ -40,6 +54,9 @@ Github doesn't have a clear method of deploying subdirectories (eg. `public/`).
 
 The current solution is to have the `gh-pages` branch hold only
 the contents in `public/` and deploy the `gh-pages` branch.
+
+❗This is temporary, there are some issues with this method regarding the CNAME
+commit that's created when you add a custom domain on GitHub
 
 To keep the deployed website up to date with master:
 
@@ -51,4 +68,4 @@ This will push the contents of the `public/` directory on `master` to the `gh-pa
 branch. Github will automatically update the contents of the deployed website
 based on the new commits pushed.
 
-[More information](https://stackoverflow.com/questions/36782467/set-subdirectory-as-website-root-on-github-pages)
+[More information]("https://gist.github.com/cobyism/4730490")
