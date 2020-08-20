@@ -30,9 +30,23 @@ If you want to create reusable component classes, you can add them to
 Tailwind's `@apply` directive along with the available utility classes.
 
 **Important:**
-Once you've made your changes, run `npm run build-css`
-and Tailwind will compile a new stylesheet into
-`public/styles.css`.
+While developing, disable `purge` in `tailwind.config.js` so you
+have access to all of Tailwind's utility classes while developing.
+
+Eg.
+
+```javascript
+purge: {
+  enabled: false;
+}
+```
+
+After any change to `src/styles.css` or `tailwind.config.js` run
+`npm run build-css` and Tailwind will compile a new stylesheet into `public/styles.css`.
+
+When you're ready to merge your branch to master, make sure to enable purge again
+and recompile the stylesheet. If you don't purge the unused styles, `styles.css`
+can end up being greater than 4mb.
 
 ## Deploying to Github Pages
 
