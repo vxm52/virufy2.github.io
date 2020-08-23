@@ -2,9 +2,9 @@
   "name": "website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+    "build-css": "tailwindcss build src/styles.css -o docs/styles.css"
   },
   "repository": {
     "type": "git",
