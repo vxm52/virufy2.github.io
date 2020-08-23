@@ -47,25 +47,3 @@ After any change to `src/styles.css` or `tailwind.config.js` run
 When you're ready to merge your branch to master, make sure to enable purge again
 and recompile the stylesheet. If you don't purge the unused styles, `styles.css`
 can end up being greater than 4mb.
-
-## Deploying to Github Pages
-
-Github doesn't have a clear method of deploying subdirectories (eg. `public/`).
-
-The current solution is to have the `gh-pages` branch hold only
-the contents in `public/` and deploy the `gh-pages` branch.
-
-❗This is temporary, there are some issues with this method regarding the CNAME
-commit that's created when you add a custom domain on GitHub
-
-To keep the deployed website up to date with master:
-
-1. Make sure your local `master` branch is up to date
-2. Navigate to the root directory
-3. run: `git subtree push --prefix public origin gh-pages`
-
-This will push the contents of the `public/` directory on `master` to the `gh-pages`
-branch. Github will automatically update the contents of the deployed website
-based on the new commits pushed.
-
-[More information](https://gist.github.com/cobyism/4730490)
