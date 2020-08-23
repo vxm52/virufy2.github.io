@@ -1,21 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <title>
-      Verify your COVID-19 risk with a smartphone | Mission | Virufy
+      Verifique seu risco ao COVID-19 com seu smartphone | Missão | Virufy
     </title>
     <!-- TODO: Add Hotjar Tracking Script -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Virufy - assess your risk for COVID-19 with our AI-powered app using your smartphone. A project of Stanford University's
-	COVID-19 Response Innovation Lab."
-    />
-    <meta name="author" content="Team Virufy" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
-    <script defer src="scripts/index.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -31,6 +20,31 @@
 
       gtag("config", "UA-165690517-3");
     </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Virufy - Avalie seu risco ao COVID-19 usando seu smartphone através do nosso aplicativo desenvolvido com tecnologia de Inteligência Artificial. Um projeto do Laboratório de Inovação de Resposta ao COVID-19 da Universidade de Stanford."
+    />
+    <meta name="author" content="Team Virufy" />
+    <link rel="stylesheet" href="../styles.css" />
+
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+
+    <!-- Cookie banner -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
+
+    <script defer src="../scripts/index.js"></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+      data-cfasync="false"
+    ></script>
   </head>
   <body class="text-gray-100 font-body overscroll-none">
     <!-- Nav section -->
@@ -41,7 +55,7 @@
           <a href="./index.html">
             <img
               class="logo"
-              src="img/logos/virufy-logo.svg"
+              src="../img/logos/virufy-logo.svg"
               alt="Virufy logo"
             />
           </a>
@@ -54,39 +68,39 @@
               id="mobile-lng-btn"
               class="px-3 py-1 text-sm border rounded lg:hidden button text-secondary-200 border-secondary-200"
             >
-              English
+              Português
             </button>
           </div>
           <!-- Mobile language menu -->
           <div class="hidden text-center mobile-menu" id="mobile-lng-menu">
             <section class="px-4 py-4">
               <span class="inline-block text-base gray-200 text"
-                >Choose the language</span
+                >Selecione o idioma</span
               >
             </section>
             <!-- TODO: Add links to translated pages -->
-            <a href="./mission.html">
+            <a href="../index.html">
               <section
                 class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
               >
                 <span>English</span>
               </section>
             </a>
-            <a href="./es/mission.html">
+            <a href="../es/index.html">
               <section
                 class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
               >
                 <span>Español</span>
               </section>
             </a>
-            <a href="./pt/mission.html">
+            <a href="../pt/index.html">
               <section
                 class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
               >
                 <span>Português</span>
               </section>
             </a>
-            <a href="./ja/mission.html">
+            <a href="../ja/index.html">
               <section
                 hidden
                 class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
@@ -149,42 +163,42 @@
         <!-- Mobile Nav -->
         <div class="hidden px-6 mobile-menu" id="mobile-nav">
           <section class="px-4 py-4">
-            <span class="inline-block text-xs text-gray-200">About us</span>
+            <span class="inline-block text-xs text-gray-200">Sobre nós</span>
             <div class="flex mt-4">
               <a href="./mission.html" class="w-1/2">
-                <span>Mission</span>
+                <span>Missão</span>
               </a>
               <a href="./data.html">
-                <span>Open data</span>
+                <span>Dados abertos</span>
               </a>
             </div>
             <div class="flex mt-2">
-              <a href="./team.html" class="w-1/2">
-                <span>Our team</span>
+              <a href="../team.html" class="w-1/2">
+                <span>Nossa equipe</span>
               </a>
             </div>
           </section>
           <section class="px-4 py-4 border-t border-gray-200">
             <div class="flex">
-              <a href="./research.html" class="w-1/2">
-                <span>Our research</span>
+              <a href="../research.html" class="w-1/2">
+                <span>Nossa pesquisa</span>
               </a>
-              <a target="_blank" href="https://www.gofundme.com/f/virufyorg">
+              <a href="https://www.gofundme.com/f/virufyorg">
                 <span>GoFundMe</span>
               </a>
             </div>
             <div class="flex mt-2">
               <a href="./join.html">
-                <span>Join us</span>
+                <span>Junte-se a nós</span>
               </a>
             </div>
           </section>
           <section
             class="flex justify-center px-4 py-8 border-t border-gray-200"
           >
-            <a target="_blank" href="https://form.jotform.com/202276990325155">
+            <a href="https://form.jotform.com/201988192533159">
               <button class="w-full px-8 py-2 text-white rounded bg-primary">
-                Donate your cough
+                Doe sua tosse
               </button>
             </a>
           </section>
@@ -196,44 +210,44 @@
         >
           <div class="relative inline-block group">
             <a href="#">
-              About us
+              Sobre nós
               <img
                 class="inline-block"
-                src="img/home/caret-down-icon.png"
-                alt="caret icon"
+                src="../img/home/caret-down-icon.png"
+                alt="Ícone de expansão"
               />
             </a>
             <div
               style="min-width: 150px;"
               class="absolute flex-col hidden px-4 py-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
             >
-              <a class="pb-2" href="./mission.html">Mission</a>
-              <a class="pb-2" href="./team.html">Our team</a>
+              <a class="pb-2" href="./mission.html">Missão</a>
+              <a class="pb-2" href="../team.html">Nossa equipe</a>
               <a href="./data.html">Open data</a>
             </div>
           </div>
 
           <li>
-            <a href="./research.html">
-              <span>Our research</span>
+            <a href="../research.html">
+              <span>Nossa pesquisa</span>
             </a>
           </li>
           <li>
             <a href="./join.html">
-              <span>Join us</span>
+              <span>Junte-se a nós</span>
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.gofundme.com/f/virufyorg">
+            <a href="https://www.gofundme.com/f/virufyorg">
               <span>GoFundMe</span>
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://form.jotform.com/202276990325155">
+            <a href="https://form.jotform.com/202276990325155">
               <button
                 class="px-4 py-1 border rounded text-secondary-200 border-secondary-200"
               >
-                Donate your cough
+                Doe sua tosse
               </button>
             </a>
           </li>
@@ -242,15 +256,15 @@
             <button
               class="px-4 py-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
             >
-              English
+              Português
             </button>
             <div
               style="min-width: 100px;"
               class="absolute flex-col hidden pt-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
             >
-              <a class="pb-2 mx-4" href="./es/mission.html">Español</a>
-              <a class="pb-2 mx-4" href="./pt/mission.html">Português</a>
-              <a hidden class="pb-2 mx-4" href="./ja/mission.html">日本語</a>
+              <a class="pb-2 mx-4" href="../index.html">English</a>
+              <a class="pb-2 mx-4" href="../es/index.html">Español</a>
+              <a hidden class="pb-2 mx-4" href="./ja/index.html">日本語</a>
             </div>
           </div>
         </ul>
@@ -264,20 +278,20 @@
       >
         <div class="w-full md:w-7/12">
           <h1 class="mb-6 text-5xl font-bold text-gray-300 font-heading">
-            Our goal
+            Nosso objetivo
           </h1>
 
           <p class="text-xl">
-            We believe instant, universal, and early detection, which will allow
-            society to pinpoint the locations of the virus, is the key to end
-            the pandemic and necessity for lockdowns.
+            Acreditamos que a detecção instantânea, universal e precoce (que
+            permitirá à sociedade identificar os locais do vírus) é a chave para
+            acabar com a pandemia e a necessidade de quarentenas.
           </p>
         </div>
         <div class="hidden md:block md:w-4/12">
           <img
             class="ml-auto"
-            src="./img/mission/header-image.png"
-            alt="Mission"
+            src="../img/mission/header-image.png"
+            alt="Missão"
           />
         </div>
       </header>
@@ -292,20 +306,20 @@
           <div style="max-width: 70px;">
             <img
               class="my-6 md:my-0 md:pr-2"
-              src="./img/mission/globe.png"
-              alt="Globe"
+              src="../img/mission/globe.png"
+              alt="Globo"
             />
           </div>
 
           <!-- text -->
           <div class="w-full md:w-10/12">
             <h2 class="mb-2 text-2xl font-bold text-gray-200">
-              Focus on global impact
+              Foco no impacto global
             </h2>
             <p>
-              Collect data and provide a solution for people in developing
-              countries across the world. We are currently working with
-              collaborators in Pakistan, US, and Japan.
+              Colete dados e forneça uma solução para pessoas em países em
+              desenvolvimento em todo o mundo. Atualmente, estamos trabalhando
+              com colaboradores no Paquistão, EUA e Japão.
             </p>
           </div>
         </div>
@@ -316,20 +330,20 @@
           <div style="max-width: 70px;">
             <img
               class="my-6 md:my-0 md:pr-2"
-              src="./img/mission/heart.png"
-              alt="Heart"
+              src="../img/mission/heart.png"
+              alt="Coração"
             />
           </div>
           <!-- text -->
           <div class="w-full md:w-10/12">
             <h2 class="mb-2 text-2xl font-bold text-gray-200">
-              Reduce burden on health systems
+              Reduza a carga nos sistemas de saúde
             </h2>
             <p>
-              Get your COVID-19 risk status without ever needing to go to a
-              hsopital or testing site. Share your risk score with your doctor
-              via phone or telehealth appointment to increase capacity at
-              hospitals.
+              Obtenha seu status de risco COVID-19 sem nunca precisar ir a um
+              hospital ou local de teste. Compartilhe sua pontuação de risco com
+              seu médico por telefone ou consulta remota para aumentar a
+              capacidade dos hospitais.
             </p>
           </div>
         </div>
@@ -340,20 +354,20 @@
           <div style="max-width: 70px;">
             <img
               class="my-6 md:my-0 md:pr-2"
-              src="./img/mission/mask.png"
-              alt="Mask"
+              src="../img/mission/mask.png"
+              alt="Máscara"
             />
           </div>
           <!-- text -->
           <div class="w-full md:w-10/12">
             <h2 class="mb-2 text-2xl font-bold text-gray-200">
-              Decrease risk of exposure
+              Diminua o risco de exposição
             </h2>
             <p>
-              Home testing means no trip to the hospital, reducing the risk of
-              exposure to both you and healthcare workers. Early detection means
-              you can isolate yourself sonner, decreasing the risk of infection
-              for others who come in contact with you.
+              Testes em casa significam nenhuma ida ao hospital, reduzindo o
+              risco de exposição a você e aos profissionais de saúde. A detecção
+              precoce significa que você pode se isolar mais cedo, diminuindo o
+              risco de infecção para pessoas que entrarem em contato com você.
             </p>
           </div>
         </div>
@@ -364,40 +378,44 @@
           <div style="max-width: 70px;">
             <img
               class="my-6 md:my-0 md:pr-2"
-              src="./img/mission/lock.png"
-              alt="lock"
-            />
-          </div>
-          <!-- text -->
-          <div class="w-full md:w-10/12">
-            <h2 class="mb-2 text-2xl font-bold text-gray-200">End lockdowns</h2>
-            <p>
-              Global detection and tracking of infected individuals helps end
-              current lockdowns safely. While also helping to prevent future
-              ones. Early detection and isolation of COVID-19 positive patients
-              means we can get back to our normal routines sooner.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-wrap justify-center my-5 md:w-1/2 md:my-10 md:flex-no-wrap md:justify-start"
-        >
-          <!-- icon -->
-          <div style="max-width: 70px;">
-            <img
-              class="my-6 md:my-0 md:pr-2"
-              src="./img/mission/cross.png"
-              alt="Cross"
+              src="../img/mission/lock.png"
+              alt="Cadeado"
             />
           </div>
           <!-- text -->
           <div class="w-full md:w-10/12">
             <h2 class="mb-2 text-2xl font-bold text-gray-200">
-              Increase access to care
+              Acabe com as quarentenas
             </h2>
             <p>
-              Testing for rural communities and others who live far from
-              hospitals or testing sites. No-cost testing solution for COVID-19.
+              A detecção global e o rastreamento de indivíduos infectados ajudam
+              a encerrar as quarentenas atuais com segurança e ao mesmo tempo
+              ajuda a prevenir futuros isolamentos. A detecção precoce e o
+              afastamento de pacientes COVID-19 positivos significa que podemos
+              voltar às nossas rotinas normais mais cedo.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap justify-center my-5 md:w-1/2 md:my-10 md:flex-no-wrap md:justify-start"
+        >
+          <!-- icon -->
+          <div style="max-width: 70px;">
+            <img
+              class="my-6 md:my-0 md:pr-2"
+              src="../img/mission/cross.png"
+              alt="Cruz"
+            />
+          </div>
+          <!-- text -->
+          <div class="w-full md:w-10/12">
+            <h2 class="mb-2 text-2xl font-bold text-gray-200">
+              Aumente o acesso ao atendimento
+            </h2>
+            <p>
+              Teste para comunidades rurais e outras pessoas que vivem longe de
+              hospitais ou locais de teste. Solução gratuita de teste para
+              COVID-19.
             </p>
           </div>
         </div>
@@ -408,19 +426,19 @@
           <div style="max-width: 70px;">
             <img
               class="my-6 md:my-0 md:pr-1"
-              src="./img/mission/level.png"
+              src="../img/mission/level.png"
               alt="Stress level"
             />
           </div>
           <!-- text -->
           <div class="w-full md:w-10/12">
             <h2 class="mb-2 text-2xl font-bold text-gray-200">
-              Decrease stress
+              Diminua o estresse
             </h2>
             <p>
-              Feeling symptoms? Find out your risk early without the stress of
-              waiting to get tested. No need to worry about testing availibility
-              for access.
+              Sentindo sintomas? Descubra o risco de ter Covid cedo, sem o
+              estresse de esperar para fazer o teste. Não se preocupe com a
+              disponibilidade de testes.
             </p>
           </div>
         </div>
@@ -433,43 +451,58 @@
       >
         <section>
           <div>
-            <a href="./assets/privacy_policy.pdf">Privacy Policy</a>
+            <a target="_blank" href="../assets/privacy_policy.pdf"
+              >Política de Privacidade</a
+            >
           </div>
           <div>
-            <p>© Copyright 2020 Virufy. All rights reserved.</p>
+            <p>© Copyright 2020 Virufy. Todos os direitos reservados.</p>
           </div>
         </section>
         <!-- Icon container -->
         <section class="flex mb-16">
           <a target="_blank" href="https://github.com/virufy" class="mr-3">
-            <img src="img/logos/github.svg" alt="Github Icon" />
+            <img src="../img/logos/github.svg" alt="Ícone do Github" />
           </a>
           <a target="_blank" href="https://twitter.com/VirufyOrg" class="mr-3">
-            <img src="img/logos/twitter.svg" alt="Twitter Icon" />
+            <img src="../img/logos/twitter.svg" alt="Ícone do Twitter" />
           </a>
           <a
             target="_blank"
             href="https://www.facebook.com/Virufy/"
             class="mr-3"
           >
-            <img src="img/logos/facebook.svg" alt="Facebook Icon" />
+            <img src="../img/logos/facebook.svg" alt="Ícone do Facebook" />
           </a>
           <a
             target="_blank"
             href="https://www.instagram.com/virufyorg/"
             class="mr-3"
           >
-            <img src="img/logos/instagram.svg" alt="Instagram Icon" />
+            <img src="../img/logos/instagram.svg" alt="Ícode do Instagram" />
           </a>
           <a
             target="_blank"
             href="https://www.linkedin.com/company/virufy/"
             class="mr-3"
           >
-            <img src="img/logos/linkedin.svg" alt="LinkedIn Icon" />
+            <img src="../img/logos/linkedin.svg" alt="Ícone do LinkedIn" />
           </a>
         </section>
       </div>
     </footer>
+    <script defer>
+      window.cookieconsent.initialise({
+        palette: {
+          popup: {
+            background: "#00B696",
+          },
+          button: {
+            background: "#08979C",
+            text: "#FFF",
+          },
+        },
+      });
+    </script>
   </body>
 </html>
