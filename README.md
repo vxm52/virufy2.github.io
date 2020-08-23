@@ -26,7 +26,7 @@ is a copy of Tailwind's defaults (this isn't the file actually being used by Tai
 You can view the structure in there for reference.
 
 If you want to create reusable component classes, you can add them to
-`src/styles.css` (**NOT** `public/styles.css`). Recommendation: Use
+`src/styles.css` (**NOT** `docs/styles.css`). Recommendation: Use
 Tailwind's `@apply` directive along with the available utility classes.
 
 **Important:**
@@ -42,7 +42,7 @@ purge: {
 ```
 
 After any change to `src/styles.css` or `tailwind.config.js` run
-`npm run build-css` and Tailwind will compile a new stylesheet into `public/styles.css`.
+`npm run build-css` and Tailwind will compile a new stylesheet into `docs/styles.css`.
 
 When you're ready to merge your branch to master, make sure to enable purge again
 and recompile the stylesheet. If you don't purge the unused styles, `styles.css`
