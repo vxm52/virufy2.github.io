@@ -1,22 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt">
   <head>
     <title>
-      Verifica tu riesgo al COVID-19 con tu smartphone | Datos | Virufy
+      Verifique seu risco ao COVID-19 com seu smartphone | Dados | Virufy
     </title>
     <!-- TODO: Add Hotjar Tracking Script -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Virufy - evalua tu riesgo a COVID-19 con
-      nuestro app desarollado con tecnología de IA usando tu smartphone. Un
-      proyecto del Laboratorio de Innovación de Respuesta COVID-19 de Stanford."
-    />
-    <meta name="author" content="Team Virufy" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
-    <script defer src="../scripts/index.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -32,6 +20,31 @@
 
       gtag("config", "UA-165690517-3");
     </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Virufy - Avalie seu risco ao COVID-19 usando seu smartphone através do nosso aplicativo desenvolvido com tecnologia de Inteligência Artificial. Um projeto do Laboratório de Inovação de Resposta ao COVID-19 da Universidade de Stanford."
+    />
+    <meta name="author" content="Team Virufy" />
+    <link rel="stylesheet" href="../styles.css" />
+
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+
+    <!-- Cookie banner -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
+
+    <script defer src="../scripts/index.js"></script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+      data-cfasync="false"
+    ></script>
   </head>
   <body class="text-gray-100 font-body overscroll-none">
     <!-- Nav section -->
@@ -55,32 +68,39 @@
               id="mobile-lng-btn"
               class="px-3 py-1 text-sm border rounded lg:hidden button text-secondary-200 border-secondary-200"
             >
-              Español
+              Português
             </button>
           </div>
           <!-- Mobile language menu -->
           <div class="hidden text-center mobile-menu" id="mobile-lng-menu">
             <section class="px-4 py-4">
               <span class="inline-block text-base gray-200 text"
-                >Seleccione el idioma</span
+                >Selecione o idioma</span
               >
             </section>
             <!-- TODO: Add links to translated pages -->
-            <a href="./../data.html">
+            <a href="../index.html">
               <section
                 class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
               >
                 <span>English</span>
               </section>
             </a>
-            <a href="./../pt/data.html">
+            <a href="../es/index.html">
+              <section
+                class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+              >
+                <span>Español</span>
+              </section>
+            </a>
+            <a href="../pt/index.html">
               <section
                 class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
               >
                 <span>Português</span>
               </section>
             </a>
-            <a href="./../ja/data.html">
+            <a href="../ja/index.html">
               <section
                 hidden
                 class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
@@ -88,7 +108,6 @@
                 <span>日本語</span>
               </section>
             </a>
-
             <!--
               TODO: If we want to implement saving, we  need to enable
               cookies to store the user's language preferences 
@@ -144,47 +163,42 @@
         <!-- Mobile Nav -->
         <div class="hidden px-6 mobile-menu" id="mobile-nav">
           <section class="px-4 py-4">
-            <span class="inline-block text-xs text-gray-200"
-              >Quiénes somos</span
-            >
+            <span class="inline-block text-xs text-gray-200">Sobre nós</span>
             <div class="flex mt-4">
-              <a href="./mission.html" class="w-1/2">
-                <span>Misión</span>
+              <a href="../mission.html" class="w-1/2">
+                <span>Missão</span>
               </a>
               <a href="./data.html">
-                <span>Datos abiertos</span>
+                <span>Dados abertos</span>
               </a>
             </div>
             <div class="flex mt-2">
-              <a href="./team.html" class="w-1/2">
-                <span>Nuestro equipo</span>
+              <a href="../team.html" class="w-1/2">
+                <span>Nossa equipe</span>
               </a>
             </div>
           </section>
           <section class="px-4 py-4 border-t border-gray-200">
             <div class="flex">
-              <a href="./research.html" class="w-1/2">
-                <span>Nuestra investigación</span>
+              <a href="../research.html" class="w-1/2">
+                <span>Nossa pesquisa</span>
               </a>
-              <a target="_blank" href="https://www.gofundme.com/f/virufyorg">
+              <a href="https://www.gofundme.com/f/virufyorg">
                 <span>GoFundMe</span>
               </a>
             </div>
             <div class="flex mt-2">
               <a href="./join.html">
-                <span>Únete a nosotros</span>
+                <span>Junte-se a nós</span>
               </a>
             </div>
           </section>
           <section
             class="flex justify-center px-4 py-8 border-t border-gray-200"
           >
-            <a
-              target="_blank"
-              href="https://form.jotform.com/202276990325155?language=es"
-            >
+            <a href="https://form.jotform.com/201988192533159">
               <button class="w-full px-8 py-2 text-white rounded bg-primary">
-                Dona tu tos
+                Doe sua tosse
               </button>
             </a>
           </section>
@@ -192,51 +206,48 @@
 
         <!-- Desktop Nav -->
         <ul
-          class="items-baseline justify-between hidden w-3/4 2xl:w-1/2 lg:flex"
+          class="items-baseline justify-between hidden w-3/4 xl:w-1/2 lg:flex"
         >
           <div class="relative inline-block group">
             <a href="#">
-              Quiénes somos
+              Sobre nós
               <img
                 class="inline-block"
                 src="../img/home/caret-down-icon.png"
-                alt="caret icon"
+                alt="Ícone de expansão"
               />
             </a>
             <div
               style="min-width: 150px;"
               class="absolute z-50 flex-col hidden px-4 py-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
             >
-              <a class="pb-2" href="./mission.html">Misión</a>
-              <a class="pb-2" href="./team.html">Nuestro equipo</a>
-              <a href="./data.html">Datos abiertos</a>
+              <a class="pb-2" href="../mission.html">Missão</a>
+              <a class="pb-2" href="../team.html">Nossa equipe</a>
+              <a href="./data.html">Open data</a>
             </div>
           </div>
 
           <li>
-            <a href="./research.html">
-              <span>Nuestra investigación</span>
+            <a href="../research.html">
+              <span>Nossa pesquisa</span>
             </a>
           </li>
           <li>
             <a href="./join.html">
-              <span>Únete a nosotros</span>
+              <span>Junte-se a nós</span>
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.gofundme.com/f/virufyorg">
+            <a href="https://www.gofundme.com/f/virufyorg">
               <span>GoFundMe</span>
             </a>
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://form.jotform.com/202276990325155?language=es"
-            >
+            <a href="https://form.jotform.com/202276990325155">
               <button
                 class="px-4 py-1 border rounded text-secondary-200 border-secondary-200"
               >
-                Dona tu tos
+                Doe sua tosse
               </button>
             </a>
           </li>
@@ -245,15 +256,15 @@
             <button
               class="px-4 py-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
             >
-              Español
+              Português
             </button>
             <div
               style="min-width: 100px;"
               class="absolute z-50 flex-col hidden pt-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
             >
-              <a class="pb-2 mx-4" href="./../data.html">English</a>
-              <a class="pb-2 mx-4" href="./../pt/data.html">Português</a>
-              <a hidden class="pb-2 mx-4" href="./../ja/data.html">日本語</a>
+              <a class="pb-2 mx-4" href="../index.html">English</a>
+              <a class="pb-2 mx-4" href="../es/index.html">Español</a>
+              <a hidden class="pb-2 mx-4" href="./ja/index.html">日本語</a>
             </div>
           </div>
         </ul>
@@ -262,7 +273,7 @@
     <!-- End of nav section -->
 
     <main class="relative">
-      <header class="-z-10">
+      <header>
         <div class="relative flex justify-center">
           <!-- background image -->
           <img
@@ -274,12 +285,12 @@
             class="w-full px-4 mx-auto my-10 3xl:mt-16 md:absolute max-w-screen-3xl md:pb-4 md:px-16 3xl:px-0"
           >
             <h1 class="mb-6 text-5xl font-bold text-gray-300 font-heading">
-              Datos abiertos
+              Dados abertos
             </h1>
 
             <p class="text-xl md:w-7/12">
-              Hemos decidido mantener un código abierto para unos de los
-              conjuntos de datos de tos.
+              Decidimos tornar públicos alguns de nossos conjuntos de dados de
+              tosse COVID-19.
             </p>
           </div>
         </div>
@@ -289,18 +300,19 @@
       <div class="wrapper md:pb-4 md:px-16 3xl:px-0">
         <section class="mb-10">
           <h2 class="max-w-3xl mb-4 text-2xl font-bold text-gray-200">
-            Queremos beneficiar humanidad y decidimos ser los pioneros en abrir
-            el primer banco de datos de COVID-19 y hacerlo gratis.
+            Queremos beneficiar a humanidade e decidimos ser pioneiros no
+            fornecimento de código aberto do primeiro conjunto de dados de tosse
+            COVID-19 gratuito.
           </h2>
           <p>
-            La pandemia de COVID-19 es extremadamente dañina a la sociedad y
-            necesitamos trabajar juntos a superarlo. La IA necesita muchos data
-            para funcionar, y no tenemos conocimiento de otros datos abiertos
-            para el conjunto de datos de COVID-19 en cualquier parte del mundo.
-            Queremos beneficiar humanidad y decidimos ser los pioneros en abrir
-            el primer conjunto de datos de COVID-19 y hacerlo gratis. Esto
-            formentará innovación y colaboración del sector académico y
-            industrial en todo el mundo.
+            A pandemia de COVID-19 é extremamente prejudicial para a sociedade e
+            todos nós precisamos trabalhar juntos para superá-la. A inteligência
+            artificial precisa de uma grande quantidade de dados para funcionar
+            e não conhecemos em nenhum lugar do mundo um banco de dados de tosse
+            do COVID-19 que seja público. Queremos beneficiar a humanidade e
+            decidimos ser os pioneiros em tornar público o primeiro banco de
+            bados gratuito de tosse do COVID-19. Isso estimulará a inovação e a
+            colaboração de pesquisas acadêmicas e da indústria em todo o mundo.
           </p>
         </section>
         <section class="flex flex-wrap justify-between pb-10">
@@ -308,27 +320,27 @@
             <h2
               class="max-w-xs pt-1 mb-4 text-xl font-bold text-gray-200 border-t-2 border-gray-400 border-none md:border-solid"
             >
-              Fuente de datos
+              Fonte de dados
             </h2>
             <p>
-              Nuestros datos son buena calidad porque fueron colectados en un
-              hospital bajo la direccion de médicos cumpliendo procedimientos
-              normalizados de trabajo. Nuestros datos son pre-procesados y
-              etiquetados con COVID-19, (adquiridos de las pruebas de PCR),
-              junto con las demográficas del paciente (edad, género, historia
-              médica).
+              Nossos dados são de altíssima qualidade porque foram coletados em
+              um hospital sob supervisão de médicos de acordo com os
+              procedimentos operacionais padrão (POP). Nossos dados são
+              pré-processados ​​e rotulados com o status COVID-19 (adquiridos a
+              partir de testes de PCR), juntamente com os dados demográficos dos
+              pacientes (idade, sexo, histórico médico).
             </p>
           </div>
           <div class="my-5 md:w-5/12 md:my-10">
             <h2
               class="max-w-xs pt-1 mb-4 text-xl font-bold text-gray-200 border-t-2 border-gray-400 border-none md:border-solid"
             >
-              Empieza
+              Iniciar
             </h2>
             <p>
-              Nuestros datos y instrucciones de uso se pueden encontrar en
-              nuestra página de Github. Nuestros modelos de tos y texto para
-              processar los datos estan siendo subidos.
+              Nossos dados e instruções de uso podem ser encontrados em nossa
+              página do GitHub. Nossos modelos textuais e de tosse para
+              processar os dados também estão disponíveis.
             </p>
             <a
               href="https://github.com/virufy/covid/tree/master/data"
@@ -337,7 +349,7 @@
               <button
                 class="px-6 py-1 mt-5 border-2 rounded border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-150"
               >
-                Visita nuestra página de Github
+                Visite nosso Github
               </button>
             </a>
           </div>
@@ -345,26 +357,22 @@
             <h2
               class="max-w-xs pt-1 mb-4 text-xl font-bold text-gray-200 border-t-2 border-gray-400 border-none md:border-solid"
             >
-              Colaboración
+              Colaboração
             </h2>
             <p>
-              Nos complace la revisión de nuestros datos y código. Esperamos
-              crear una comunidad de investigadores impulsados a utilizar estos
-              datos para crear soluciones para la pandemia. Por favor, envíanos
-              un correo electrónico a
-              <a
-                target="_blank"
-                href="mailto:open-data@virufy.org"
-                class="text-primary"
+              Revisões de nossos dados e códigos são bem-vindas. Esperamos criar
+              uma comunidade de pesquisadores motivada a usar esses dados para
+              criar soluções para a pandemia. Envie um email para
+              <a href="mailto:open-data@virufy.org" class="text-primary"
                 >open-data@virufy.org</a
               >
-              si estás interesado.
+              se você estiver interessado.
             </p>
-            <a target="_blank" href="mailto:open-data@virufy.org">
+            <a href="mailto:open-data@virufy.org">
               <button
                 class="px-6 py-1 mt-5 border-2 rounded border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-150"
               >
-                Contáctanos
+                Entre em contato
               </button>
             </a>
           </div>
@@ -377,46 +385,47 @@
         style="z-index: -1;"
       />
     </main>
+
     <footer class="footer md:px-20 md:py-12">
       <div
         class="flex flex-col-reverse mx-auto max-w-screen-3xl md:flex-row md:justify-between"
       >
         <section>
           <div>
-            <a href="../assets/privacy_policy_es.pdf">Política de privacidad</a>
+            <a href="./assets/privacy_policy.pdf">Política de Privacidade</a>
           </div>
           <div>
-            <p>© Copyright 2020 Virufy. Todos los derechos reservados.</p>
+            <p>© Copyright 2020 Virufy. Todos os direitos reservados.</p>
           </div>
         </section>
         <!-- Icon container -->
         <section class="flex mb-16">
           <a target="_blank" href="https://github.com/virufy" class="mr-3">
-            <img src="../img/logos/github.svg" alt="Github Icon" />
+            <img src="../img/logos/github.svg" alt="Ícone do Github" />
           </a>
           <a target="_blank" href="https://twitter.com/VirufyOrg" class="mr-3">
-            <img src="../img/logos/twitter.svg" alt="Twitter Icon" />
+            <img src="../img/logos/twitter.svg" alt="Ícone do Twitter" />
           </a>
           <a
             target="_blank"
             href="https://www.facebook.com/Virufy/"
             class="mr-3"
           >
-            <img src="../img/logos/facebook.svg" alt="Facebook Icon" />
+            <img src="../img/logos/facebook.svg" alt="Ícone do Facebook" />
           </a>
           <a
             target="_blank"
             href="https://www.instagram.com/virufyorg/"
             class="mr-3"
           >
-            <img src="../img/logos/instagram.svg" alt="Instagram Icon" />
+            <img src="../img/logos/instagram.svg" alt="Ícode do Instagram" />
           </a>
           <a
             target="_blank"
             href="https://www.linkedin.com/company/virufy/"
             class="mr-3"
           >
-            <img src="../img/logos/linkedin.svg" alt="LinkedIn Icon" />
+            <img src="../img/logos/linkedin.svg" alt="Ícone do LinkedIn" />
           </a>
         </section>
       </div>
