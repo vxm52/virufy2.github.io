@@ -4,7 +4,7 @@ module.exports = {
   },
   purge: {
     enabled: true,
-    content: ["./public/**/*.html", "./public/**/*.js"],
+    content: ["./docs/**/*.html", "./docs/**/*.js"],
   },
   theme: {
     extend: {
