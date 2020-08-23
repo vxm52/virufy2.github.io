@@ -24,7 +24,7 @@
 }
 
 .desktop-hover-menu {
-  @apply absolute flex-col hidden px-4 py-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly;
+  @apply absolute z-50 flex-col hidden px-4 py-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly;
 }
 
 .desktop-about-menu {
