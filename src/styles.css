@@ -27,6 +27,10 @@
   @apply absolute flex-col hidden px-4 py-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly;
 }
 
+.desktop-about-menu {
+  min-width: 110px;
+}
+
 .footer {
   @apply px-6 py-10 text-white bg-secondary-100;
 }
