@@ -747,5 +747,19 @@
         </section>
       </div>
     </footer>
+    <script>
+      function collapse(btn) {
+        const icon = btn.nextElementSibling;
+        const content = btn.parentElement.nextElementSibling;
+
+        if (content.style.maxHeight === "0px") {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.setAttribute("src", "../img/research/collapse.png");
+        } else {
+          content.style.maxHeight = "0px";
+          icon.setAttribute("src", "../img/research/expand.png");
+        }
+      }
+    </script>
   </body>
 </html>
