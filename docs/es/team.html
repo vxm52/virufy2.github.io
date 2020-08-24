@@ -32,8 +32,8 @@
   </head>
   <body class="text-gray-100 font-body overscroll-none">
     <!-- Nav section -->
-    <section class="relative wrapper">
-      <nav class="flex items-center justify-between md:py-4">
+    <section class="relative">
+      <nav class="flex items-center justify-between wrapper md:py-4">
         <!-- Virufy logo -->
         <div>
           <a href="./index.html">
@@ -196,15 +196,12 @@
             <a href="#">
               Quiénes somos
               <img
-                class="inline-block"
-                src="../img/home/caret-down-icon.png"
+                class="desktop-about-icon"
+                src="../img/logos/caret-down.svg"
                 alt="caret icon"
               />
             </a>
-            <div
-              style="min-width: 150px;"
-              class="absolute z-50 flex-col hidden px-4 py-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
-            >
+            <div class="desktop-hover-menu desktop-about-menu-es">
               <a class="pb-2" href="./mission.html">Misión</a>
               <a class="pb-2" href="./team.html">Nuestro equipo</a>
               <a href="./data.html">Datos abiertos</a>
@@ -245,13 +242,10 @@
             >
               Español
             </button>
-            <div
-              style="min-width: 100px;"
-              class="absolute z-50 flex-col hidden pt-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly"
-            >
-              <a class="pb-2 mx-4" href="./../team.html">English</a>
-              <a hidden class="pb-2 mx-4" href="./../pt/team.html">Português</a>
-              <a hidden class="pb-2 mx-4" href="./../ja/team.html">日本語</a>
+            <div class="desktop-hover-menu">
+              <a class="pb-2" href="./../team.html">English</a>
+              <a hidden class="pb-2" href="./../pt/team.html">Português</a>
+              <a hidden class="pb-2" href="./../ja/team.html">日本語</a>
             </div>
           </div>
         </ul>
@@ -260,7 +254,7 @@
     <!-- End of nav section -->
 
     <main class="relative">
-      <header class="flex lg:pb-40 wrapper 3xl:px-0 -z-10">
+      <header class="flex lg:pb-40 wrapper">
         <section class="self-center mt-6 lg:mt-24 md:w-1/2 3xl:px-0">
           <div>
             <h1
@@ -285,7 +279,7 @@
       />
 
       <!-- Wrapper -->
-      <div class="wrapper md:px-16 3xl:px-0 2xl:mt-24">
+      <div class="wrapper 2xl:mt-24">
         <!-- Collaboration section -->
         <section class="md:mb-32">
           <div class="mb-6">
@@ -367,7 +361,7 @@
       <!-- End of wrapper -->
 
       <!-- Wrapper for Leadership section -->
-      <div class="wrapper md:px-16 3xl:px-0">
+      <div class="wrapper">
         <div class="mb-6 md:mb-20">
           <h2 class="text-3xl font-bold text-center text-gray-200">
             Liderazgo
@@ -562,7 +556,7 @@
       <!-- End of wrapper for Leadership section -->
 
       <!-- Wrapper for Advisory section -->
-      <div class="wrapper md:px-16 3xl:px-0 md:mt-20">
+      <div class="wrapper md:mt-12">
         <div class="mb-6 md:mb-16">
           <h2 class="text-3xl font-bold text-center text-gray-200">Asesoría</h2>
         </div>
@@ -829,7 +823,7 @@
       </div>
 
       <!-- Wrapper for CTA section -->
-      <div class="wrapper md:px-16 3xl:px-0 md:mt-20">
+      <div class="wrapper">
         <div class="mb-6 md:mb-20">
           <h2 class="text-2xl font-bold text-center text-gray-200 md:text-3xl">
             ¿Estás interesado en ayudar? ¡Únete a nuestro equipo!
@@ -844,7 +838,7 @@
         </div>
       </div>
     </main>
-    <footer class="footer md:px-20 md:py-12">
+    <footer class="footer">
       <div
         class="flex flex-col-reverse mx-auto max-w-screen-3xl md:flex-row md:justify-between"
       >

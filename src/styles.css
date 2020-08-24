@@ -8,7 +8,7 @@
  Generics
  ******/
 .wrapper {
-  @apply px-4 mx-auto mt-8 max-w-screen-3xl md:pb-4 md:px-16 3xl:px-0;
+  @apply px-6 mx-auto mt-8 max-w-screen-3xl md:pb-4 md:px-8 3xl:px-6 4xl:px-0;
 }
 
 .logo {
@@ -19,6 +19,27 @@
   @apply absolute top-0 left-0 z-10 w-full h-screen mt-16 text-gray-400 bg-white border-t border-gray-200 md:mt-20;
 }
 
+.desktop-about-icon {
+  @apply inline-block w-2 ml-1;
+}
+
+.desktop-hover-menu {
+  min-width: 100px;
+  @apply absolute z-50 flex-col hidden px-4 py-4 font-light text-gray-200 bg-white rounded shadow-md group-hover:flex justify-evenly;
+}
+
+.desktop-about-menu {
+  min-width: 120px;
+}
+
+.desktop-about-menu-es {
+  min-width: 140px;
+}
+
+.desktop-about-menu-pt {
+  min-width: 130px;
+}
+
 .footer {
-  @apply px-6 py-10 text-white bg-secondary-100;
+  @apply px-6 py-10 text-white md:px-8 md:py-12 bg-secondary-100 3xl:px-0;
 }
