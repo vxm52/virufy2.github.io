@@ -28,7 +28,11 @@
 }
 
 .desktop-about-menu {
-  min-width: 110px;
+  min-width: 120px;
+}
+
+.desktop-about-menu-es {
+  min-width: 140px;
 }
 
 .footer {
