@@ -1352,6 +1352,13 @@ video {
   }
 }
 
+@media (min-width: 1680px){
+  .wrapper{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 @media (min-width: 1920px){
   .wrapper{
     padding-left: 0;
@@ -1461,6 +1468,13 @@ video {
     padding-right: 2rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1680px){
+  .footer{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
